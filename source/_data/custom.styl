@@ -1,0 +1,15 @@
+.overview .menu .item.active:hover {
+    box-shadow: 0 0 0.75rem var(--color-green);
+}
+
+.index.wrap .btn {
+    background-image: linear-gradient(to right, var(--color-green-light) 0, var(--color-blue-light) 100%);
+
+    &::before {
+      content: none;
+    }
+}
+
+.segments > .item:nth-child(even) .btn {
+    background-image: linear-gradient(to right, var(--color-blue-light) 0, var(--color-green-light) 100%);
+}
