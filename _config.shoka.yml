@@ -12,13 +12,13 @@ menu:
   # links: /links/ || magic
 
 social:
-  github: https://github.com/Vision010 || github || "#191717"
+  github: https://github.com/v-immor || github || "#191717"
   #google: https://plus.google.com/yourname || google
   # twitter: https://twitter.com/yourname || twitter || "#00aff0"
   # zhihu: https://www.zhihu.com/people/yourname || zhihu || "#1e88e5"
   # music: https://music.163.com/#/user/home?id=yourid || cloud-music || "#e60026"
   # weibo: https://weibo.com/yourname || weibo || "#ea716e"
-  about: https://about.me/yourname || address-card || "#3b5998"
+  # about: https://about.me/yourname || address-card || "#3b5998"
   #email: mailto:yourname@mail.com || envelope || "#55acd5"
   #facebook: https://www.facebook.com/yourname || facebook
   #stackoverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -43,13 +43,17 @@ widgets:
 footer:
   since: 2022
   count: true
+# 打赏
+reward:
+  # If true, reward will be displayed in every article by default.
+  enable: false
 
 # 文章界面统计
 post:
   count: true
 
 loader:
-  start: true # 当初次打开页面时，显示加载动画
+  start: false # 当初次打开页面时，显示加载动画
   switch: false # tab 切换到其他页面时，显示加载动画
 
 sidebar:
@@ -116,20 +120,20 @@ autoprefixer:
   exclude:
     - '*.min.css'
 
-algolia:
-  appId: #Your appId
-  apiKey: #Your apiKey
-  adminApiKey: #Your adminApiKey
-  chunkSize: 5000
-  indexName: #"shoka"
-  fields:
-    - title #必须配置
-    - path #必须配置
-    - categories #推荐配置
-    - content:strip:truncate,0,2000
-    - gallery
-    - photos
-    - tags
+# algolia:
+#   appId: #Your appId
+#   apiKey: #Your apiKey
+#   adminApiKey: #Your adminApiKey
+#   chunkSize: 5000
+#   indexName: #"shoka"
+#   fields:
+#     - title #必须配置
+#     - path #必须配置
+#     - categories #推荐配置
+#     - content:strip:truncate,0,2000
+#     - gallery
+#     - photos
+#     - tags
 
 keywords: JavaScript,React,FrontEnd
 
