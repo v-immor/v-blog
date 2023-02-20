@@ -6,14 +6,14 @@ categories:
 ---
 # Redux组成
 1. redux由action、reducer、store三个部分组成
-![](https://cdn.nlark.com/yuque/0/2019/png/412560/1575014804335-fb1bce0e-4b5f-4d54-9c28-dfa70aaef82a.png)
+![](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2019/png/412560/1575014804335-fb1bce0e-4b5f-4d54-9c28-dfa70aaef82a.png)
 2. redux工作流程
 
-![](https://cdn.nlark.com/yuque/0/2019/webp/412560/1575014603014-685c44b6-483f-4e93-ae3a-13dabba7de01.webp#align=left&display=inline&height=368&originHeight=368&originWidth=1240&size=0&status=done&style=none&width=1240)
+![](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2019/webp/412560/1575014603014-685c44b6-483f-4e93-ae3a-13dabba7de01.webp#align=left&display=inline&height=368&originHeight=368&originWidth=1240&size=0&status=done&style=none&width=1240)
 
 3. redux分发理解
 
-![](https://cdn.nlark.com/yuque/0/2019/gif/412560/1575014755198-d0be1ffb-ae30-40c7-af49-b359ea99dd2f.gif#align=left&display=inline&height=475&originHeight=475&originWidth=700&size=0&status=done&style=none&width=700)
+![](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2019/gif/412560/1575014755198-d0be1ffb-ae30-40c7-af49-b359ea99dd2f.gif#align=left&display=inline&height=475&originHeight=475&originWidth=700&size=0&status=done&style=none&width=700)
 ## action
 是把数据从应用传到 store 的有效载荷。它是 store 数据的唯一来源。一般来说，就是通过 store.dispatch() 将 action 传到 store。
 action 本质上是 JavaScript 普通对象。我们约定，action 内使用一个字符串类型的 type 字段来表示将要执行的动作。多数情况下，type 会被定义成字符串常量。当应用规模越来越大时，建议使用单独的模块或文件来存放 action。
