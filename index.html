@@ -1,0 +1,889 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/v-blog/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/v-blog/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="开发随笔" href="https://v-immor.github.io/v-blog/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="开发随笔" href="https://v-immor.github.io/v-blog/atom.xml" />
+<link rel="alternate" type="application/json" title="开发随笔" href="https://v-immor.github.io/v-blog/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/v-blog/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="JavaScript,React,FrontEnd" />
+
+
+<link rel="canonical" href="https://v-immor.github.io/v-blog/">
+
+
+
+  <title>Vision = 开发随笔 = ~~仗键行码~~</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+            <a href="/v-blog/" class="logo" rel="start"><p class="artboard">Vision</p>
+              <h1 itemprop="name headline" class="title">开发随笔</h1>
+            </a>
+            <p class="meta" itemprop="description">= ~~仗键行码~~ =</p>
+          
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/v-blog/" rel="start">Vision</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="index wrap">
+      <h2 class="divider">精选分类</h2>
+      <div class="cards">
+          
+<section class="item">
+  <div class="cover" data-background-image="/v-blog/ReactAppDevelop/cover.jpg">
+    <h2 class="title">ReactAppDevelop</h2>
+  </div>
+  <div class="info">
+    <div class="ribbon"><a href="/v-blog/categories/ReactAppDevelop/" itemprop="url" title="ReactAppDevelop">ReactAppDevelop</a></div>
+    <div class="inner">
+        <ul class="posts">
+            <li><a title="ReactApp状态管理" href="/v-blog/categories/ReactAppDevelop/ReactApp%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/">ReactApp状态管理</a></li>
+            <li><a title="如何满足 React 组件开发的最佳实践？" href="/v-blog/2022/03/07/ReactAppDevelop/%E5%A6%82%E4%BD%95%E6%BB%A1%E8%B6%B3React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9F/">如何满足 React 组件开发的最佳实践？</a></li>
+        </ul>
+        <div class="meta footer">
+          <span>
+            <i class="ic i-file"></i>1 个子项，2 篇文章
+          </span>
+        </div>
+        <a href="/v-blog/categories/ReactAppDevelop/" itemprop="url" title="ReactAppDevelop" class="btn">more...</a>
+    </div>
+  </div>
+</section>
+
+          
+<section class="item">
+  <div class="cover" data-background-image="/v-blog/javascripts/react/cover.jpg">
+    <h2 class="title">react</h2>
+    <span>javascripts</span>
+  </div>
+  <div class="info">
+    <div class="ribbon"><a href="/v-blog/categories/javascripts/react/" itemprop="url" title="react">react</a></div>
+    <div class="inner">
+        <ul class="posts">
+            <li><a title="React Fiber 是什么？" href="/v-blog/2022/04/07/javascripts/react/ReactFiber%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/">React Fiber 是什么？</a></li>
+            <li><a title="React 的生命周期" href="/v-blog/2021/03/14/javascripts/react/React%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">React 的生命周期</a></li>
+        </ul>
+        <div class="meta footer">
+          <span>
+            <a href="/v-blog/categories/javascripts/" itemprop="url" title="javascripts"><i class="ic i-flag"></i>javascripts</a>
+          </span>
+          <span>
+            <i class="ic i-file"></i>2 篇文章
+          </span>
+        </div>
+        <a href="/v-blog/categories/javascripts/react/" itemprop="url" title="react" class="btn">more...</a>
+    </div>
+  </div>
+</section>
+
+      </div>
+    <h2 class="divider">文章列表</h2>
+    <div class="segments posts">
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/12/20/javascripts/%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6/" itemprop="url" title="一个具有并发特性的异步任务调度工具"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-20 21:52:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-20T21:52:00+00:00">2022-12-20</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>3.3k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>3 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/12/20/javascripts/%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6/" itemprop="url" title="一个具有并发特性的异步任务调度工具">一个具有并发特性的异步任务调度工具</a></h3>
+    <div class="excerpt">
+        # 需求
+概述：存在 20 个异步任务等待执行，实现一个调度工具，满足同一时刻只能执行指定数量任务，并且在执行一个任务时，立马将执行任务达到上限，直到异步任务全部执行完毕。
+[ ] 需要实现异步任务并发限制。
+[ ] 当待执行任务池中存在任务时，同一时刻执行任务需要达到最大上限。
+
+进阶：当任务失败时，进行 3 次重试，3 次重试后若还是失败，则中断所有异步任务
+
+# 实现一：class 类 + async/await 模式
+
+利用事件循环中，会首先清空微任务的原理，进行微任务 “阻塞”，达到暂停执行的效果；
+
+class AsyncWorker &amp;#123; queue = []...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/javascripts/" itemprop="url" title="javascripts"><i class="ic i-flag"></i>javascripts</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/12/20/javascripts/%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6/" itemprop="url" title="一个具有并发特性的异步任务调度工具" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/12/09/javascripts/Promise%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0/" itemprop="url" title="Promise 中的方法实现"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclxfdlttj20zk0m8npd.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-09 06:20:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-09T06:20:00+00:00">2022-12-09</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>4k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>4 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/12/09/javascripts/Promise%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0/" itemprop="url" title="Promise 中的方法实现">Promise 中的方法实现</a></h3>
+    <div class="excerpt">
+        JS 中的微任务
+
+MutationObserver
+Promise.then
+queueMicroTask
+
+兼容性不好
+
+process.nextTick
+
+node 端
+
+# 基础 Promise
+# Promise 解决函数实现
+function resolvePromise(promise, x, resolve, reject) &amp;#123; if (promise === x) return reject(new TypeError(&#39;x 不能和 promise 相等&#39;)) if (x &amp;amp;&amp;amp; (typeof x ===...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/javascripts/promise/" itemprop="url" title="promise"><i class="ic i-flag"></i>promise</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/12/09/javascripts/Promise%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0/" itemprop="url" title="Promise 中的方法实现" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/12/07/javascripts/JS%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF/" itemprop="url" title="JS 中的继承"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicljitigmj20zk0m87fp.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-07 21:42:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-07T21:42:00+00:00">2022-12-07</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>1.8k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/12/07/javascripts/JS%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF/" itemprop="url" title="JS 中的继承">JS 中的继承</a></h3>
+    <div class="excerpt">
+        参考：
+
+https://github.com/mqyqingfeng/Blog/issues/16 冴羽的 JavaScript 深入系列《JavaScript 深入之继承的多种方式和优缺点》
+红宝书
+
+# 原型链继承
+
+缺点：
+
+引用类型会被所有子类共享
+子类在实例化时不能够像父类传递参数
+
+function Person () &amp;#123;&amp;#125;function Kid() &amp;#123;&amp;#125;// 直接将 Person 的实例做为 Kid 的原型Kid.prototype = new Person()#...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/javascripts/" itemprop="url" title="javascripts"><i class="ic i-flag"></i>javascripts</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/12/07/javascripts/JS%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF/" itemprop="url" title="JS 中的继承" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/06/09/javascripts/JS%E4%B8%AD%E7%9A%84%E5%87%BD%E6%95%B0/" itemprop="url" title="JS 中的函数"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-06-09 23:13:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-06-09T23:13:00+00:00">2022-06-09</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>2.9k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>3 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/06/09/javascripts/JS%E4%B8%AD%E7%9A%84%E5%87%BD%E6%95%B0/" itemprop="url" title="JS 中的函数">JS 中的函数</a></h3>
+    <div class="excerpt">
+        # 函数是 JavaScript 世界的一等公民
+所谓 “一等公民” 即可以享受世界规则内任何权益，并且在与其他等级公民享受同一权益时优先级更高。那么，如何在代码中去理解 “一等公民” 呢？作为 JSer 都清楚在 JavaScript 世界存在 “变量提升” 的规则。
+var a = 2c()var c = 2b() // 这里执行将会报错：TypeError: b is not a functionvar b = function() &amp;#123;&amp;#125;function c() &amp;#123; console.log(b)&amp;#125;//...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/javascripts/" itemprop="url" title="javascripts"><i class="ic i-flag"></i>javascripts</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/06/09/javascripts/JS%E4%B8%AD%E7%9A%84%E5%87%BD%E6%95%B0/" itemprop="url" title="JS 中的函数" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/06/01/ReactAppDevelop/React%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86Redux/" itemprop="url" title="React全局状态管理 - Redux"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicli9lfebj20zk0m84qp.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-06-01 11:12:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-06-01T11:12:00+00:00">2022-06-01</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>3.9k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>4 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/06/01/ReactAppDevelop/React%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86Redux/" itemprop="url" title="React全局状态管理 - Redux">React全局状态管理 - Redux</a></h3>
+    <div class="excerpt">
+        # Redux 组成
+
+redux 由 action、reducer、store 三个部分组成
+
+redux 工作流程
+
+redux 分发理解
+
+# action
+是把数据从应用传到 store 的有效载荷。它是 store 数据的唯一来源。一般来说，就是通过 store.dispatch () 将 action 传到 store。
+action 本质上是 JavaScript 普通对象。我们约定，action 内使用一个字符串类型的 type 字段来表示将要执行的动作。多数情况下，type 会被定义成字符串常量。当应用规模越来越大时，建议使用单独的模块或文件来存放...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/ReactAppDevelop/ReactApp%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" itemprop="url" title="ReactApp状态管理"><i class="ic i-flag"></i>ReactApp状态管理</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/06/01/ReactAppDevelop/React%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86Redux/" itemprop="url" title="React全局状态管理 - Redux" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/04/20/javascripts/JS%E4%B8%AD%E7%9A%84%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/" itemprop="url" title="JS 中的执行环境与作用域链"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicis3attqj20zk0m8k7l.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-04-20 21:22:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-04-20T21:22:00+00:00">2022-04-20</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>2.2k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/04/20/javascripts/JS%E4%B8%AD%E7%9A%84%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/" itemprop="url" title="JS 中的执行环境与作用域链">JS 中的执行环境与作用域链</a></h3>
+    <div class="excerpt">
+        # 执行环境的概念
+
+执行环境定义了变量或函数有权访问的其他数据，决定了他们各自的行为。
+每一个执行环境都有一个与之关联的变量对象，环境中所有定义的变量和函数都保存在这个变量中。
+
+这个变量我们无法通过代码访问到，但解释器可以使用到它。
+在全局执行环境中这个变量可以近似认为是 window/global，但仅限于不使用关键字、 var 和 function 定义的变量或函数。
+
+当执行环境中的所有代码都执行完毕后，环境会被销毁，保存在其中的所有变量和函数定义也会被销毁。
+
+全局执行环境直到应用程序退出才会销毁 (关闭网页 /...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/javascripts/" itemprop="url" title="javascripts"><i class="ic i-flag"></i>javascripts</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/04/20/javascripts/JS%E4%B8%AD%E7%9A%84%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/" itemprop="url" title="JS 中的执行环境与作用域链" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/04/20/javascripts/JS%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" itemprop="url" title="JS 中的数据类型"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-04-20 18:15:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-04-20T18:15:00+00:00">2022-04-20</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>6.2k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>6 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/04/20/javascripts/JS%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" itemprop="url" title="JS 中的数据类型">JS 中的数据类型</a></h3>
+    <div class="excerpt">
+        # 基本数据类型
+
+string
+number
+boolean
+undefined
+null
+
+除了 undefined 和 null 没有原型，其余基本类型的原型都是其包装引用类型 (String、Number、Boolean)
+NaN 也属于 number，同时 NaN 进行任何数学运算结果都是 NaN
+
+# ES6 后增加的基本数据类型
+
+BigInt
+Symbol
+
+# 引用类型
+
+除基本数据类型外都是引用类型。
+
+Object
+Array
+Function
+Date
+RegExp
+
+#...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/javascripts/" itemprop="url" title="javascripts"><i class="ic i-flag"></i>javascripts</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/04/20/javascripts/JS%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" itemprop="url" title="JS 中的数据类型" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/04/07/javascripts/react/ReactFiber%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/" itemprop="url" title="React Fiber 是什么？"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclxfdlttj20zk0m8npd.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-04-07 10:32:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-04-07T10:32:00+00:00">2022-04-07</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>3.3k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>3 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/04/07/javascripts/react/ReactFiber%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/" itemprop="url" title="React Fiber 是什么？">React Fiber 是什么？</a></h3>
+    <div class="excerpt">
+        # 从 React 的架构演进来看 React 为视图渲染做了哪些优化
+React 渲染页面主要可以看成两个阶段：
+
+调度阶段（reconciliation）：在这个阶段 React 会更新数据生成新的 Virtual DOM，然后通过 Diff 算法，快速找出需要更新的元素，放到更新队列中去，得到新的更新队列。
+渲染阶段（commit）：这个阶段 React 会遍历更新队列，将其所有的变更一次性更新到 DOM 上。
+
+# React 15 架构
+在 React 15...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/javascripts/react/" itemprop="url" title="react"><i class="ic i-flag"></i>react</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/04/07/javascripts/react/ReactFiber%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/" itemprop="url" title="React Fiber 是什么？" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2022/03/07/ReactAppDevelop/%E5%A6%82%E4%BD%95%E6%BB%A1%E8%B6%B3React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9F/" itemprop="url" title="如何满足 React 组件开发的最佳实践？"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclfdu6exj20zk0m87hw.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2022-03-07 14:32:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-07T14:32:00+00:00">2022-03-07</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>1.5k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2022/03/07/ReactAppDevelop/%E5%A6%82%E4%BD%95%E6%BB%A1%E8%B6%B3React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9F/" itemprop="url" title="如何满足 React 组件开发的最佳实践？">如何满足 React 组件开发的最佳实践？</a></h3>
+    <div class="excerpt">
+        本篇主要内容
+
+怎样的才能称为最佳实践
+如何拆分组件
+
+# 什么是 React？
+
+React 是一个用于构建用户界面的声明式的 JavaScript 库。
+组件化：构建管理自身状态的封装组件，然后对其组合以构成复杂的 UI。
+
+# React 组件化的哲学
+
+https://zh-hans.reactjs.org/docs/thinking-in-react.html
+满足 React 组件化哲学的实现就可以称之为 “最佳实践” 了。
+
+从拿到设计稿开始，我们大致需要 5 步就可以构建出我们的应用了。
+# 第一步：将设计好的 UI...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/ReactAppDevelop/" itemprop="url" title="ReactAppDevelop"><i class="ic i-flag"></i>ReactAppDevelop</a>
+      </span>
+    </div>
+    <a href="/v-blog/2022/03/07/ReactAppDevelop/%E5%A6%82%E4%BD%95%E6%BB%A1%E8%B6%B3React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9F/" itemprop="url" title="如何满足 React 组件开发的最佳实践？" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/v-blog/2021/03/17/javascripts/%E5%9F%BA%E4%BA%8EPromiseA+%E5%AE%9E%E7%8E%B0Promise/" itemprop="url" title="基于 Promise A+ 实现 Promise"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2021-03-17 11:34:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-03-17T11:34:00+00:00">2021-03-17</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>5.7k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>5 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/v-blog/2021/03/17/javascripts/%E5%9F%BA%E4%BA%8EPromiseA+%E5%AE%9E%E7%8E%B0Promise/" itemprop="url" title="基于 Promise A+ 实现 Promise">基于 Promise A+ 实现 Promise</a></h3>
+    <div class="excerpt">
+        Promise A+ 规范简述： https://www.yuque.com/docs/share/b0c31f39-e0c5-47c5-a194-270b436e9670?#
+
+# Class 实现：
+/** * 1. 用 new Promise 实例化的 promise 对象有以下三个状态 * 2. 一个 promise 必须提供一个 then 方法以访问其当前值、最终返回值和据因 * 3. onFulfilled 和 onRejected 都是可选参数 * 4. onFulfilled 和 onRejected 直到执行环境堆栈尽包含平台代码前不可被调用 * 5. onFulfilled...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/v-blog/categories/javascripts/promise/" itemprop="url" title="promise"><i class="ic i-flag"></i>promise</a>
+      </span>
+    </div>
+    <a href="/v-blog/2021/03/17/javascripts/%E5%9F%BA%E4%BA%8EPromiseA+%E5%AE%9E%E7%8E%B0Promise/" itemprop="url" title="基于 Promise A+ 实现 Promise" class="btn">more...</a>
+  </div>
+</article>
+
+    </div>
+
+  </div>
+
+  
+  <nav class="pagination">
+    <div class="inner">
+    <span class="page-number current">1</span><a class="page-number" href="/v-blog/page/2/">2</a><a class="extend next" rel="next" href="/v-blog/page/2/"><i class="ic i-angle-right" aria-label="下一页"></i></a>
+    </div>
+  </nav>
+
+
+
+        </div>
+        <div id="sidebar">
+          
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Vision"
+      data-src="/v-blog/images/avatar.png">
+  <p class="name" itemprop="name">Vision</p>
+  <div class="description" itemprop="description">普通的开发随笔，普通的博客，我不是普通~</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/v-blog/archives/">
+        <span class="count">13</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/v-blog/categories/">
+        <span class="count">5</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/v-blog/tags/">
+        <span class="count">4</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3YtaW1tb3I=" title="https:&#x2F;&#x2F;github.com&#x2F;v-immor"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/v-blog/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/v-blog/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/v-blog/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/v-blog/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/v-blog/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/v-blog/page/2/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2022 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Vision @ Vision</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">45k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">40 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '',
+    favicon: {
+      show: "~~Vision~~",
+      hide: "~~README~~"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/v-blog/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
