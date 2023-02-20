@@ -22,7 +22,7 @@ categories:
 
 **将组件当作一种函数或者是对象来考虑，根据单一功能原则来判定组件的范围。**
 **举个例子：**
-![image.png](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2022/png/412560/1649513238571-f6e7c569-2807-405f-b044-95bd075fe4d4.png#averageHue=%23cfd3a0&clientId=u4af3e3d1-f3b2-4&from=paste&height=915&id=ubc84a2f1&name=image.png&originHeight=1830&originWidth=870&originalType=binary&ratio=1&rotation=0&showTitle=false&size=240165&status=done&style=none&taskId=u85c38b9e-de84-4c20-8e06-5a04c0de072&title=&width=435)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/412560/1649513238571-f6e7c569-2807-405f-b044-95bd075fe4d4.png#averageHue=%23cfd3a0&clientId=u4af3e3d1-f3b2-4&from=paste&height=915&id=ubc84a2f1&name=image.png&originHeight=1830&originWidth=870&originalType=binary&ratio=1&rotation=0&showTitle=false&size=240165&status=done&style=none&taskId=u85c38b9e-de84-4c20-8e06-5a04c0de072&title=&width=435)
 **如何控制细粒度？**
 
 - 是否存在交互？交互影响的范围？

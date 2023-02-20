@@ -58,8 +58,8 @@ tags:
 
 ## 版本生命周期图
 ### 16.0前
-![](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2019/jpeg/412560/1573024477334-cdc75266-1c03-4456-8884-636590eb38e7.jpeg#align=left&display=inline&height=761&originHeight=900&originWidth=740&size=0&status=done&width=626)
+![](https://cdn.nlark.com/yuque/0/2019/jpeg/412560/1573024477334-cdc75266-1c03-4456-8884-636590eb38e7.jpeg#align=left&display=inline&height=761&originHeight=900&originWidth=740&size=0&status=done&width=626)
 ### 16.3
-![image.png](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2019/png/412560/1573024330391-de1ae95f-5765-4fc4-87f3-d65562021717.png#align=left&display=inline&height=673&name=image.png&originHeight=673&originWidth=1175&size=71548&status=done&width=1175)
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/412560/1573024330391-de1ae95f-5765-4fc4-87f3-d65562021717.png#align=left&display=inline&height=673&name=image.png&originHeight=673&originWidth=1175&size=71548&status=done&width=1175)
 ### 16.4
-![image.png](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2019/png/412560/1573024364754-4a3fc8cc-4e13-447e-87f0-88db049d1b8c.png#align=left&display=inline&height=665&name=image.png&originHeight=665&originWidth=1169&size=70468&status=done&width=1169)
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/412560/1573024364754-4a3fc8cc-4e13-447e-87f0-88db049d1b8c.png#align=left&display=inline&height=665&name=image.png&originHeight=665&originWidth=1169&size=70468&status=done&width=1169)

@@ -280,7 +280,7 @@ quest1.then(data=>{
 ### 兼容性处理
 大部分现代浏览器都支持ES6，少部分(IE，手机浏览器)对Promise不支持，可以通过第三方插件bluebird或者使用polyfill解决兼容性问题，具体使用方法可百度Get。下图为Promise的兼容性图表
 
-![](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2019/png/412560/1571845552462-0c39ab96-4150-466b-87fd-07b54348b170.png#align=left&display=inline&height=363&originHeight=363&originWidth=800&size=0&status=done&width=800)
+![](https://cdn.nlark.com/yuque/0/2019/png/412560/1571845552462-0c39ab96-4150-466b-87fd-07b54348b170.png#align=left&display=inline&height=363&originHeight=363&originWidth=800&size=0&status=done&width=800)
 
 > 原理及实现Promise将在下一节中进行介绍
 

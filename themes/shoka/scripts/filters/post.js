@@ -6,6 +6,8 @@ hexo.extend.filter.register('after_post_render', data => {
   const { config } = hexo;
   const theme = hexo.theme.config;
 
+  // /(?<=(img[^>]*src="))([http(s?)://cdn.nlark.com/yuque/][^"]*)/
+  data.content = data.content.replace(/(?<=(img[^>]*src="))([http(s?)://cdn.nlark.com/yuque/][^"]*)/img, 'https://images.weserv.nl/?url=$2');
   data.content = data.content.replace(/(<img[^>]*) src=/img, '$1 data-src=');
 
   const url = require('url');

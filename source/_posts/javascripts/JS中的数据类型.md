@@ -94,15 +94,15 @@ o3 instanceof C; // true 因为 C.prototype 现在在 o3 的原型链上
 
 - Boolean()
 
-![image.png](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2022/png/412560/1650382009436-f999cc2a-03be-41fc-8895-5c00d4fdea37.png#clientId=u067bca08-7c24-4&from=paste&height=329&id=u54f7deb9&name=image.png&originHeight=658&originWidth=1558&originalType=binary&ratio=1&rotation=0&showTitle=false&size=96000&status=done&style=none&taskId=ue914dee8-e709-41d6-8469-2e49f32a58d&title=&width=779)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/412560/1650382009436-f999cc2a-03be-41fc-8895-5c00d4fdea37.png#clientId=u067bca08-7c24-4&from=paste&height=329&id=u54f7deb9&name=image.png&originHeight=658&originWidth=1558&originalType=binary&ratio=1&rotation=0&showTitle=false&size=96000&status=done&style=none&taskId=ue914dee8-e709-41d6-8469-2e49f32a58d&title=&width=779)
 
 - Number()
 
-![image.png](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2022/png/412560/1650382029025-2d63da15-6eff-4bcd-ae91-bb04fe15df81.png#clientId=u067bca08-7c24-4&from=paste&height=412&id=u6ed163aa&name=image.png&originHeight=824&originWidth=1446&originalType=binary&ratio=1&rotation=0&showTitle=false&size=106534&status=done&style=none&taskId=u2d7a27ca-344d-40fc-b76e-03b338c479c&title=&width=723)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/412560/1650382029025-2d63da15-6eff-4bcd-ae91-bb04fe15df81.png#clientId=u067bca08-7c24-4&from=paste&height=412&id=u6ed163aa&name=image.png&originHeight=824&originWidth=1446&originalType=binary&ratio=1&rotation=0&showTitle=false&size=106534&status=done&style=none&taskId=u2d7a27ca-344d-40fc-b76e-03b338c479c&title=&width=723)
 
 - String()
 
-![image.png](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2022/png/412560/1650382047559-8951b295-6118-4156-ab78-528de56eaf20.png#clientId=u067bca08-7c24-4&from=paste&height=352&id=u7de25f84&name=image.png&originHeight=704&originWidth=1428&originalType=binary&ratio=1&rotation=0&showTitle=false&size=102731&status=done&style=none&taskId=uad9d8e53-fdba-428b-982c-bfe25dc8d40&title=&width=714)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/412560/1650382047559-8951b295-6118-4156-ab78-528de56eaf20.png#clientId=u067bca08-7c24-4&from=paste&height=352&id=u7de25f84&name=image.png&originHeight=704&originWidth=1428&originalType=binary&ratio=1&rotation=0&showTitle=false&size=102731&status=done&style=none&taskId=uad9d8e53-fdba-428b-982c-bfe25dc8d40&title=&width=714)
 
 - toString()
    - 一个表示该对象的字符串

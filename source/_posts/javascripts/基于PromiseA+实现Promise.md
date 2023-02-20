@@ -313,4 +313,4 @@ function resolvePromise(promise, x, resolve, reject) {
 ```
 
 #### promises-aplus-tests 测试结果：
-![image.png](https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2021/png/412560/1614224040174-68a4ccc3-1303-4cac-827d-0bd0d3024db2.png#align=left&display=inline&height=195&name=image.png&originHeight=390&originWidth=1388&size=69351&status=done&style=none&width=694)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/412560/1614224040174-68a4ccc3-1303-4cac-827d-0bd0d3024db2.png#align=left&display=inline&height=195&name=image.png&originHeight=390&originWidth=1388&size=69351&status=done&style=none&width=694)
