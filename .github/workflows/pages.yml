@@ -27,6 +27,8 @@ jobs:
         run: npm install
       - name: Analysis Dependencies
         run: npm ls --depth 0
+      - name: Clean
+        run: npm run clean
       - name: Build
         run: npm run build --debug
       - name: Deploy
