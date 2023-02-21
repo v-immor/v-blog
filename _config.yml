@@ -12,8 +12,8 @@ language: zh-CN
 timezone: ''
 
 valine:
-  appId: # valine appid
-  appKey: # valine appkey
+  appId: TlRgjpt7aWX4tVB9FZ3HokVV-gzGzoHsz
+  appKey: eUKodKg5zn2TDUsa95eUbkVG
   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
   pageSize: 10 # Pagination size
@@ -52,9 +52,9 @@ algolia-search:
     hits_stats: "找到${hits}条结果（用时${time} ms）"
 
 algolia:
-  appId: # env set
-  apiKey: # env set
-  adminApiKey: # env set
+  appId: ZR8434JSPP
+  apiKey: cd4d4c3764e382ba0aa3ca597a82a1be
+  adminApiKey: # hide
   chunkSize: 5000
   indexName: "v-blog"
   fields:
