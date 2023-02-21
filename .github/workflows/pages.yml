@@ -27,6 +27,8 @@ jobs:
         run: npm install
       - name: update config
         run: |
+          echo "key-> ${{ vars.VALINE_APPID }} ${{ vars.VALINE_APPKEY}} ${{ vars.ALGOLIA_APPID }} ${{ vars.ALGOLIA_APIKEY }}"
+          echo "key2 -> ${{ secrets.ALGOLIA_ADIMINKEY }}"
           npm run config valine.appId ${{ vars.VALINE_APPID }}
           npm run config valine.appKey ${{ vars.VALINE_APPKEY}}
           npm run config algolia.appId ${{ vars.ALGOLIA_APPID }}
