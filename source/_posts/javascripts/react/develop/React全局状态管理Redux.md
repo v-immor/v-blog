@@ -1,8 +1,10 @@
 ---
 title: React全局状态管理 - Redux
-date: 2022-06-01 11:12
+date: '2022-06-01 11:12'
 categories:
-  - [React, 开发实践]
+  - - React
+    - 开发实践
+abbrlink: 33bad1c2
 ---
 
 # Redux组成

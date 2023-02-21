@@ -1,11 +1,13 @@
 ---
 title: Promise 中的方法实现
-date: 2022-12-09 06:20
+date: '2022-12-09 06:20'
 categories:
-    - [JavaScript, Promise]
+  - - JavaScript
+    - Promise
 tags:
   - Promise
   - 原理
+abbrlink: c321570b
 ---
 
 > JS 中的微任务

@@ -1,8 +1,10 @@
 ---
 title: 如何满足 React 组件开发的最佳实践？
-date: 2022-03-07 14:32
+date: '2022-03-07 14:32'
 categories:
-   - [React, 开发实践]
+  - - React
+    - 开发实践
+abbrlink: 1750c17f
 ---
 
 > 本篇主要内容

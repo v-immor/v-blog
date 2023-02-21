@@ -1,11 +1,13 @@
 ---
 title: 离开回调地狱，进入 Promise 时代
-date: 2021-02-25 22:10
+date: '2021-02-25 22:10'
 categories:
-  - [JavaScript, Promise]
+  - - JavaScript
+    - Promise
 tags:
   - Promise
   - 原理
+abbrlink: acf427af
 ---
 
 ### 简介

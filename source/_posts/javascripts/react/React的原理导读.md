@@ -1,11 +1,13 @@
 ---
 title: React 的原理导读
-date: 2022-12-04 14:42
+date: '2022-12-04 14:42'
 categories:
-  - [JavaScript, React]
+  - - JavaScript
+    - React
 tags:
   - React
   - 原理
+abbrlink: 1e1dcd8
 ---
 
 ## ![image.png](https://cdn.nlark.com/yuque/0/2023/png/448234/1675069920704-6f8183a3-1276-4e1d-ab62-39a3ea2eef68.png#averageHue=%23fdfcb9&clientId=u2f044d5c-2bb7-4&from=paste&height=1380&id=ueceaacac&name=image.png&originHeight=1380&originWidth=1848&originalType=binary&ratio=1&rotation=0&showTitle=false&size=243276&status=done&style=none&taskId=u6d8a2d5a-29e2-4b74-8ded-df44326196f&title=&width=1848)

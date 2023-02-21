@@ -1,10 +1,11 @@
 ---
 title: JS 中的执行环境与作用域链
-date: 2022-04-20 21:22
+date: '2022-04-20 21:22'
 categories:
-    - [JavaScript]
+  - - JavaScript
 tags:
   - JS 基础
+abbrlink: 41a9f2c1
 ---
 
 ## 执行环境的概念

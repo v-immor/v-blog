@@ -1,11 +1,13 @@
 ---
 title: Vue Router 食用指南
-date: 2021-12-29 14:16
+date: '2021-12-29 14:16'
 categories:
-  - [JavaScript, Vue]
+  - - JavaScript
+    - Vue
 tags:
   - Vue
   - 原理
+abbrlink: 217af96f
 ---
 
 ### 1. 起步

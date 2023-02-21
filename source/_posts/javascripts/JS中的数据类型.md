@@ -1,10 +1,11 @@
 ---
 title: JS 中的数据类型
-date: 2022-04-20 18:15
+date: '2022-04-20 18:15'
 categories:
-    - [JavaScript]
+  - - JavaScript
 tags:
   - JS 基础
+abbrlink: 4c3fd2b0
 ---
 
 ## 基本数据类型

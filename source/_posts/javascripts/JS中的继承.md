@@ -1,10 +1,11 @@
 ---
 title: JS 中的继承
-date: 2022-12-07 21:42
+date: '2022-12-07 21:42'
 categories:
-    - [JavaScript]
+  - - JavaScript
 tags:
   - JS 基础
+abbrlink: 5c1a1e7b
 ---
 
 > 参考：

@@ -1,11 +1,13 @@
 ---
 title: 基于 Promise A+ 实现 Promise
-date: 2021-03-17 11:34
+date: '2021-03-17 11:34'
 categories:
-  - [JavaScript, Promise]
+  - - JavaScript
+    - Promise
 tags:
   - Promise
   - 原理
+abbrlink: 649c58d0
 ---
 
 > Promise A+ 规范简述： [https://www.yuque.com/docs/share/b0c31f39-e0c5-47c5-a194-270b436e9670?#](https://www.yuque.com/docs/share/b0c31f39-e0c5-47c5-a194-270b436e9670?#)

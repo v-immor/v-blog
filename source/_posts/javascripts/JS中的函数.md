@@ -1,10 +1,11 @@
 ---
 title: JS 中的函数
-date: 2022-06-09 23:13
+date: '2022-06-09 23:13'
 categories:
-    - [JavaScript]
+  - - JavaScript
 tags:
   - JS 基础
+abbrlink: 3c6f1dc0
 ---
 
 ## 函数是 JavaScript 世界的一等公民

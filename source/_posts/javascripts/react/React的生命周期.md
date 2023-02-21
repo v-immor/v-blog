@@ -1,11 +1,13 @@
 ---
 title: React 的生命周期
-date: 2021-03-14 14:16
+date: '2021-03-14 14:16'
 categories:
-    - [JavaScript, React]
+  - - JavaScript
+    - React
 tags:
-- React
-- 原理
+  - React
+  - 原理
+abbrlink: ea276d7c
 ---
 
 ## 生命周期介绍
