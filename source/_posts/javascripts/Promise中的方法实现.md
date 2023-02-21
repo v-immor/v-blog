@@ -2,7 +2,7 @@
 title: Promise 中的方法实现
 date: 2022-12-09 06:20
 categories:
-    - [javascripts, promise]
+    - [JavaScript, Promise]
 tags:
   - Promise
   - 原理

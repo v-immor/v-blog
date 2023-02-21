@@ -2,7 +2,7 @@
 title: JS 中的函数
 date: 2022-06-09 23:13
 categories:
-    - [javascripts]
+    - [JavaScript]
 tags:
   - JS 基础
 ---

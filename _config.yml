@@ -68,6 +68,10 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  JavaScript: javascripts
+  React: react
+  React应用开发实践: react-app-develop
+  Web应用开发实践: web-develop
 tag_map:
 
 # Metadata elements

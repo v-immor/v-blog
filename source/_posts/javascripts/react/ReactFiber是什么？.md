@@ -2,10 +2,10 @@
 title: React Fiber 是什么？
 date: 2022-04-07 10:32
 categories:
-    - [javascripts, react]
+- [JavaScript, React]
 tags:
-   - React
-   - 原理
+- React
+- 原理
 ---
 
 ## 从 React 的架构演进来看 React 为视图渲染做了哪些优化

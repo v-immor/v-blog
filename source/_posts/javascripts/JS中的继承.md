@@ -2,7 +2,7 @@
 title: JS 中的继承
 date: 2022-12-07 21:42
 categories:
-    - [javascripts]
+    - [JavaScript]
 tags:
   - JS 基础
 ---

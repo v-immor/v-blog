@@ -2,8 +2,9 @@
 title: React全局状态管理 - Redux
 date: 2022-06-01 11:12
 categories:
-    - [ReactAppDevelop, ReactApp状态管理]
+  - [React, 开发实践]
 ---
+
 # Redux组成
 1. redux由action、reducer、store三个部分组成
 ![](https://cdn.nlark.com/yuque/0/2019/png/412560/1575014804335-fb1bce0e-4b5f-4d54-9c28-dfa70aaef82a.png)

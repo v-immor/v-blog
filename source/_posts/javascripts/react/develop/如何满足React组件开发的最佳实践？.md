@@ -2,8 +2,9 @@
 title: 如何满足 React 组件开发的最佳实践？
 date: 2022-03-07 14:32
 categories:
-    - [ReactAppDevelop]
+   - [React, 开发实践]
 ---
+
 > 本篇主要内容
 > - [x] 怎样的才能称为最佳实践
 > - [x] 如何拆分组件

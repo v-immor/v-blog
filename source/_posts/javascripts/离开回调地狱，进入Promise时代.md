@@ -2,7 +2,7 @@
 title: 离开回调地狱，进入 Promise 时代
 date: 2021-02-25 22:10
 categories:
-  - [javascripts, promise]
+  - [JavaScript, Promise]
 tags:
   - Promise
   - 原理

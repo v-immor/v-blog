@@ -2,7 +2,7 @@
 title: 基于 Promise A+ 实现 Promise
 date: 2021-03-17 11:34
 categories:
-    - [javascripts, promise]
+  - [JavaScript, Promise]
 tags:
   - Promise
   - 原理

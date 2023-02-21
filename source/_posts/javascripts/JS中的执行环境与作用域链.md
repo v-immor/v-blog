@@ -2,7 +2,7 @@
 title: JS 中的执行环境与作用域链
 date: 2022-04-20 21:22
 categories:
-    - [javascripts]
+    - [JavaScript]
 tags:
   - JS 基础
 ---
