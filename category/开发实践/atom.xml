@@ -8,6 +8,7 @@
     <category term="Promise" />
     <category term="原理" />
     <category term="React" />
+    <category term="Vue" />
     <entry>
         <id>https://v-immor.github.io/v-blog/2022/06/01/javascripts/react/develop/React%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86Redux/</id>
         <title>React全局状态管理 - Redux</title>

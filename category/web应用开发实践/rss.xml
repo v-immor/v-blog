@@ -11,6 +11,7 @@
         <category>Promise</category>
         <category>原理</category>
         <category>React</category>
+        <category>Vue</category>
         <item>
             <guid isPermalink="true">https://v-immor.github.io/v-blog/2021/02/11/web-develop/%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81%E4%B8%8E%E5%9B%9E%E6%B5%81%E3%80%81%E9%87%8D%E7%BB%98/</guid>
             <title>防抖、节流与回流、重绘</title>
