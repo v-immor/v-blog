@@ -5,11 +5,66 @@
 # Site
 title: 开发随笔
 subtitle: '~~仗键行码~~'
-description: '普通的开发随笔，普通的博客，我不是普通~'
+description: '~虚拟建设者~'
 keywords: React,JavaScript,开发随笔
 author: Vision
 language: zh-CN
 timezone: ''
+
+valine:
+  appId: # valine appid
+  appKey: # valine appkey
+  placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
+  avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
+  pageSize: 10 # Pagination size
+  lang: zh-CN
+  visitor: true # 文章访问量统计
+  NoRecordIP: false # 不记录 IP
+  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  powerMode: true # 默认打开评论框输入特效
+  tagMeta:
+    visitor: 新朋友
+    master: 主人
+    friend: 小伙伴
+    investor: 金主粑粑
+  tagColor:
+    visitor: "#855194"
+    master: "var(--color-orange)"
+    friend: "var(--color-aqua)"
+    investor: "var(--color-pink)"
+  tagMember:
+    master:
+      # - hash of master@email.com
+      # - hash of master2@email.com
+    friend:
+      # - hash of friend@email.com
+      # - hash of friend2@email.com
+    investor:
+      # - hash of investor1@email.com
+
+algolia-search:
+  enable: true
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "我们没有找到任何搜索结果: ${query}"
+    hits_stats: "找到${hits}条结果（用时${time} ms）"
+
+algolia:
+  appId: # env set
+  apiKey: # env set
+  adminApiKey: # env set
+  chunkSize: 5000
+  indexName: "v-blog"
+  fields:
+    - title #必须配置
+    - path #必须配置
+    - categories #推荐配置
+    - content:strip:truncate,0,2000
+    - gallery
+    - photos
+    - tags
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
