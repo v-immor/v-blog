@@ -10,9 +10,9 @@
     <category term="React" />
     <category term="Vue" />
     <entry>
-        <id>https://v-immor.github.io/v-blog/2021/12/29/javascripts/vue/vue-router/</id>
+        <id>https://v-immor.github.io/v-blog/posts/217af96f.html</id>
         <title>Vue Router 食用指南</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2021/12/29/javascripts/vue/vue-router/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/217af96f.html"/>
         <content type="html">&lt;h3 id=&#34;1-起步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-起步&#34;&gt;#&lt;/a&gt; 1. 起步&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;使用模块化，要调用 Vue.use (VueRouter)&lt;/li&gt;

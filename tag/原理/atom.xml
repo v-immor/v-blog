@@ -10,9 +10,9 @@
     <category term="React" />
     <category term="Vue" />
     <entry>
-        <id>https://v-immor.github.io/v-blog/2022/12/09/javascripts/Promise%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0/</id>
+        <id>https://v-immor.github.io/v-blog/posts/c321570b.html</id>
         <title>Promise 中的方法实现</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2022/12/09/javascripts/Promise%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/c321570b.html"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;JS 中的微任务&lt;/p&gt;
 &lt;ul&gt;
@@ -46,9 +46,9 @@
         <updated>2022-12-09T06:20:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2022/12/04/javascripts/react/React%E7%9A%84%E5%8E%9F%E7%90%86%E5%AF%BC%E8%AF%BB/</id>
+        <id>https://v-immor.github.io/v-blog/posts/1e1dcd8.html</id>
         <title>React 的原理导读</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2022/12/04/javascripts/react/React%E7%9A%84%E5%8E%9F%E7%90%86%E5%AF%BC%E8%AF%BB/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/1e1dcd8.html"/>
         <content type="html">&lt;h2 id=&#34;imagepng&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#imagepng&#34;&gt;#&lt;/a&gt; &lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2023/png/448234/1675069920704-6f8183a3-1276-4e1d-ab62-39a3ea2eef68.png#averageHue=%23fdfcb9&amp;amp;clientId=u2f044d5c-2bb7-4&amp;amp;from=paste&amp;amp;height=1380&amp;amp;id=ueceaacac&amp;amp;name=image.png&amp;amp;originHeight=1380&amp;amp;originWidth=1848&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=243276&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u6d8a2d5a-29e2-4b74-8ded-df44326196f&amp;amp;title=&amp;amp;width=1848&#34; alt=&#34;image.png&#34;&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;document.querySelector(&#39;#app&#39;)._reactRootContainer&lt;/code&gt;  控制台获取整个 root 对象&lt;/p&gt;
 &lt;h2 id=&#34;旧-react-架构v15&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#旧-react-架构v15&#34;&gt;#&lt;/a&gt; 旧 React 架构（v15）&lt;/h2&gt;
@@ -536,9 +536,9 @@
         <updated>2022-12-04T14:42:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2022/04/07/javascripts/react/ReactFiber%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</id>
+        <id>https://v-immor.github.io/v-blog/posts/4e4316ec.html</id>
         <title>React Fiber 是什么？</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2022/04/07/javascripts/react/ReactFiber%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/4e4316ec.html"/>
         <content type="html">&lt;h2 id=&#34;从-react-的架构演进来看-react-为视图渲染做了哪些优化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#从-react-的架构演进来看-react-为视图渲染做了哪些优化&#34;&gt;#&lt;/a&gt; 从 React 的架构演进来看 React 为视图渲染做了哪些优化&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;React 渲染页面主要可以看成两个阶段：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -639,9 +639,9 @@ JavaScript 也是单线程运行的，在浏览器环境中需要负责 JS 代�
         <updated>2022-04-07T10:32:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2021/12/29/javascripts/vue/vue-router/</id>
+        <id>https://v-immor.github.io/v-blog/posts/217af96f.html</id>
         <title>Vue Router 食用指南</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2021/12/29/javascripts/vue/vue-router/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/217af96f.html"/>
         <content type="html">&lt;h3 id=&#34;1-起步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-起步&#34;&gt;#&lt;/a&gt; 1. 起步&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;使用模块化，要调用 Vue.use (VueRouter)&lt;/li&gt;
@@ -716,9 +716,9 @@ JavaScript 也是单线程运行的，在浏览器环境中需要负责 JS 代�
         <updated>2021-12-29T14:16:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2021/03/17/javascripts/%E5%9F%BA%E4%BA%8EPromiseA+%E5%AE%9E%E7%8E%B0Promise/</id>
+        <id>https://v-immor.github.io/v-blog/posts/649c58d0.html</id>
         <title>基于 Promise A+ 实现 Promise</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2021/03/17/javascripts/%E5%9F%BA%E4%BA%8EPromiseA+%E5%AE%9E%E7%8E%B0Promise/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/649c58d0.html"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Promise A+ 规范简述： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueXVxdWUuY29tL2RvY3Mvc2hhcmUvYjBjMzFmMzktZTBjNS00N2M1LWExOTQtMjcwYjQzNmU5NjcwPyM=&#34;&gt;https://www.yuque.com/docs/share/b0c31f39-e0c5-47c5-a194-270b436e9670?#&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -738,9 +738,9 @@ JavaScript 也是单线程运行的，在浏览器环境中需要负责 JS 代�
         <updated>2021-03-17T11:34:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2021/03/14/javascripts/react/React%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</id>
+        <id>https://v-immor.github.io/v-blog/posts/ea276d7c.html</id>
         <title>React 的生命周期</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2021/03/14/javascripts/react/React%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/ea276d7c.html"/>
         <content type="html">&lt;h2 id=&#34;生命周期介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生命周期介绍&#34;&gt;#&lt;/a&gt; 生命周期介绍&lt;/h2&gt;
 &lt;p&gt;组件的生命周期可分成三个状态：&lt;/p&gt;
 &lt;ul&gt;
@@ -815,9 +815,9 @@ JavaScript 也是单线程运行的，在浏览器环境中需要负责 JS 代�
         <updated>2021-03-14T14:16:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2021/02/25/javascripts/%E7%A6%BB%E5%BC%80%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1%EF%BC%8C%E8%BF%9B%E5%85%A5Promise%E6%97%B6%E4%BB%A3/</id>
+        <id>https://v-immor.github.io/v-blog/posts/acf427af.html</id>
         <title>离开回调地狱，进入 Promise 时代</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2021/02/25/javascripts/%E7%A6%BB%E5%BC%80%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1%EF%BC%8C%E8%BF%9B%E5%85%A5Promise%E6%97%B6%E4%BB%A3/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/acf427af.html"/>
         <content type="html">&lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
 &lt;p&gt;在 JavaScript 的世界中，所有代码都是单线程执行的。由于这个 “缺陷”，导致 JavaScript 的所有网络操作，浏览器事件，都必须是异步执行，所以所期望的结果往往就会不一样，由于 JS 灵活性，便产生了 callback 回调函数，将函数作为参数，以获得期望结果，这在简单的异步操作中有很好的表现，但在复杂 / 多层异步中就会变得恐怖起来，代码将会看起来非常臃肿，且不易维护，这就是 “回调地狱”。为了解决 “回调地狱”，开发者就提出 “Promise” 对象，在 ES6 被统一规范之前，Promise 就已经有各种开源实现了。并且在大多数现代浏览器下都是支持 Promise 对象，即使是少数不支持 Promise 的浏览器，在开源社区中也有丰富的解决方案。所以可以放心大胆地去使用 Promise，规避 “回调地狱”。&lt;/p&gt;
 &lt;p&gt;Promise 必须为以下三种状态之一：等待态（Pending）、执行态（Fulfilled）和拒绝态（Rejected）。一旦 Promise 被 resolve 或 reject，不能再迁移至其他任何状态（即状态 immutable）。&lt;br&gt;

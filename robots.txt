@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /posts/
+Allow: /links/
+
+Disallow: /tags/
+Disallow: /search/
+Disallow: /about/
+
+Sitemap: https://v-immor.github.io/v-blog/sitemap.xml

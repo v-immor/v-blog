@@ -10,9 +10,9 @@
     <category term="React" />
     <category term="Vue" />
     <entry>
-        <id>https://v-immor.github.io/v-blog/2022/12/09/javascripts/Promise%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0/</id>
+        <id>https://v-immor.github.io/v-blog/posts/c321570b.html</id>
         <title>Promise 中的方法实现</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2022/12/09/javascripts/Promise%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/c321570b.html"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;JS 中的微任务&lt;/p&gt;
 &lt;ul&gt;
@@ -46,9 +46,9 @@
         <updated>2022-12-09T06:20:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2021/03/17/javascripts/%E5%9F%BA%E4%BA%8EPromiseA+%E5%AE%9E%E7%8E%B0Promise/</id>
+        <id>https://v-immor.github.io/v-blog/posts/649c58d0.html</id>
         <title>基于 Promise A+ 实现 Promise</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2021/03/17/javascripts/%E5%9F%BA%E4%BA%8EPromiseA+%E5%AE%9E%E7%8E%B0Promise/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/649c58d0.html"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Promise A+ 规范简述： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueXVxdWUuY29tL2RvY3Mvc2hhcmUvYjBjMzFmMzktZTBjNS00N2M1LWExOTQtMjcwYjQzNmU5NjcwPyM=&#34;&gt;https://www.yuque.com/docs/share/b0c31f39-e0c5-47c5-a194-270b436e9670?#&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -68,9 +68,9 @@
         <updated>2021-03-17T11:34:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2021/02/25/javascripts/%E7%A6%BB%E5%BC%80%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1%EF%BC%8C%E8%BF%9B%E5%85%A5Promise%E6%97%B6%E4%BB%A3/</id>
+        <id>https://v-immor.github.io/v-blog/posts/acf427af.html</id>
         <title>离开回调地狱，进入 Promise 时代</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2021/02/25/javascripts/%E7%A6%BB%E5%BC%80%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1%EF%BC%8C%E8%BF%9B%E5%85%A5Promise%E6%97%B6%E4%BB%A3/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/acf427af.html"/>
         <content type="html">&lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
 &lt;p&gt;在 JavaScript 的世界中，所有代码都是单线程执行的。由于这个 “缺陷”，导致 JavaScript 的所有网络操作，浏览器事件，都必须是异步执行，所以所期望的结果往往就会不一样，由于 JS 灵活性，便产生了 callback 回调函数，将函数作为参数，以获得期望结果，这在简单的异步操作中有很好的表现，但在复杂 / 多层异步中就会变得恐怖起来，代码将会看起来非常臃肿，且不易维护，这就是 “回调地狱”。为了解决 “回调地狱”，开发者就提出 “Promise” 对象，在 ES6 被统一规范之前，Promise 就已经有各种开源实现了。并且在大多数现代浏览器下都是支持 Promise 对象，即使是少数不支持 Promise 的浏览器，在开源社区中也有丰富的解决方案。所以可以放心大胆地去使用 Promise，规避 “回调地狱”。&lt;/p&gt;
 &lt;p&gt;Promise 必须为以下三种状态之一：等待态（Pending）、执行态（Fulfilled）和拒绝态（Rejected）。一旦 Promise 被 resolve 或 reject，不能再迁移至其他任何状态（即状态 immutable）。&lt;br&gt;

@@ -10,9 +10,9 @@
     <category term="React" />
     <category term="Vue" />
     <entry>
-        <id>https://v-immor.github.io/v-blog/2022/06/01/javascripts/react/develop/React%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86Redux/</id>
+        <id>https://v-immor.github.io/v-blog/posts/33bad1c2.html</id>
         <title>React全局状态管理 - Redux</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2022/06/01/javascripts/react/develop/React%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86Redux/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/33bad1c2.html"/>
         <content type="html">&lt;h1 id=&#34;redux组成&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#redux组成&#34;&gt;#&lt;/a&gt; Redux 组成&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;redux 由 action、reducer、store 三个部分组成&lt;br&gt;
@@ -54,9 +54,9 @@ store 的职责：&lt;/p&gt;
         <updated>2022-06-01T11:12:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://v-immor.github.io/v-blog/2022/03/07/javascripts/react/develop/%E5%A6%82%E4%BD%95%E6%BB%A1%E8%B6%B3React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9F/</id>
+        <id>https://v-immor.github.io/v-blog/posts/1750c17f.html</id>
         <title>如何满足 React 组件开发的最佳实践？</title>
-        <link rel="alternate" href="https://v-immor.github.io/v-blog/2022/03/07/javascripts/react/develop/%E5%A6%82%E4%BD%95%E6%BB%A1%E8%B6%B3React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9F/"/>
+        <link rel="alternate" href="https://v-immor.github.io/v-blog/posts/1750c17f.html"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;本篇主要内容&lt;/p&gt;
 &lt;ul class=&#34;task-list&#34;&gt;

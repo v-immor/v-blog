@@ -1,0 +1,590 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/v-blog/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/v-blog/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="开发随笔" href="https://v-immor.github.io/v-blog/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="开发随笔" href="https://v-immor.github.io/v-blog/atom.xml" />
+<link rel="alternate" type="application/json" title="开发随笔" href="https://v-immor.github.io/v-blog/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/v-blog/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="https://v-immor.github.io/v-blog/posts/408004fb.html">
+
+
+
+  <title>
+防抖、节流与回流、重绘 - Web应用开发实践 |
+Vision = 开发随笔 = ~~仗键行码~~</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">防抖、节流与回流、重绘
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2021-02-11 20:34:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-02-11T20:34:00+00:00">2021-02-11</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>2k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/v-blog/" rel="start">Vision</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(52).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(81).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(69).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(3).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(13).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(90).webp"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/v-blog/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/v-blog/categories/web-develop/" itemprop="item" rel="index" title="分类于 Web应用开发实践"><span itemprop="name">Web应用开发实践</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://v-immor.github.io/v-blog/posts/408004fb.html">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/v-blog/images/avatar.png">
+    <meta itemprop="name" content="Vision">
+    <meta itemprop="description" content="~~仗键行码~~, ~虚拟建设者~">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="开发随笔">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="防抖任务频繁触发的情况下只有任务触发的间隔超过指定间隔的时候任务才会执行"><a class="markdownIt-Anchor" href="#防抖任务频繁触发的情况下只有任务触发的间隔超过指定间隔的时候任务才会执行">#</a> 防抖：任务频繁触发的情况下，只有任务触发的间隔超过指定间隔的时候，任务才会执行。</h2>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">/**</pre></td></tr><tr><td data-num="2"></td><td><pre> * 防抖函数</pre></td></tr><tr><td data-num="3"></td><td><pre> * @author vision</pre></td></tr><tr><td data-num="4"></td><td><pre> * @param &#123;执行函数&#125; fn</pre></td></tr><tr><td data-num="5"></td><td><pre> * @param &#123;延迟&#125; delay</pre></td></tr><tr><td data-num="6"></td><td><pre> */</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token keyword">let</span> context <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token keyword">let</span> arg <span class="token operator">=</span> arguments<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> arg<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="18"></td><td><pre></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment">/**</pre></td></tr><tr><td data-num="20"></td><td><pre> * 防抖函数 - 箭头函数</pre></td></tr><tr><td data-num="21"></td><td><pre> * @param &#123;执行函数&#125; fn</pre></td></tr><tr><td data-num="22"></td><td><pre> * @param &#123;延迟&#125; delay</pre></td></tr><tr><td data-num="23"></td><td><pre> */</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">debounceEs6</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="25"></td><td><pre>  <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>rest</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="27"></td><td><pre>    <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="28"></td><td><pre>    timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="29"></td><td><pre>      <span class="token function">fn</span><span class="token punctuation">(</span>rest<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="32"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h2 id="节流指定时间间隔内只会执行一次任务"><a class="markdownIt-Anchor" href="#节流指定时间间隔内只会执行一次任务">#</a> 节流：指定时间间隔内只会执行一次任务。</h2>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token comment">// 通过闭包保存一个标记</span></pre></td></tr><tr><td data-num="3"></td><td><pre>      <span class="token keyword">let</span> canRun <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token comment">// 在函数开头判断标志是否为 true，不为 true 则中断函数</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>canRun<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>          <span class="token keyword">return</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token comment">// 将 canRun 设置为 false，防止执行之前再被执行</span></pre></td></tr><tr><td data-num="10"></td><td><pre>        canRun <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token comment">// 定时器</span></pre></td></tr><tr><td data-num="12"></td><td><pre>        <span class="token function">setTimeout</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>          <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> arguments<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>          <span class="token comment">// 执行完事件（比如调用完接口）之后，重新将这个标志设置为 true</span></pre></td></tr><tr><td data-num="15"></td><td><pre>          canRun <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      <span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h2 id="重绘repaint当元素样式的改变不影响布局时浏览器将使用重绘对元素进行更新此时由于只需要-ui-层面的重新像素绘制因此损耗较少"><a class="markdownIt-Anchor" href="#重绘repaint当元素样式的改变不影响布局时浏览器将使用重绘对元素进行更新此时由于只需要-ui-层面的重新像素绘制因此损耗较少">#</a> 重绘 (repaint)：当元素样式的改变不影响布局时，浏览器将使用重绘对元素进行更新，此时由于只需要 UI 层面的重新像素绘制，因此损耗较少。</h2>
+<blockquote>
+<p>常见的重绘操作有：</p>
+<ul>
+<li>改变元素颜色改变</li>
+<li>元素背景色</li>
+<li>more ……</li>
+</ul>
+</blockquote>
+<h2 id="回流reflow又叫重排layout-当元素的尺寸-结构或者触发某些属性时浏览器会重新渲染页面称为回流-此时浏览器需要重新经过计算计算后还需要重新页面布局因此是较重的操作"><a class="markdownIt-Anchor" href="#回流reflow又叫重排layout-当元素的尺寸-结构或者触发某些属性时浏览器会重新渲染页面称为回流-此时浏览器需要重新经过计算计算后还需要重新页面布局因此是较重的操作">#</a> 回流 (reflow)：又叫重排（layout）。当元素的尺寸、结构或者触发某些属性时，浏览器会重新渲染页面，称为回流。此时，浏览器需要重新经过计算，计算后还需要重新页面布局，因此是较重的操作。</h2>
+<blockquote>
+<p>常见的回流操作有：</p>
+<ul>
+<li>页面初次渲染</li>
+<li>浏览器窗口大小改变</li>
+<li>元素尺寸 / 位置 / 内容发生改变</li>
+<li>元素字体大小变化</li>
+<li>添加或者删除可见的 DOM 元素</li>
+<li>激活 CSS 伪类（:hover……）</li>
+<li>more ……</li>
+</ul>
+</blockquote>
+<h2 id="重点回流必定会触发重绘重绘不一定会触发回流-重绘的开销较小回流的代价较高"><a class="markdownIt-Anchor" href="#重点回流必定会触发重绘重绘不一定会触发回流-重绘的开销较小回流的代价较高">#</a> 重点：回流必定会触发重绘，重绘不一定会触发回流。重绘的开销较小，回流的代价较高。</h2>
+<p><img data-src="https://images.weserv.nl/?url=https://cdn.nlark.com/yuque/0/2019/png/412560/1577760943909-4c193c10-3cf7-40a2-96e9-0a96b9704dea.png#align=left&amp;display=inline&amp;height=829&amp;name=169721e0dc217977.png&amp;originHeight=829&amp;originWidth=1227&amp;size=36160&amp;status=done&amp;style=none&amp;width=1227" alt="169721e0dc217977.png"></p>
+<h3 id="工作中要如何避免大量使用重绘与回流"><a class="markdownIt-Anchor" href="#工作中要如何避免大量使用重绘与回流">#</a> 工作中要如何避免大量使用重绘与回流？</h3>
+<ol>
+<li>避免频繁操作样式，可汇总后统一一次修改</li>
+<li>尽量使用 class 进行样式修改，而不是直接操作样式</li>
+<li>减少 DOM 的操作，可使用字符串一次性插入</li>
+</ol>
+<hr>
+<blockquote>
+<p>以下资料来自于<span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uaW0vcG9zdC81ZTA5NmQ2M2U1MWQ0NTU4MzgxZTk5MDYjaGVhZGluZy0yOQ=="> https://juejin.im/post/5e096d63e51d4558381e9906#heading-29</span></p>
+</blockquote>
+<h3 id="常见的会导致回流的元素"><a class="markdownIt-Anchor" href="#常见的会导致回流的元素">#</a> 常见的会导致回流的元素：</h3>
+<ul>
+<li>常见的几何属性有 width、height、padding、margin、left、top、border 等等。</li>
+<li>最容易被忽略的操作：获取一些需要通过即时计算得到的属性，当你要用到像这样的属性：offsetTop、offsetLeft、 offsetWidth、offsetHeight、scrollTop、scrollLeft、scrollWidth、scrollHeight、clientTop、clientLeft、clientWidth、clientHeight 时，浏览器为了获取这些值，也会进行回流。</li>
+<li>当我们调用了 getComputedStyle 方法，或者 IE 里的 currentStyle 时，也会触发回流。原理是一样的，都为求一个 “即时性” 和 “准确性”。</li>
+</ul>
+<h3 id="避免方式"><a class="markdownIt-Anchor" href="#避免方式">#</a> 避免方式：</h3>
+<ol>
+<li>避免逐条改变样式，使用类名去合并样式</li>
+<li>将 DOM “离线”, 使用 DocumentFragment</li>
+<li>提升为合成层，如使用 <code>will-change</code></li>
+</ol>
+<figure class="highlight css"><figcaption data-lang="CSS"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token selector">#divId</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token property">will-change</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="优点"><a class="markdownIt-Anchor" href="#优点">#</a> 优点:</h3>
+<ul>
+<li>合成层的位图，会交由 GPU 合成，比 CPU 处理要快</li>
+<li>当需要 repaint 时，只需要 repaint 本身，不会影响到其他的层</li>
+<li>对于 transform 和 opacity 效果，不会触发 layout 和 paint</li>
+</ul>
+<p><strong>注意：</strong><br>
+部分浏览器缓存了一个 flush 队列，把我们触发的回流与重绘任务都塞进去，待到队列里的任务多起来、或者达到了一定的时间间隔，或者 “不得已” 的时候，再将这些任务一口气出队。但是当我们访问一些即使属性时，浏览器会为了获得此时此刻的、最准确的属性值，而提前将 flush 队列的任务出队。</p>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-02-21 13:42:54" itemprop="dateModified" datetime="2023-02-21T13:42:54+00:00">2023-02-21</time>
+  </span>
+  <span id="posts/408004fb.html" class="item leancloud_visitors" data-flag-title="防抖、节流与回流、重绘" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Vision <i class="ic i-at"><em>@</em></i>开发随笔
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://v-immor.github.io/v-blog/posts/408004fb.html" title="防抖、节流与回流、重绘">https://v-immor.github.io/v-blog/posts/408004fb.html</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+    </div>
+    <div class="item right">
+      
+
+  <a href="/v-blog/posts/acf427af.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(85).webp" title="离开回调地狱，进入 Promise 时代">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> Promise</span>
+  <h3>离开回调地狱，进入 Promise 时代</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B2%E6%8A%96%E4%BB%BB%E5%8A%A1%E9%A2%91%E7%B9%81%E8%A7%A6%E5%8F%91%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E5%8F%AA%E6%9C%89%E4%BB%BB%E5%8A%A1%E8%A7%A6%E5%8F%91%E7%9A%84%E9%97%B4%E9%9A%94%E8%B6%85%E8%BF%87%E6%8C%87%E5%AE%9A%E9%97%B4%E9%9A%94%E7%9A%84%E6%97%B6%E5%80%99%E4%BB%BB%E5%8A%A1%E6%89%8D%E4%BC%9A%E6%89%A7%E8%A1%8C"><span class="toc-number">1.</span> <span class="toc-text"> 防抖：任务频繁触发的情况下，只有任务触发的间隔超过指定间隔的时候，任务才会执行。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8A%82%E6%B5%81%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%E5%86%85%E5%8F%AA%E4%BC%9A%E6%89%A7%E8%A1%8C%E4%B8%80%E6%AC%A1%E4%BB%BB%E5%8A%A1"><span class="toc-number">2.</span> <span class="toc-text"> 节流：指定时间间隔内只会执行一次任务。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E7%BB%98repaint%E5%BD%93%E5%85%83%E7%B4%A0%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%94%B9%E5%8F%98%E4%B8%8D%E5%BD%B1%E5%93%8D%E5%B8%83%E5%B1%80%E6%97%B6%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B0%86%E4%BD%BF%E7%94%A8%E9%87%8D%E7%BB%98%E5%AF%B9%E5%85%83%E7%B4%A0%E8%BF%9B%E8%A1%8C%E6%9B%B4%E6%96%B0%E6%AD%A4%E6%97%B6%E7%94%B1%E4%BA%8E%E5%8F%AA%E9%9C%80%E8%A6%81-ui-%E5%B1%82%E9%9D%A2%E7%9A%84%E9%87%8D%E6%96%B0%E5%83%8F%E7%B4%A0%E7%BB%98%E5%88%B6%E5%9B%A0%E6%AD%A4%E6%8D%9F%E8%80%97%E8%BE%83%E5%B0%91"><span class="toc-number">3.</span> <span class="toc-text"> 重绘 (repaint)：当元素样式的改变不影响布局时，浏览器将使用重绘对元素进行更新，此时由于只需要 UI 层面的重新像素绘制，因此损耗较少。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9E%E6%B5%81reflow%E5%8F%88%E5%8F%AB%E9%87%8D%E6%8E%92layout-%E5%BD%93%E5%85%83%E7%B4%A0%E7%9A%84%E5%B0%BA%E5%AF%B8-%E7%BB%93%E6%9E%84%E6%88%96%E8%80%85%E8%A7%A6%E5%8F%91%E6%9F%90%E4%BA%9B%E5%B1%9E%E6%80%A7%E6%97%B6%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BC%9A%E9%87%8D%E6%96%B0%E6%B8%B2%E6%9F%93%E9%A1%B5%E9%9D%A2%E7%A7%B0%E4%B8%BA%E5%9B%9E%E6%B5%81-%E6%AD%A4%E6%97%B6%E6%B5%8F%E8%A7%88%E5%99%A8%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E7%BB%8F%E8%BF%87%E8%AE%A1%E7%AE%97%E8%AE%A1%E7%AE%97%E5%90%8E%E8%BF%98%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80%E5%9B%A0%E6%AD%A4%E6%98%AF%E8%BE%83%E9%87%8D%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">4.</span> <span class="toc-text"> 回流 (reflow)：又叫重排（layout）。当元素的尺寸、结构或者触发某些属性时，浏览器会重新渲染页面，称为回流。此时，浏览器需要重新经过计算，计算后还需要重新页面布局，因此是较重的操作。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E7%82%B9%E5%9B%9E%E6%B5%81%E5%BF%85%E5%AE%9A%E4%BC%9A%E8%A7%A6%E5%8F%91%E9%87%8D%E7%BB%98%E9%87%8D%E7%BB%98%E4%B8%8D%E4%B8%80%E5%AE%9A%E4%BC%9A%E8%A7%A6%E5%8F%91%E5%9B%9E%E6%B5%81-%E9%87%8D%E7%BB%98%E7%9A%84%E5%BC%80%E9%94%80%E8%BE%83%E5%B0%8F%E5%9B%9E%E6%B5%81%E7%9A%84%E4%BB%A3%E4%BB%B7%E8%BE%83%E9%AB%98"><span class="toc-number">5.</span> <span class="toc-text"> 重点：回流必定会触发重绘，重绘不一定会触发回流。重绘的开销较小，回流的代价较高。</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E4%B8%AD%E8%A6%81%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E5%A4%A7%E9%87%8F%E4%BD%BF%E7%94%A8%E9%87%8D%E7%BB%98%E4%B8%8E%E5%9B%9E%E6%B5%81"><span class="toc-number">5.1.</span> <span class="toc-text"> 工作中要如何避免大量使用重绘与回流？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%9A%E5%AF%BC%E8%87%B4%E5%9B%9E%E6%B5%81%E7%9A%84%E5%85%83%E7%B4%A0"><span class="toc-number">5.2.</span> <span class="toc-text"> 常见的会导致回流的元素：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%BF%E5%85%8D%E6%96%B9%E5%BC%8F"><span class="toc-number">5.3.</span> <span class="toc-text"> 避免方式：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%82%B9"><span class="toc-number">5.4.</span> <span class="toc-text"> 优点:</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/v-blog/posts/408004fb.html" rel="bookmark" title="防抖、节流与回流、重绘">防抖、节流与回流、重绘</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Vision"
+      data-src="/v-blog/images/avatar.png">
+  <p class="name" itemprop="name">Vision</p>
+  <div class="description" itemprop="description">~虚拟建设者~</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/v-blog/archives/">
+        <span class="count">15</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/v-blog/categories/">
+        <span class="count">7</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/v-blog/tags/">
+        <span class="count">5</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3YtaW1tb3I=" title="https:&#x2F;&#x2F;github.com&#x2F;v-immor"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/v-blog/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/v-blog/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/v-blog/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/v-blog/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/v-blog/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/v-blog/posts/4e4316ec.html" title="React Fiber 是什么？">React Fiber 是什么？</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/v-blog/posts/41a9f2c1.html" title="JS 中的执行环境与作用域链">JS 中的执行环境与作用域链</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/react/" title="分类于 React">React</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/react/%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/" title="分类于 开发实践">开发实践</a>
+</div>
+
+    <span><a href="/v-blog/posts/1750c17f.html" title="如何满足 React 组件开发的最佳实践？">如何满足 React 组件开发的最佳实践？</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/v-blog/posts/ea276d7c.html" title="React 的生命周期">React 的生命周期</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
+</div>
+
+    <span><a href="/v-blog/posts/acf427af.html" title="离开回调地狱，进入 Promise 时代">离开回调地狱，进入 Promise 时代</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
+</div>
+
+    <span><a href="/v-blog/posts/649c58d0.html" title="基于 Promise A+ 实现 Promise">基于 Promise A+ 实现 Promise</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/web-develop/" title="分类于 Web应用开发实践">Web应用开发实践</a>
+</div>
+
+    <span><a href="/v-blog/posts/408004fb.html" title="防抖、节流与回流、重绘">防抖、节流与回流、重绘</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
+</div>
+
+    <span><a href="/v-blog/posts/c321570b.html" title="Promise 中的方法实现">Promise 中的方法实现</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/v-blog/posts/5c1a1e7b.html" title="JS 中的继承">JS 中的继承</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/v-blog/posts/1e1dcd8.html" title="React 的原理导读">React 的原理导读</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2022 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Vision @ Vision</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">65k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">59 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/408004fb.html',
+    favicon: {
+      show: "~~Vision~~",
+      hide: "~~README~~"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/v-blog/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
