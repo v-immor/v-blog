@@ -3,6 +3,11 @@ title: 个人简历
 date: 2021-02-21 17:27
 ---
 
+:::info
+- 一个熟练的前端，擅长 React，React 相关技术栈都写过/了解过，写过 Vue 的项目、写过 NestJS 的接口服务;
+- 一个半吊子的 Java，写过 SSM 和 Spring Boot 的项目;
+- Hello Word Python/Rust;
+:::
 ## 基本信息
 | 个人信息 | --- |
 | --- | --- |
