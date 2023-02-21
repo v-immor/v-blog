@@ -32,6 +32,10 @@
       {%- endif %}
     {%- endif %}
   </h1>
+
+    {%- if page.subtitle %}
+      <p class="meta" itemprop="description">{{- page.subtitle }}</p>
+    {%- endif %}
 {% endblock %}
 
 {% block content %}
