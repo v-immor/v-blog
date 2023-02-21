@@ -93,6 +93,7 @@ index_generator:
 default_category: uncategorized
 category_map:
   JavaScript: javascripts
+  Vue: vue
   React: react
   React应用开发实践: react-app-develop
   Web应用开发实践: web-develop
