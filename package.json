@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prebuild": "hexo config valine.appId $VALINE_APPID & hexo config valine.appKey $VALINE_APPKEY & hexo config algolia.appId $ALGOLIA_APPID & hexo config algolia.apiKey $ALGOLIA_APIKEY & hexo config algolia.adminApiKey $ALGOLIA_ADIMINKEY",
+    "config": "hexo config",
     "build": "hexo generate --debug",
     "clean": "hexo clean",
     "deploy": "hexo deploy",

@@ -25,8 +25,13 @@ jobs:
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: npm install
-      - name: show Env
-        run: env
+      - name: update config
+        run: |
+          npm run config valine.appId ${{ vars.VALINE_APPID }}
+          npm run config valine.appKey ${{ vars.VALINE_APPKEY}}
+          npm run config algolia.appId ${{ vars.ALGOLIA_APPID }}
+          npm run config algolia.apiKey ${{ vars.ALGOLIA_APIKEY }}
+          npm run config algolia.adminApiKey ${{ secrets.ALGOLIA_ADIMINKEY }}
       # - name: Clean
       #   run: npm run clean
       - name: Build
