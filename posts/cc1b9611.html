@@ -1,0 +1,773 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/v-blog/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/v-blog/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="开发随笔" href="https://v-immor.github.io/v-blog/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="开发随笔" href="https://v-immor.github.io/v-blog/atom.xml" />
+<link rel="alternate" type="application/json" title="开发随笔" href="https://v-immor.github.io/v-blog/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/v-blog/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="面试" />
+
+
+<link rel="canonical" href="https://v-immor.github.io/v-blog/posts/cc1b9611.html">
+
+
+
+  <title>
+JavaScript - Quetions |
+Vision = 开发随笔 = ~~仗键行码~~</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">JavaScript
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-02-24 23:04:24">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-02-24T23:04:24+00:00">2023-02-24</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>5.9k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>5 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/v-blog/" rel="start">Vision</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(57).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(46).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(40).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(52).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(64).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(60).webp"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/v-blog/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/v-blog/categories/Quetions/" itemprop="item" rel="index" title="分类于 Quetions"><span itemprop="name">Quetions</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://v-immor.github.io/v-blog/posts/cc1b9611.html">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/v-blog/images/avatar.png">
+    <meta itemprop="name" content="Vision">
+    <meta itemprop="description" content="~~仗键行码~~, ~虚拟建设者~">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="开发随笔">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="js-基础"><a class="markdownIt-Anchor" href="#js-基础">#</a> JS 基础</h2>
+<ol>
+<li class="quiz fill">
+<p>JS 的数据类型有哪些？</p>
+<blockquote>
+<ol>
+<li>基本数据类型 ( <code>string</code> 、 <code>number</code> 、 <code>boolean</code> 、 <code>null</code> 、 <code>undefined</code> 、 <code>symbol</code> 、 <code>bigInt</code> )</li>
+<li>引用数据类型（ <code>Object</code> 、 <code>Function</code> 、 <code>Date</code> 、 <code>Array</code> ）</li>
+<li>基本数据类型的存放在栈内存中，引用数据类型的引用指针存放于栈内存，内容存放于堆内存中。</li>
+</ol>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>JS 的继承方式，各种继承方式的优缺点及实现方式</p>
+<blockquote>
+<ul>
+<li>
+<ol>
+<li><code>原型链继承</code> ；2.  <code>借用构造函数继承</code> ；3.  <code>组合继承</code> ；4.  <code>原型式继承</code> ；5.  <code>寄生式继承</code> ；6.  <code>寄生组合式继承</code> ；</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>JS 的执行环境和作用域、作用域链</p>
+</li>
+<li class="quiz fill">
+<p><code>new</code>  的原理和实现</p>
+<blockquote>
+<ul>
+<li>
+<p><code>new</code>  主要是将一个新对象的原型指向构造函数的原型，并在这个对象上注入属性后将其返回。</p>
+</li>
+<li>
+<p>实现  <code>new</code>  的步骤有</p>
+<ol>
+<li>创建一个新对象。</li>
+<li>把这个对象的原型指向构造函数的原型</li>
+<li>通过构造函数将属性初始化</li>
+<li>返回这个对象。</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">function</span> <span class="token function">myNew</span><span class="token punctuation">(</span><span class="token parameter">constructor<span class="token punctuation">,</span> <span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  obj<span class="token punctuation">.</span>__proto__ <span class="token operator">=</span> constructor<span class="token punctuation">.</span>prototype</pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token function">constructor</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> args<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token keyword">return</span> obj</pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p><code>bind</code> 、 <code>call</code> 、 <code>apply</code>  的原理和实现</p>
+</li>
+<li class="quiz fill">
+<p>什么是原型，什么是原型链？</p>
+<blockquote>
+<ul>
+<li>原型就是对象。JS 的对象系统是基于原型模式设计的，在原型模式里有一个原则是 “要得到一个对象，不是通过实例化类，而是找到一个对象作为原型并克隆这个对象。”</li>
+<li>原型链就是对象之间的关联，在 JS 中实例对象的  <code>__proto__</code>  会指向其构造函数的原型  <code>prototype</code> ，构造函数的原型对象的  <code>__protot__</code>  也会指向这个原型对象构造函数的  <code>prototype</code> ，一直到  <code>Object.prototype.__proto__</code>  为止，这种链式向上关联就是 <code>原型链 </code></li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>什么是闭包？</p>
+<blockquote>
+<ul>
+<li>闭包是指在函数内使用了非函数内的变量，导致这个变量无法在其作用域销毁时销毁的现象。</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p><code>typeof</code>  和  <code>instanceOf</code>  的原理和区别</p>
+<blockquote>
+<ul>
+<li><code>typeof</code>  判断的是对象在内存上的存储类型， <code>instanceOf</code>  判断的是原型链上的原型。</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>什么是变量提升</p>
+<blockquote>
+<ul>
+<li>在变量未定义时就能够使用的现象就是 <code>变量提升</code></li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p><code>this</code>  是什么？</p>
+</li>
+<li class="quiz fill">
+<p>描述 JS 的事件循环？</p>
+</li>
+<li class="quiz fill">
+<p>为什么 <strong>for</strong> 循环的性能比 <strong>forEach</strong> 高？</p>
+</li>
+<li class="quiz fill">
+<p>描述一下 V8 引擎的 <code>垃圾回收机制</code> ，如何定位内存泄露？</p>
+</li>
+</ol>
+<h2 id="es6"><a class="markdownIt-Anchor" href="#es6">#</a> ES6</h2>
+<ol start="0">
+<li class="quiz fill">
+<p>ES6 有哪些新特性？</p>
+<blockquote>
+<p>ES6 主要的新特性有</p>
+<ol>
+<li>拥有  <code>块级作用域</code>  的  <code>const</code>  和  <code>let</code></li>
+<li><code>箭头函数</code></li>
+<li>便捷操作对象、数组的 <code>扩展运算符</code></li>
+<li>用于处理异步任务的  <code>Promise</code></li>
+<li>定义类的  <code>Class</code>  语法糖</li>
+<li>比  <code>definePrototype</code>  更加安全友好的  <code>Proxy</code>  代理对象</li>
+<li>新的数据结构  <code>Set</code> 、 <code>WeakSet</code> 、 <code>Map</code> 、 <code>WeakMap</code></li>
+<li>新的基础数据类型  <code>Symbol</code></li>
+<li>一些数组方法…</li>
+</ol>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p><code>var</code> 、 <code>const</code> 、 <code>let</code>  有什么区别？如何用 var 模拟 const 和 let？</p>
+<blockquote>
+<ol>
+<li><code>var</code>  定义的变量，可以在定义前使用，存在变量提升， <code>const</code>  和  <code>let</code>  定义的变量不能够在定义前使用，存在 <code>暂时性死区</code> 的概念。</li>
+<li><code>const</code>  定义的变量不能修改，  <code>let</code>  定义的变量可以修改。 <code>const</code>  的不能修改指的是栈中引用不能够修改，对内部的属性依旧是可以修改的。</li>
+<li><code>const</code>  和  <code>let</code>  声明的变量在同一作用域内不能重复声明， <code>var</code>  可以重复声明</li>
+</ol>
+</blockquote>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> _scope <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">var</span> _variables <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> _variables<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token keyword">var</span> property <span class="token operator">=</span> _variables<span class="token punctuation">[</span>i<span class="token punctuation">]</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>_scope<span class="token punctuation">.</span><span class="token function">hasOwnPropertype</span><span class="token punctuation">(</span>property<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">SyntaxError</span><span class="token punctuation">(</span><span class="token string">'存在重复声明`'</span> <span class="token operator">+</span> key <span class="token operator">+</span> <span class="token string">'`变量'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>_scope<span class="token punctuation">,</span> property<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>      <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">ReferenceError</span><span class="token punctuation">(</span><span class="token string">'变量`'</span> <span class="token operator">+</span> property <span class="token operator">+</span> <span class="token string">'`未定义'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="18"></td><td><pre></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token keyword">function</span> <span class="token function">_checkScope</span><span class="token punctuation">(</span><span class="token parameter">property</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>_scope<span class="token punctuation">.</span><span class="token function">hasOwnPropertype</span><span class="token punctuation">(</span>property<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">SyntaxError</span><span class="token punctuation">(</span><span class="token string">'不可重复声明'</span> <span class="token operator">+</span> key <span class="token operator">+</span> <span class="token string">'变量'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="24"></td><td><pre></pre></td></tr><tr><td data-num="25"></td><td><pre><span class="token keyword">function</span> <span class="token function">_let</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>  <span class="token function">_checkScope</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="27"></td><td><pre></pre></td></tr><tr><td data-num="28"></td><td><pre>  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>_scope<span class="token punctuation">,</span> name<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="29"></td><td><pre>    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="31"></td><td><pre>    <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>      <span class="token keyword">return</span> value</pre></td></tr><tr><td data-num="33"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="34"></td><td><pre>    <span class="token function">set</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>      value <span class="token operator">=</span> val</pre></td></tr><tr><td data-num="36"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="37"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="38"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="39"></td><td><pre></pre></td></tr><tr><td data-num="40"></td><td><pre><span class="token keyword">function</span> <span class="token function">_const</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="41"></td><td><pre>  <span class="token function">_checkScope</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="42"></td><td><pre></pre></td></tr><tr><td data-num="43"></td><td><pre>  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>_scope<span class="token punctuation">,</span> name<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="44"></td><td><pre>    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="45"></td><td><pre>    <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="46"></td><td><pre>    <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="47"></td><td><pre>      <span class="token keyword">return</span> value</pre></td></tr><tr><td data-num="48"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="49"></td><td><pre>    <span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="50"></td><td><pre>      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">TypeError</span><span class="token punctuation">(</span><span class="token string">'不可修改变量'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="51"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="52"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="53"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p><code>箭头函数</code> 和普通函数有什么区别？</p>
+<blockquote>
+<ul>
+<li>箭头函数没有  <code>this</code>  指向的烦恼</li>
+<li>箭头函数不能够作为构造函数使用，也就是不能够和  <code>new</code>  搭配使用</li>
+<li>箭头函数默认是一种匿名函数</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>什么是  <code>Promise</code> ?</p>
+<blockquote>
+<ul>
+<li><code>Promise</code>  是  <code>ECMAScript</code>  提出解决 JS 中 <code>回调地狱</code> 问题的异步编程方案。</li>
+<li><code>Promise</code>  认为任务执行后必然会存在一个结果， <code>成功</code>  / <code>失败</code> 。将任务的状态定义为  <code>pending</code> 、 <code>fulfilled</code> 、 <code>rejected</code>  三种状态，当任务从  <code>pending</code>  开始执行时，必然会到达  <code>fulfilled</code>  或者  <code>rejected</code>  的其中一个状态。</li>
+<li>通过  <code>Promise</code>  定义的异步任务，在  <code>EventLoop</code>  中属于 <code>微任务</code> ，会在当前循环中完成执行。</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>实现一个  <code>Promise</code> </p>
+</li>
+<li class="quiz fill">
+<p>实现一下常见的  <code>Promise</code>  方法</p>
+</li>
+<li class="quiz fill">
+<p>什么是  <code>Proxy</code> ？</p>
+</li>
+<li class="quiz fill">
+<p>什么是  <code>Reflect</code> ？</p>
+</li>
+<li class="quiz fill">
+<p><code>Proxy</code>  和  <code>definePrototype</code>  的区别</p>
+</li>
+<li class="quiz fill">
+<p><code>Set</code> 、 <code>WeakSet</code> 、 <code>Map</code> 、 <code>WeakMap</code>  的区别</p>
+</li>
+<li class="quiz fill">
+<p><code>async</code> / <code>await</code>  和  <code>Promise</code>  的区别</p>
+</li>
+</ol>
+<h2 id="应用"><a class="markdownIt-Anchor" href="#应用">#</a> 应用</h2>
+<ol>
+<li class="quiz fill">
+<p>防抖和节流的区别，如何实现？</p>
+<blockquote>
+<ul>
+<li>防抖是指短时间内连续执行一个函数，只会产生一个有效执行。</li>
+<li>节流是指短时间内连续执行一个函数时，会以固定的频率产生有效执行。</li>
+<li>防抖常用于即时搜索，点击按钮中。</li>
+<li>节流常用于滚动事件、监听事件。</li>
+</ul>
+</blockquote>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">task<span class="token punctuation">,</span> ms</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token keyword">null</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">const</span> that <span class="token operator">=</span> <span class="token keyword">this</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">const</span> agrs <span class="token operator">=</span> arguments</pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>timer<span class="token punctuation">)</span> <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">task</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>that<span class="token punctuation">,</span> <span class="token operator">...</span>agrs<span class="token punctuation">)</span><span class="token punctuation">,</span> ms<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">task<span class="token punctuation">,</span> ms</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token keyword">let</span> last <span class="token operator">=</span> <span class="token keyword">null</span></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">const</span> now <span class="token operator">=</span> <span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>last <span class="token operator">||</span> now <span class="token operator">-</span> last <span class="token operator">>=</span> ms<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      last <span class="token operator">=</span> now</pre></td></tr><tr><td data-num="17"></td><td><pre>      <span class="token function">task</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token operator">...</span>arguments<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p>实现一个  <code>sleep</code>  函数</p>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 这种实现方式阻塞的是同步代码，阻塞了执行栈，是最接近 ms 的实现，还可以通过 Promise 实现</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">function</span> <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token parameter">ms</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token keyword">const</span> now <span class="token operator">=</span> <span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token keyword">while</span> <span class="token punctuation">(</span>now <span class="token operator">>=</span> <span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p>实现一个  <code>add</code>  函数，满足  <code>add(1, 2, 3)</code>  和  <code>add(1)(2)(3)</code>  值相等（ <code>柯里化</code> ）</p>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token keyword">const</span> nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arguments<span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token keyword">const</span> <span class="token function-variable function">fn</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>rest</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    nums<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token operator">...</span>rest<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">return</span> fn</pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>  fn<span class="token punctuation">.</span><span class="token function-variable function">toString</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> nums<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">pre<span class="token punctuation">,</span> cur</span><span class="token punctuation">)</span> <span class="token operator">=></span> pre <span class="token operator">+</span> cur<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token keyword">return</span> fn</pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p>实现一个  <code>compose</code>  函数</p>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">function</span> <span class="token function">compose</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token keyword">const</span> tasks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arguments<span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>tasks<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token operator">=></span> v</pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>tasks<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> tasks<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token keyword">const</span> first <span class="token operator">=</span> tasks<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">return</span> tasks<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">(</span><span class="token parameter">pre<span class="token punctuation">,</span> cur</span><span class="token punctuation">)</span> <span class="token operator">=></span></pre></td></tr><tr><td data-num="10"></td><td><pre>      <span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token operator">=></span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token function">cur</span><span class="token punctuation">(</span><span class="token function">pre</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    first</pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p>实现一个  <code>flatten</code>  函数</p>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 递归法</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">function</span> <span class="token function">flatten</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> item <span class="token keyword">of</span> arr<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token function">flatten</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>      res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token keyword">return</span> res</pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="15"></td><td><pre></pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token comment">// 迭代法</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token keyword">function</span> <span class="token function">flatten</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token keyword">const</span> queue <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arr<span class="token punctuation">]</span></pre></td></tr><tr><td data-num="19"></td><td><pre>  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="20"></td><td><pre></pre></td></tr><tr><td data-num="21"></td><td><pre>  <span class="token keyword">while</span> <span class="token punctuation">(</span>queue<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token keyword">const</span> f <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="23"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span><span class="token punctuation">)</span> queue<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span><span class="token operator">...</span>f<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="24"></td><td><pre>    <span class="token keyword">else</span> res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="25"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="26"></td><td><pre></pre></td></tr><tr><td data-num="27"></td><td><pre>  <span class="token keyword">return</span> res</pre></td></tr><tr><td data-num="28"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p>JS 异步解决方案的发展历程以及优缺点</p>
+<blockquote>
+<ul>
+<li><code>回调函数</code>  -&gt;  <code>Promise</code>  -&gt;  <code>Generator</code>  -&gt;  <code>async/await</code></li>
+<li><code>回调地狱</code>  -&gt;  <code>链式地狱</code>  -&gt;  <code>语义古怪</code>  -&gt; 同步代码解决异步任务</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p><code>Promise</code>  构造函数是同步执行还是异步执行，那么  <code>then</code>  方法呢？</p>
+<blockquote>
+<p>构造函数是同步执行的， <code>then</code>  是  <code>resolve</code>  调用后产生的微任务，属于异步执行</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'同步执行'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'异步执行'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p>实现一个异步任务并发调度函数</p>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">function</span> <span class="token function">asyncScheudle</span><span class="token punctuation">(</span><span class="token parameter">tasks<span class="token punctuation">,</span> limit <span class="token operator">=</span> <span class="token number">3</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token keyword">const</span> queue <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>tasks<span class="token punctuation">.</span>length<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token keyword">let</span> idx <span class="token operator">=</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token keyword">function</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token parameter">task<span class="token punctuation">,</span> runIdx</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      <span class="token keyword">const</span> <span class="token function-variable function">asyncTask</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        count <span class="token operator">+=</span> <span class="token number">1</span></pre></td></tr><tr><td data-num="12"></td><td><pre>        <span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>          <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">task</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre>          result<span class="token punctuation">[</span>runIdx<span class="token punctuation">]</span> <span class="token operator">=</span> res</pre></td></tr><tr><td data-num="15"></td><td><pre>          idx <span class="token operator">+=</span> <span class="token number">1</span></pre></td></tr><tr><td data-num="16"></td><td><pre>          <span class="token keyword">if</span> <span class="token punctuation">(</span>idx <span class="token operator">===</span> tasks<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token function">resolve</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>          <span class="token keyword">throw</span> error</pre></td></tr><tr><td data-num="19"></td><td><pre>        <span class="token punctuation">&#125;</span> <span class="token keyword">finally</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>          count <span class="token operator">-=</span> <span class="token number">1</span></pre></td></tr><tr><td data-num="21"></td><td><pre>          <span class="token keyword">if</span> <span class="token punctuation">(</span>queue<span class="token punctuation">.</span>length<span class="token punctuation">)</span> queue<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="22"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>      <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="24"></td><td><pre></pre></td></tr><tr><td data-num="25"></td><td><pre>      <span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">&lt;</span> limit<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>        <span class="token keyword">return</span> <span class="token function">asyncTask</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="27"></td><td><pre>      <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="28"></td><td><pre></pre></td></tr><tr><td data-num="29"></td><td><pre>      queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>asyncTask<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="31"></td><td><pre></pre></td></tr><tr><td data-num="32"></td><td><pre>    tasks<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">tk<span class="token punctuation">,</span> idx</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">run</span><span class="token punctuation">(</span>tk<span class="token punctuation">,</span> idx<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="33"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="34"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+<li class="quiz fill">
+<p>实现 <code>数组转树</code> 和 <code>树转数组</code> 的方法</p>
+<blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// prettier-ignore</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> tree <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string'</span><span class="token punctuation">,</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1'</span><span class="token punctuation">,</span><span class="token literal-property property">children</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1-1'</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string-1'</span><span class="token punctuation">,</span><span class="token literal-property property">children</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1-1-1'</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string-1-1'</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1-1-2'</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string-1-2'</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1-2'</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string-2'</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">function</span> <span class="token function">treeToArray</span><span class="token punctuation">(</span><span class="token parameter">tree</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token keyword">const</span> <span class="token function-variable function">bfs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> parent <span class="token operator">=</span> <span class="token keyword">null</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">&#123;</span> <span class="token operator">...</span>node<span class="token punctuation">,</span> parent<span class="token punctuation">,</span> <span class="token literal-property property">parentId</span><span class="token operator">:</span> parent <span class="token operator">?</span> parent<span class="token punctuation">.</span>id <span class="token operator">:</span> <span class="token keyword">null</span> <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>children <span class="token operator">&amp;&amp;</span> node<span class="token punctuation">.</span>children<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      node<span class="token punctuation">.</span>children<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">bfs</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> node<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="15"></td><td><pre></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token function">bfs</span><span class="token punctuation">(</span>tree<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token keyword">return</span> res</pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="20"></td><td><pre></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token comment">// prettier-ignore</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string'</span><span class="token punctuation">,</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1'</span><span class="token punctuation">,</span><span class="token literal-property property">parentId</span><span class="token operator">:</span><span class="token keyword">null</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1-1'</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string-1'</span><span class="token punctuation">,</span><span class="token literal-property property">parentId</span><span class="token operator">:</span><span class="token string">'1'</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1-1-1'</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string-1-1'</span><span class="token punctuation">,</span><span class="token literal-property property">parentId</span><span class="token operator">:</span><span class="token string">'1-1'</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1-1-2'</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string-1-2'</span><span class="token punctuation">,</span><span class="token literal-property property">parentId</span><span class="token operator">:</span><span class="token string">'1-1'</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1-2'</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'string-2'</span><span class="token punctuation">,</span><span class="token literal-property property">parentId</span><span class="token operator">:</span><span class="token string">'1'</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="23"></td><td><pre></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token keyword">function</span> <span class="token function">arrayToTree</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="25"></td><td><pre>  <span class="token keyword">const</span> <span class="token function-variable function">buildTree</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">nodes<span class="token punctuation">,</span> parentId <span class="token operator">=</span> <span class="token keyword">null</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>    <span class="token keyword">return</span> nodes</pre></td></tr><tr><td data-num="27"></td><td><pre>      <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token operator">=></span> node<span class="token punctuation">.</span>parentId <span class="token operator">===</span> parentId<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="28"></td><td><pre>      <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="29"></td><td><pre>        <span class="token operator">...</span>node<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="30"></td><td><pre>        parentId<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="31"></td><td><pre>        <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token function">buildTree</span><span class="token punctuation">(</span>nodes<span class="token punctuation">,</span> node<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="32"></td><td><pre>      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="33"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="34"></td><td><pre></pre></td></tr><tr><td data-num="35"></td><td><pre>  <span class="token keyword">return</span> <span class="token function">buildTree</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="36"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></blockquote>
+</li>
+</ol>
+
+      <div class="tags">
+          <a href="/v-blog/tags/%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> 面试</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-02-28 06:26:00" itemprop="dateModified" datetime="2023-02-28T06:26:00+00:00">2023-02-28</time>
+  </span>
+  <span id="posts/cc1b9611.html" class="item leancloud_visitors" data-flag-title="JavaScript" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Vision <i class="ic i-at"><em>@</em></i>开发随笔
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://v-immor.github.io/v-blog/posts/cc1b9611.html" title="JavaScript">https://v-immor.github.io/v-blog/posts/cc1b9611.html</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/v-blog/posts/b7e144d1.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(12).webp" title="算法">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> Quetions</span>
+  <h3>算法</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#js-%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text"> JS 基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#es6"><span class="toc-number">2.</span> <span class="toc-text"> ES6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text"> 应用</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/v-blog/posts/4a322b5b.html" rel="bookmark" title="React">React</a></li><li><a href="/v-blog/posts/50daec4.html" rel="bookmark" title="网络">网络</a></li><li><a href="/v-blog/posts/b7e144d1.html" rel="bookmark" title="算法">算法</a></li><li><a href="/v-blog/posts/764f33bc.html" rel="bookmark" title="工程化">工程化</a></li><li class="active"><a href="/v-blog/posts/cc1b9611.html" rel="bookmark" title="JavaScript">JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Vision"
+      data-src="/v-blog/images/avatar.png">
+  <p class="name" itemprop="name">Vision</p>
+  <div class="description" itemprop="description">~虚拟建设者~</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/v-blog/archives/">
+        <span class="count">20</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/v-blog/categories/">
+        <span class="count">8</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/v-blog/tags/">
+        <span class="count">6</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3YtaW1tb3I=" title="https:&#x2F;&#x2F;github.com&#x2F;v-immor"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/v-blog/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/v-blog/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/v-blog/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/v-blog/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/v-blog/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/web-develop/" title="分类于 Web应用开发实践">Web应用开发实践</a>
+</div>
+
+    <span><a href="/v-blog/posts/408004fb.html" title="防抖、节流与回流、重绘">防抖、节流与回流、重绘</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
+</div>
+
+    <span><a href="/v-blog/posts/764f33bc.html" title="工程化">工程化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/react/" title="分类于 React">React</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/react/%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/" title="分类于 开发实践">开发实践</a>
+</div>
+
+    <span><a href="/v-blog/posts/33bad1c2.html" title="React全局状态管理 - Redux">React全局状态管理 - Redux</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/v-blog/posts/4e4316ec.html" title="React Fiber 是什么？">React Fiber 是什么？</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
+</div>
+
+    <span><a href="/v-blog/posts/649c58d0.html" title="基于 Promise A+ 实现 Promise">基于 Promise A+ 实现 Promise</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/v-blog/posts/41a9f2c1.html" title="JS 中的执行环境与作用域链">JS 中的执行环境与作用域链</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
+</div>
+
+    <span><a href="/v-blog/posts/4a322b5b.html" title="React">React</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
+</div>
+
+    <span><a href="/v-blog/posts/acf427af.html" title="离开回调地狱，进入 Promise 时代">离开回调地狱，进入 Promise 时代</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/v-blog/posts/5c1a1e7b.html" title="JS 中的继承">JS 中的继承</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/vue/" title="分类于 Vue">Vue</a>
+</div>
+
+    <span><a href="/v-blog/posts/217af96f.html" title="Vue Router 食用指南">Vue Router 食用指南</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2022 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Vision @ Vision</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">79k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:12</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/cc1b9611.html',
+    favicon: {
+      show: "~~Vision~~",
+      hide: "~~README~~"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',quiz: {
+      choice: "单选题",
+      multiple: "多选题",
+      true_false: "判断题",
+      essay: "问答题",
+      gap_fill: "填空题",
+      mistake: "错题备注"
+    },
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/v-blog/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
