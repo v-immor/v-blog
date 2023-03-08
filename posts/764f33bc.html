@@ -76,7 +76,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>933</span>
+    <span>2.9k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -84,7 +84,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>1 分钟</span>
+    <span>3 分钟</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(45).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(28).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(1).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(64).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(95).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(71).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(67).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(54).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(76).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(22).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(53).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(5).webp"></li>
         </ul>
       </div>
     </header>
@@ -176,11 +176,34 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <li class="quiz fill">
 <p>什么是 <code>工程化</code> ？</p>
 </li>
+<li class="quiz fill">
+<p><code>import</code>  和  <code>require</code>  的区别？</p>
+<blockquote>
+<ul>
+<li><code>require</code>  是  <code>CommonJS</code>  的标准，引入模块是运行时同步执行的，可以在运行时使用，引入是模块的值拷贝，不会共享模块的变量；搭配的导出语法是 <code>moudle.exports</code></li>
+<li><code>import</code>  是  <code>ES Module</code>  的标准，引入模块是编译时异步加载的，早期的版本不允许在运行时调用，引入的是模块的值引用，可以共享模块变量；导出语法是 <code>export</code></li>
+</ul>
+</blockquote>
+</li>
 </ol>
 <h2 id="npm"><a class="markdownIt-Anchor" href="#npm">#</a> NPM</h2>
 <ol>
 <li class="quiz fill">
 <p><code>npm</code>  的安装流程</p>
+<blockquote>
+<ul>
+<li><code>npm install</code>  -&gt; 查找  <code>package.json</code>  -&gt; 获取远程包信息 -&gt; 构建依赖结构 -&gt; 查找缓存 -&gt; 下载远程包 -&gt; 添加到缓存 -&gt; 添加到  <code>node_modules</code>  -&gt; 生成 / 更新  <code>package-lock.json</code> ;</li>
+<li><code>npm install</code>  -&gt; 比对  <code>package.json</code>  和  <code>package-lock.json</code>  -&gt; 查找缓存 -&gt; 添加到  <code>node_modules</code></li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p><code>npm</code>  如何解决依赖冲突？</p>
+<blockquote>
+<ul>
+<li>在依赖的包中新增  <code>node_modules</code> ，项目中的依赖优先置于顶层包，其余相同依赖会在对应的包下；</li>
+</ul>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p><code>npm</code> 、 <code>yarn</code> 、 <code>pnpm</code>  的区别</p>
@@ -230,9 +253,26 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 </li>
 <li class="quiz fill">
 <p>常用的  <code>loader</code>  和  <code>plugin</code>  有哪些？他们的作用分别是什么？</p>
+<blockquote>
+<ul>
+<li>loader： <code>css-loader</code> 、 <code>style-loader</code> 、 <code>less-loader</code> 、 <code>sass-loader</code> 、 <code>jsx-loader</code> 、 <code>image-loader</code> 、 <code>thread-loader</code></li>
+<li>plugin:  <code>html-webpack-plugin</code> 、 <code>mini-css-extract-plugin</code> 、 <code>copy-webpack-plugin</code> 、 <code>happypack</code> 、 <code>commons-chunk-plugin</code> 、 <code>hot-module-replacement-plugin</code></li>
+</ul>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p>描述  <code>Webpack</code>  的 <code>热更新</code> 原理</p>
+<blockquote>
+<blockquote>
+<p>webpack 的热更新是由  <code>hot-module-replacement-plugin</code>  提供能力，在 webpackV5 时内置为 module.hot 上；</p>
+</blockquote>
+<ol>
+<li><code>HMR</code>  提供了  <code>HMR Server</code>  和  <code>HMR runtime</code>  两个部分；</li>
+<li><code>HMR Server</code>  部分是  <code>webpack-dev-middleware</code>  开发服务器的中间件。通过监听  <code>webpack</code>  的  <code>compiler done</code>  将编译后的模块新 hash 通过  <code>websocket</code>  发送给浏览器的  <code>HMR runtime</code>  部分进行 hash 比较后，若不一致则通过模块新 hash 请求  <code>manifest</code>  文件确认模块变更的范围列表，再请求对应的 <code>[hash].hot-update.js</code> ，再进行替换和执行；</li>
+<li><code>HMR runtime</code>  会执行  <code>module.hot.accept</code>  的回调函数进行热替换，所以在需要热替换的 JS 需要手动添加  <code>module.hot.accept</code>  逻辑。通常只需要在应用入口进行添加就够用了。对于样式文件，在 loader 中已经添加了  <code>module.hot.accept</code>  逻辑，所以只需添加相应的 loader 也会开启热替换的功能；</li>
+<li>如果在模块替换或者执行的时候出现了意外，就会用 reload 兜底，刷新整个页面</li>
+</ol>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p>什么是 <code>联邦模块</code> ？</p>
@@ -268,6 +308,49 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <p><code>Rollup</code>  常用的插件</p>
 </li>
 </ol>
+<h2 id="微前端"><a class="markdownIt-Anchor" href="#微前端">#</a> 微前端</h2>
+<ol>
+<li class="quiz fill">
+<p><code>JS 沙箱</code>  的实现方式有几种，原理是？</p>
+<blockquote>
+<ol>
+<li>iframe  <code>sandbox</code> ,  <code>contentWindow</code>  天然沙箱，iframe 必须同域才能够使用 contentWindow 属性</li>
+<li>with + new Function 代理沙箱</li>
+<li>快照沙箱，在运行时将 window 对象进行一个快照拷贝，将 window 上所有的属性复制到快照对象上，当子应用卸载时，将当前 window 对象与快照对象进行 diff ，将变更的属性使用 map 保存起来，便于下一次挂载时再次进行还原。通过  <code>Proxy</code>  也能够监听到属性修改，用  <code>Proxy</code>  实现的也叫代理沙箱；</li>
+</ol>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>CSS  <code>样式隔离</code>  的实现方式以及原理？</p>
+<blockquote>
+<ol>
+<li>没有开启  <code>shadowDOM</code>  模式下， <code>micro-app</code>  默认会为每一个样式加上  <code>micro-app[name=xxx]</code>  的前缀作为样式隔离；</li>
+<li>可以在  <code>microApp.start()</code>  中配置全局禁用，也可以在  <code>micro-app</code>  的  <code>disableScopecss</code>  属性进行单个应用的禁用。在样式文件中可以通过添加注释  <code>! scopecss-disable</code>  来禁用单个样式的隔离。</li>
+<li>开启  <code>shadowDOM</code>  模式后样式将不进行隔离处理，因为  <code>shadowDOM</code>  天然隔离样式。</li>
+</ol>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p><code>micro-app</code>  元素隔离原理</p>
+<blockquote>
+<ol>
+<li><code>micro-app</code>  是通过修改  <code>document</code>  原型链上的  <code>querySelector</code>  实现的元素隔离，当子应用调用时，会存在  <code>appName</code> ，则会调用子应用的  <code>querySelector</code> ，当主应用访问  <code>document</code>  的属性时，通过拦截将  <code>appName</code>  置空，从而访问到原始的  <code>querySelector</code></li>
+<li>基座应用是可以访问到子应用的元素的，基座应用在没有开启  <code>shadowDOM</code>  模式下可以访问到所有的元素；</li>
+<li>在子应用卸载时，元素隔离的解除是异步的，可能会造成渲染异常，可以通过手动调用  <code>window.removeDomScope()</code>  来解除元素的绑定。</li>
+</ol>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>微前端中应用间的通讯方式</p>
+<blockquote>
+<ol>
+<li>通过基座应用的  <code>state</code>  变化，传递  <code>props</code>  来更新子应用；</li>
+<li>通过 <code>发布-订阅</code> 模式，通过事件订阅来通讯；</li>
+<li><code>MessageChannel</code></li>
+</ol>
+</blockquote>
+</li>
+</ol>
 
       <div class="tags">
           <a href="/v-blog/tags/%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> 面试</a>
@@ -282,7 +365,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-02-28 06:26:00" itemprop="dateModified" datetime="2023-02-28T06:26:00+00:00">2023-02-28</time>
+    <time title="修改时间：2023-03-08 09:09:19" itemprop="dateModified" datetime="2023-03-08T09:09:19+00:00">2023-03-08</time>
   </span>
   <span id="posts/764f33bc.html" class="item leancloud_visitors" data-flag-title="工程化" title="阅读次数">
       <span class="icon">
@@ -322,7 +405,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
     <div class="item left">
       
 
-  <a href="/v-blog/posts/50daec4.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(33).webp" title="网络">
+  <a href="/v-blog/posts/50daec4.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(81).webp" title="网络">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Quetions</span>
   <h3>网络</h3>
@@ -332,7 +415,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
     <div class="item right">
       
 
-  <a href="/v-blog/posts/b7e144d1.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(25).webp" title="算法">
+  <a href="/v-blog/posts/b7e144d1.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(12).webp" title="算法">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Quetions</span>
   <h3>算法</h3>
@@ -354,11 +437,11 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text"> 基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#npm"><span class="toc-number">2.</span> <span class="toc-text"> NPM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#webpack"><span class="toc-number">3.</span> <span class="toc-text"> Webpack</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vite"><span class="toc-number">4.</span> <span class="toc-text"> Vite</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rollup"><span class="toc-number">5.</span> <span class="toc-text"> Rollup</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text"> 基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#npm"><span class="toc-number">2.</span> <span class="toc-text"> NPM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#webpack"><span class="toc-number">3.</span> <span class="toc-text"> Webpack</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vite"><span class="toc-number">4.</span> <span class="toc-text"> Vite</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rollup"><span class="toc-number">5.</span> <span class="toc-text"> Rollup</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AE%E5%89%8D%E7%AB%AF"><span class="toc-number">6.</span> <span class="toc-text"> 微前端</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/v-blog/posts/4a322b5b.html" rel="bookmark" title="React">React</a></li><li><a href="/v-blog/posts/50daec4.html" rel="bookmark" title="网络">网络</a></li><li><a href="/v-blog/posts/b7e144d1.html" rel="bookmark" title="算法">算法</a></li><li class="active"><a href="/v-blog/posts/764f33bc.html" rel="bookmark" title="工程化">工程化</a></li><li><a href="/v-blog/posts/cc1b9611.html" rel="bookmark" title="JavaScript">JavaScript</a></li>
+          <li><a href="/v-blog/posts/4a322b5b.html" rel="bookmark" title="React">React</a></li><li><a href="/v-blog/posts/50daec4.html" rel="bookmark" title="网络">网络</a></li><li><a href="/v-blog/posts/b7e144d1.html" rel="bookmark" title="算法">算法</a></li><li class="active"><a href="/v-blog/posts/764f33bc.html" rel="bookmark" title="工程化">工程化</a></li><li><a href="/v-blog/posts/cc1b9611.html" rel="bookmark" title="JavaScript">JavaScript</a></li><li><a href="/v-blog/posts/ee69e452.html" rel="bookmark" title="CSS">CSS</a></li><li><a href="/v-blog/posts/2eec1551.html" rel="bookmark" title="HTML">HTML</a></li><li><a href="/v-blog/posts/f8e09374.html" rel="bookmark" title="Vue">Vue</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -372,7 +455,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <nav class="state">
     <div class="item posts">
       <a href="/v-blog/archives/">
-        <span class="count">20</span>
+        <span class="count">24</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -466,19 +549,73 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
 </div>
 
-    <span><a href="/v-blog/posts/4c3fd2b0.html" title="JS 中的数据类型">JS 中的数据类型</a></span>
+    <span><a href="/v-blog/posts/3c6f1dc0.html" title="JS 中的函数">JS 中的函数</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/v-blog/categories/react/" title="分类于 React">React</a>
-<i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/react/%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/" title="分类于 开发实践">开发实践</a>
+<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
 </div>
 
-    <span><a href="/v-blog/posts/1750c17f.html" title="如何满足 React 组件开发的最佳实践？">如何满足 React 组件开发的最佳实践？</a></span>
+    <span><a href="/v-blog/posts/4a322b5b.html" title="React">React</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
+</div>
+
+    <span><a href="/v-blog/posts/acf427af.html" title="离开回调地狱，进入 Promise 时代">离开回调地狱，进入 Promise 时代</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/v-blog/posts/4e4316ec.html" title="React Fiber 是什么？">React Fiber 是什么？</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
+</div>
+
+    <span><a href="/v-blog/posts/2eec1551.html" title="HTML">HTML</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/v-blog/posts/1e1dcd8.html" title="React 的原理导读">React 的原理导读</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/v-blog/posts/4c3fd2b0.html" title="JS 中的数据类型">JS 中的数据类型</a></span>
   </li>
 
       
@@ -505,66 +642,10 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
-</div>
-
-    <span><a href="/v-blog/posts/acf427af.html" title="离开回调地狱，进入 Promise 时代">离开回调地狱，进入 Promise 时代</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/javascripts/vue/" title="分类于 Vue">Vue</a>
-</div>
-
-    <span><a href="/v-blog/posts/217af96f.html" title="Vue Router 食用指南">Vue Router 食用指南</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
 </div>
 
-    <span><a href="/v-blog/posts/b7e144d1.html" title="算法">算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
-</div>
-
-    <span><a href="/v-blog/posts/649c58d0.html" title="基于 Promise A+ 实现 Promise">基于 Promise A+ 实现 Promise</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
-</div>
-
-    <span><a href="/v-blog/posts/41a9f2c1.html" title="JS 中的执行环境与作用域链">JS 中的执行环境与作用域链</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
-</div>
-
-    <span><a href="/v-blog/posts/4a322b5b.html" title="React">React</a></span>
+    <span><a href="/v-blog/posts/f8e09374.html" title="Vue">Vue</a></span>
   </li>
 
   </ul>
@@ -589,13 +670,13 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">79k 字</span>
+    <span title="站点总字数">91k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:12</span>
+    <span title="站点阅读时长">1:23</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

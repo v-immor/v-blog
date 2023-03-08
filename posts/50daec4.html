@@ -76,7 +76,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>1.3k</span>
+    <span>3.4k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -84,7 +84,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>1 分钟</span>
+    <span>3 分钟</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(50).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(1).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(20).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(54).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(37).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(42).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(77).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(15).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(24).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(64).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(7).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(4).webp"></li>
         </ul>
       </div>
     </header>
@@ -172,6 +172,22 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <ol start="0">
 <li class="quiz fill">
 <p>介绍一下  <code>七层网络模型</code>  和  <code>TCP/IP 四层概念模型</code> </p>
+<blockquote>
+<ul>
+<li>七层网络模型<br>
+ <code>应用层</code>  -&gt;  <code>表示层</code>  -&gt;  <code>会话层</code>  -&gt;  <code>传输层</code>  -&gt;  <code>网络层</code>  -&gt;  <code>数据链路层</code>  -&gt;  <code>物理层</code></li>
+<li>TCP/IP 概念模型<br>
+ <code>应用层</code>  -&gt;  <code>传输层</code>  -&gt;  <code>网络层</code>  -&gt;  <code>数据链路层</code></li>
+<li>各层的代表协议<br>
+应用层：<strong>HTTP、FTP、SMTP</strong> -&gt; 为网络应用提供服务<br>
+表示层：<strong>Telnet、SNMP</strong> -&gt; 数据格式化、加解密<br>
+会话层：<strong>SMTP、DNS</strong> -&gt; 建立 / 维护 / 管理会话连接<br>
+传输层：<strong>TCP、UDP</strong> -&gt; 建立 / 维护 / 管理端到端的连接<br>
+网络层：<strong>IP、ICMP、ARP</strong> -&gt; IP 寻址、路由选择<br>
+数据链路层：<strong>PPP、PDN</strong> -&gt; 控制网络层和物理层之间的通讯<br>
+物理层：<strong>IEEE 802.1A</strong> -&gt; 比特率传输协议</li>
+</ul>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p><code>HTTP</code>  是什么？</p>
@@ -212,6 +228,44 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 </li>
 <li class="quiz fill">
 <p><code>HTTP</code>  各个版本（1.0、1.1、2.0、3.0）的区别</p>
+<blockquote>
+<ul>
+<li>HTTP/1.0:<br>
+<strong> 特点：</strong>
+<ol>
+<li>引入  <code>if-Modified-since</code>  和  <code>expires</code>  作为缓存；</li>
+<li>引入了  <code>POST</code>  和  <code>HEAD</code>  请求；</li>
+<li>引入了长连接（keep-alive），可以有序的发起多个请求，但新的请求需要等待上一个请求响应才会发起，所以默认是关闭的；</li>
+</ol>
+</li>
+<li>HTTP/1.1:<br>
+<strong> 特点：</strong>
+<ol>
+<li>默认开启长连接，引入了 <code>管道机制</code> 可在一个 TCP 连接中同时发出多个请求，但响应依旧是有序响应，所以会有 <code>队头阻塞</code> 的问题；</li>
+<li>新增了请求方法： <code>PUT</code> 、 <code>DELETE</code> 、 <code>PATCH</code> 、 <code>OPTIONS</code> ;</li>
+<li>通过  <code>Range</code>  属性实现断点续传；</li>
+<li>新增了缓存机制的失效控制字段： <code>E-tag</code> 、 <code>if-Match</code> 、 <code>if-None-Match</code></li>
+</ol>
+</li>
+<li>HTTP/2.0<br>
+<strong> 特点：</strong>
+<ol>
+<li>引入了 <code>二进制分帧</code> 来处理 header 和数据；</li>
+<li>对 header 进行压缩，解决头部偏重的问题；</li>
+<li><code>多路复用</code> ，可以在一个 TCP 连接里，同时发起多个请求，并且可以不需要要有序响应，解决了 <code>队头阻塞</code> 的问题；</li>
+<li><code>服务器推送</code> ，服务器可以主动推送资源给客服端；</li>
+<li><code>请求优先级</code> ，可以设置数据帧的优先级，让服务端优先处理响应；</li>
+</ol>
+</li>
+<li>HTTP/3.0（QUIC）<br>
+<strong>特点：</strong>
+<ol>
+<li>使用 UDP 替换 TCP 建立连接；</li>
+<li>使用了  <code>TLS1.3</code>  保证通讯的安全；</li>
+</ol>
+</li>
+</ul>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p><code>HTTP</code>  有哪些请求方法？</p>
@@ -231,7 +285,26 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 </blockquote>
 </li>
 <li class="quiz fill">
+<p><code>HTTP</code>  有哪些状态码？</p>
+<blockquote>
+<ul>
+<li>1xx：  <code>100</code>  -&gt; 服务端已收到请求，请继续发送后续请求；</li>
+<li>2xx：  <code>200</code>  -&gt; 成功响应请求，响应报文中会含有 body 部分； <code>204</code>  -&gt; 成功响应请求，但没有 body； <code>206</code>  -&gt; 响应成功，但返回内容仅是一部分，常用于分块下载、断点续传。</li>
+<li>3xx：  <code>301</code>  -&gt; 资源永久重定向到新地址； <code>302</code>  -&gt; 资源暂时重定向到新地址； <code>304</code>  -&gt; 资源未修改，重定向到缓存地址 ( <code>协商缓存</code> )</li>
+<li>4xx：  <code>400</code>  -&gt; 请求报文有错误； <code>401</code>  -&gt; 没有权限访问该资源； <code>403</code>  -&gt; 没有权限访问该资源，但资源是存在的； <code>404</code>  -&gt; 请求的资源不存在；</li>
+<li>5xx： <code>500</code>  -&gt; 笼统的服务端错误，没有具体指明； <code>501</code>  -&gt; 客服端请求的功能还不支持； <code>502</code>  -&gt; 网关挂了，服务可能是正常的； <code>503</code>  -&gt; 服务器正忙，无法响应；</li>
+<li>更多…</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
 <p><code>HTTP/2</code>  的 <code>多路复用</code> 和  <code>HTTP/1.1</code>  的  <code>keep-alive</code>  的区别</p>
+<blockquote>
+<ol>
+<li><code>多路复用</code>  指的是一个 TCP 连接下可以同时发起多个请求，并且不需要有序响应，不会阻塞请求的响应；</li>
+<li><code>keep-alive</code>  仅是让 TCP 不断开，虽然可以同时发起多个请求，但是请求的响应会有序，会造成阻塞；</li>
+</ol>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p><code>HTTPS</code>  是什么</p>
@@ -251,9 +324,24 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 </li>
 <li class="quiz fill">
 <p><code>HTTPS</code>  的握手过程</p>
+<blockquote>
+<ul>
+<li>握手可以分为五个阶段</li>
+</ul>
+<ol>
+<li>由客户端传递 <code>协议版本号</code> 、一个 <code>随机数</code> 、 <code>支持的加密方法</code> ；</li>
+<li>由服务端确认使用何种 <code>加密方法</code> ，并将 <code>数字证书</code> 、服务端产生的 <code>随机数</code> 传递给客户端；</li>
+<li>客户端确认证书有效后，生成一个 <code>新的随机数</code> 、并使用数字证书中的 <code>公钥</code> 对这个随机数进行加密后传递给服务端；</li>
+<li>服务端使用私钥解密获得随机数，用三个随机数进行计算生成本次会话所需的 <code>会话秘钥</code> ，将协商的加密方法和秘钥发送给客户端、并通知握手结束通知；</li>
+<li>进入会话阶段，通过 <code>会话秘钥</code> 加密全部对话过程；</li>
+</ol>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p><code>HTTPS</code>  的握手过程中，客户端如何验证证书的合法性</p>
+</li>
+<li class="quiz fill">
+<p><code>TLS</code>  是什么？</p>
 </li>
 <li class="quiz fill">
 <p>介绍一下  <code>HTTPS</code>  的中间人攻击</p>
@@ -267,7 +355,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <li class="quiz">
 <p>A、B 机器正常连接后，B 机器突然重启，问 A 此时 处于 TCP 什么状态？</p>
 <ul class="options">
-<li>SYN_SENT</li>
+<li class="correct">SYN_SENT</li>
 <li>SYN_RCVD</li>
 <li>ESTABLISHED</li>
 <li>FIN_WAIT1</li>
@@ -305,7 +393,42 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <p>描述从输入 URL 到页面显示的过程</p>
 </li>
 <li class="quiz fill">
+<p>浏览器有几个进程？ 分别的作用是？</p>
+<blockquote>
+<ol>
+<li>渲染进程 n</li>
+</ol>
+<ul>
+<li>GUI 渲染线程：负责渲染页面 ( <code>解析 HTML</code>  -&gt;  <code>构建 DOM 树</code>  -&gt;  <code>CSSOM 树构建</code>  -&gt;  <code>合成 Render 树</code>  -&gt; 布局、绘制)。 <code>GUI 渲染进程</code>  和  <code>JS 引擎线程</code> 是互斥的，JS 代码执行会阻塞页面的渲染；</li>
+<li>JS 引擎线程：等待任务队列的进入，负责解析 JS 代码，JS 的执行；与  <code>GUI 渲染线程</code>  互斥，会在异步宏任务之间询问是否需要调用  <code>GUI 渲染线程</code> ；</li>
+<li>计时器线程： <code>setTimeout</code>  和  <code>setInterval</code>  计时的线程，计时结束后会将回调任务通过 <code>事件触发线程</code> 放入任务队列，等待  <code>JS 引擎线程</code> 调用；</li>
+<li>事件触发线程：负责维护事件任务队列；</li>
+<li>HTTP 请求线程：负责发起请求，若有回调任务则会通过 <code>事件触发线程</code> 加入到任务队列中，等待执行；</li>
+</ul>
+<ol start="2">
+<li>GPU 进程 1</li>
+<li>网络进程 1</li>
+<li>插件进程 n</li>
+<li>浏览器进程 1</li>
+</ol>
+<ul>
+<li>浏览器的界面显示，管理页签、管理进程，将页面内容写入内存，渲染图像，文件存储；</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>浏览器的渲染进程里，有什么线程？</p>
+</li>
+<li class="quiz fill">
 <p>浏览器一帧内做了什么</p>
+<blockquote>
+<ul>
+<li>主线程的一帧：</li>
+<li>-&gt;  <code>Input Event</code>  -&gt;  <code>JS Task</code>  -&gt;  <code>Begin Frame</code>  -&gt;  <code>RAF</code>  -&gt;  <code>Layout</code>  -&gt;  <code>Paint</code>  -&gt;  <code>RIC</code>  -&gt;</li>
+<li><code>Input Event</code> ：用户输入事件</li>
+<li><code>JS Task</code> ：同步代码</li>
+</ul>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p>描述一下浏览器的事件机制</p>
@@ -321,9 +444,21 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 </li>
 <li class="quiz fill">
 <p><code>MessageChannel</code>  和  <code>window.postMessage</code> </p>
+<blockquote>
+<ul>
+<li>MessageChannel 是主线程异步执行，Window.postMessage 是 web Worker 进程</li>
+</ul>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p>如何进行跨页签通信？</p>
+<blockquote>
+<ul>
+<li><code>Web Worker</code> : window.postMessage</li>
+<li><code>MessageChannel</code></li>
+<li><code>webSocket</code> ：借助服务器</li>
+</ul>
+</blockquote>
 </li>
 </ol>
 
@@ -340,7 +475,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-02-28 06:26:00" itemprop="dateModified" datetime="2023-02-28T06:26:00+00:00">2023-02-28</time>
+    <time title="修改时间：2023-03-08 09:09:19" itemprop="dateModified" datetime="2023-03-08T09:09:19+00:00">2023-03-08</time>
   </span>
   <span id="posts/50daec4.html" class="item leancloud_visitors" data-flag-title="网络" title="阅读次数">
       <span class="icon">
@@ -380,7 +515,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
     <div class="item left">
       
 
-  <a href="/v-blog/posts/4a322b5b.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(91).webp" title="React">
+  <a href="/v-blog/posts/4a322b5b.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(5).webp" title="React">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Quetions</span>
   <h3>React</h3>
@@ -390,7 +525,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
     <div class="item right">
       
 
-  <a href="/v-blog/posts/764f33bc.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(97).webp" title="工程化">
+  <a href="/v-blog/posts/764f33bc.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(9).webp" title="工程化">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Quetions</span>
   <h3>工程化</h3>
@@ -416,7 +551,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/v-blog/posts/4a322b5b.html" rel="bookmark" title="React">React</a></li><li class="active"><a href="/v-blog/posts/50daec4.html" rel="bookmark" title="网络">网络</a></li><li><a href="/v-blog/posts/b7e144d1.html" rel="bookmark" title="算法">算法</a></li><li><a href="/v-blog/posts/764f33bc.html" rel="bookmark" title="工程化">工程化</a></li><li><a href="/v-blog/posts/cc1b9611.html" rel="bookmark" title="JavaScript">JavaScript</a></li>
+          <li><a href="/v-blog/posts/4a322b5b.html" rel="bookmark" title="React">React</a></li><li class="active"><a href="/v-blog/posts/50daec4.html" rel="bookmark" title="网络">网络</a></li><li><a href="/v-blog/posts/b7e144d1.html" rel="bookmark" title="算法">算法</a></li><li><a href="/v-blog/posts/764f33bc.html" rel="bookmark" title="工程化">工程化</a></li><li><a href="/v-blog/posts/cc1b9611.html" rel="bookmark" title="JavaScript">JavaScript</a></li><li><a href="/v-blog/posts/ee69e452.html" rel="bookmark" title="CSS">CSS</a></li><li><a href="/v-blog/posts/2eec1551.html" rel="bookmark" title="HTML">HTML</a></li><li><a href="/v-blog/posts/f8e09374.html" rel="bookmark" title="Vue">Vue</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -430,7 +565,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <nav class="state">
     <div class="item posts">
       <a href="/v-blog/archives/">
-        <span class="count">20</span>
+        <span class="count">24</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -524,7 +659,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
 </div>
 
-    <span><a href="/v-blog/posts/5c1a1e7b.html" title="JS 中的继承">JS 中的继承</a></span>
+    <span><a href="/v-blog/posts/4c3fd2b0.html" title="JS 中的数据类型">JS 中的数据类型</a></span>
   </li>
 
       
@@ -534,7 +669,28 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
 </div>
 
-    <span><a href="/v-blog/posts/4a322b5b.html" title="React">React</a></span>
+    <span><a href="/v-blog/posts/764f33bc.html" title="工程化">工程化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/v-blog/posts/0.html" title="未命名">未命名</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/v-blog/posts/4e4316ec.html" title="React Fiber 是什么？">React Fiber 是什么？</a></span>
   </li>
 
       
@@ -553,12 +709,12 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/v-blog/categories/react/" title="分类于 React">React</a>
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
 <i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/react/%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/" title="分类于 开发实践">开发实践</a>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
 </div>
 
-    <span><a href="/v-blog/posts/33bad1c2.html" title="React全局状态管理 - Redux">React全局状态管理 - Redux</a></span>
+    <span><a href="/v-blog/posts/ea276d7c.html" title="React 的生命周期">React 的生命周期</a></span>
   </li>
 
       
@@ -568,19 +724,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
 </div>
 
-    <span><a href="/v-blog/posts/764f33bc.html" title="工程化">工程化</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/javascripts/vue/" title="分类于 Vue">Vue</a>
-</div>
-
-    <span><a href="/v-blog/posts/217af96f.html" title="Vue Router 食用指南">Vue Router 食用指南</a></span>
+    <span><a href="/v-blog/posts/cc1b9611.html" title="JavaScript">JavaScript</a></span>
   </li>
 
       
@@ -590,7 +734,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
 </div>
 
-    <span><a href="/v-blog/posts/4c3fd2b0.html" title="JS 中的数据类型">JS 中的数据类型</a></span>
+    <span><a href="/v-blog/posts/bf1b3050.html" title="一个具有并发特性的异步任务调度工具">一个具有并发特性的异步任务调度工具</a></span>
   </li>
 
       
@@ -612,19 +756,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
 <a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
 </div>
 
-    <span><a href="/v-blog/posts/50daec4.html" title="网络">网络</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
-</div>
-
-    <span><a href="/v-blog/posts/acf427af.html" title="离开回调地狱，进入 Promise 时代">离开回调地狱，进入 Promise 时代</a></span>
+    <span><a href="/v-blog/posts/4a322b5b.html" title="React">React</a></span>
   </li>
 
   </ul>
@@ -649,13 +781,13 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">79k 字</span>
+    <span title="站点总字数">91k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:12</span>
+    <span title="站点阅读时长">1:23</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

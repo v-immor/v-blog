@@ -76,7 +76,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>5.9k</span>
+    <span>7.3k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -84,7 +84,7 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>5 分钟</span>
+    <span>7 分钟</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ Vision = 开发随笔 = ~~仗键行码~~</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(23).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(31).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(51).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(37).webp"></li>
+          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(1).webp"></li>
           <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(89).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(7).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(2).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(48).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(79).webp"></li>
-          <li class="item" data-background-image="https://gitee.com/zkz0/image/raw/master/img/img(73).webp"></li>
         </ul>
       </div>
     </header>
@@ -315,6 +315,16 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 </li>
 <li class="quiz fill">
 <p>React  <code>class 组件</code>  和  <code>Hook 组件</code>  的区别</p>
+<blockquote>
+<ul>
+<li>从语法来看， <code>class</code>  需要继承  <code>React.Component</code> ， <code>Hook</code>  则不需要。</li>
+<li>从代码执行角度来看， <code>class</code>  的运行逻辑没有  <code>Hook</code>  清晰， <code>class</code>  通过生命周期钩子实现，需要了解生命周期钩子的作用及含义，还需要关注  <code>this</code>  指针问题。 <code>Hook</code>  则是纯函数实现方式，不需要关注生命周期的执行，不需要考虑  <code>this</code> 。</li>
+<li>从  <code>React</code>  的设计理念来看， <code>Hook</code>  更加符合  <code>UI=Fn(data)</code>  的理念。</li>
+<li>从  <code>React</code>  运行逻辑来看， <code>class</code>  需要进行实例化， <code>Hook</code>  运行完便可回收。 <code>Hook</code>  在内存上会更加节省一些。</li>
+<li>从  <code>React</code>  的特性来看， <code>class</code>  组件使用  <code>state</code>  只需要定义在  <code>this</code>  上即可使用， <code>Hook</code>  则需要通过  <code>useState</code>  钩子来实现状态。</li>
+<li><strong>函数式组件天然可以捕获渲染时的所使用的值</strong>。</li>
+</ul>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p>setState 是同步的还是异步的</p>
@@ -385,6 +395,17 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 <li class="quiz fill">
 <p><code>React.Fragment</code>  的原理</p>
 </li>
+<li class="quiz fill">
+<p><code>React</code>  如何做 <code>时间切片</code> </p>
+<blockquote>
+<ul>
+<li>判断当前循环中已经执行了多少秒，如果低于  <code>5ms</code>  就继续下一个任务，不切片，如果大于  <code>5ms</code>  则进行切片，中断任务执行；</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p><code>useSyncExternalStore</code>  的作用及原理</p>
+</li>
 </ol>
 <h2 id="react-应用"><a class="markdownIt-Anchor" href="#react-应用">#</a> React 应用</h2>
 <ol>
@@ -396,6 +417,11 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 </li>
 <li class="quiz fill">
 <p>hook 为什么不能放在条件语句中</p>
+<blockquote>
+<ul>
+<li>因为  <code>Hooks</code>  基于链表数据结构实现的，在 React 进行遍历时，当前处理的 hook 指针是按序依次更新的，如果 hook 在条件语句中使用就会出现指针错误，找不到或找到错误的 hook 进行处理；</li>
+</ul>
+</blockquote>
 </li>
 </ol>
 <h2 id="react-技术生态"><a class="markdownIt-Anchor" href="#react-技术生态">#</a> React 技术生态</h2>
@@ -456,6 +482,12 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 </li>
 <li class="quiz fill">
 <p><code>useSelector</code>  的原理</p>
+<blockquote>
+<ol>
+<li><code>useSelector</code>  直接订阅了  <code>store</code>  的变化，在  <code>Redux</code>  更新中， <code>store</code>  是不断变化的，但内部 state 的引用只会在相应  <code>state</code>  发生变化时才会更新，所以  <code>useSelector</code>  的第一个参数是一个筛选函数，用于订阅具体的  <code>state</code> ，仅当订阅的旧  <code>state</code>  和筛选函数返回的新  <code>state</code>  不同时才会进行触发视图的更新，第二个参数则是一个更具体的比较函数，当返回 true 才会更新，类似于  <code>shouldComponentUpdate</code>  的作用。</li>
+<li><code>useSelector</code>  的更新，早期使用  <code>forceRender</code>  实现，现在使用  <code>useSyncExternalStore</code>  实现，避免因为  <code>React</code>  自身的调度更新导致状态不一致；</li>
+</ol>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p><code>redux-thunk</code>  和  <code>react-saga</code>  的区别</p>
@@ -469,15 +501,39 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 </li>
 <li class="quiz fill">
 <p><code>Redux</code>  和  <code>Mobx</code>  的区别是什么，使用场景</p>
+<blockquote>
+<ol>
+<li><code>Redux</code>  基于  <code>发布-订阅</code>  模式，走的是单向数据流，store 唯一，数据不可变；</li>
+<li><code>Mobx</code>  基于  <code>观察者</code>  模式，采用的是双向数据流，store 可以多个，数据是可变的；</li>
+<li><code>Redux</code>  需要手动追踪数据的变化，也能对数据变化进行追踪和追溯， <code>Mobx</code>  则只需对数据变化进行观察，在变化时触发监听，数据变化不好追溯；</li>
+<li><code>Redux</code>  处理异步时，需要借助中间件增强  <code>Action</code> ， <code>Mobx</code>  则天然可支持异步处理；</li>
+</ol>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p>原子状态库的原理是什么？</p>
 </li>
 <li class="quiz fill">
 <p>原子类状态库和  <code>Redux</code> 、 <code>Mobx</code>  等状态库有什么区别</p>
+<blockquote>
+<ol>
+<li>原子类状态库和  <code>Redux</code>  的核心原理都是  <code>发布-订阅</code>  模式， <code>Mobx</code>  则采用 <code>观察者</code> 模式实现；</li>
+<li>原子类状态库的基本理念是细粒度更新、扁平化分散管理、可追溯， <code>Redux</code>  的基本理念是单向数据流、集中管理、可追溯， <code>Mobx</code>  的基本理念是衍生、响应式、可观察；</li>
+</ol>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p><code>React-Query</code>  的原理是什么？</p>
+<blockquote>
+<blockquote>
+<p><code>React-Query</code>  是一个以  <code>hook</code>  的方式管理请求的请求管理库（Server State）。</p>
+</blockquote>
+<ol>
+<li><code>React-Query</code>  的本质是一个外部的状态管理器，类似于  <code>Redux</code> 、 <code>Mobx</code> ，不同的是它集成了与服务端请求的状态处理，并提供给开发者使用；</li>
+<li><code>React-Query</code>  使用了 <code>观察者</code> 模式去桥接  <code>React</code>  和状态库的数据变化  <code>useState(() =&gt; new Observer(queryClient, options))</code> ；</li>
+<li><code>React-Query</code>  通过  <code>cache</code>  的变化通知订阅者执行回调来进行更新，在 v3 版本使用的是 forceUpDate 强制更新，v4 使用  <code>useSyncExternalStore</code>  来订阅  <code>Observer</code>  的变化</li>
+</ol>
+</blockquote>
 </li>
 <li class="quiz fill">
 <p>什么是 <code>状态持久化</code> （数据持久化）？</p>
@@ -487,7 +543,7 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 <blockquote>
 <ol>
 <li>在服务端调用  <code>renderString</code>  将组件和数据输出为  <code>HTML</code>  字符串，将这部分视图先交给浏览器进行渲染。</li>
-<li>在服务端通过在全局变量挂载服务端发生的状态变化，在客户端进行 <code>水合</code> 后更新页面，让客户端和服务端的状态保持一致。</li>
+<li>在服务端通过在全局变量挂载服务端发生的状态变化，在客户端进行  <code>hydrate - 水合</code> 后更新页面，让客户端和服务端的状态保持一致。</li>
 </ol>
 </blockquote>
 </li>
@@ -532,7 +588,7 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-02-28 06:26:00" itemprop="dateModified" datetime="2023-02-28T06:26:00+00:00">2023-02-28</time>
+    <time title="修改时间：2023-03-08 09:09:19" itemprop="dateModified" datetime="2023-03-08T09:09:19+00:00">2023-03-08</time>
   </span>
   <span id="posts/4a322b5b.html" class="item leancloud_visitors" data-flag-title="React" title="阅读次数">
       <span class="icon">
@@ -572,7 +628,7 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
     <div class="item left">
       
 
-  <a href="/v-blog/posts/bf1b3050.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(39).webp" title="一个具有并发特性的异步任务调度工具">
+  <a href="/v-blog/posts/bf1b3050.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(67).webp" title="一个具有并发特性的异步任务调度工具">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> JavaScript</span>
   <h3>一个具有并发特性的异步任务调度工具</h3>
@@ -582,7 +638,7 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
     <div class="item right">
       
 
-  <a href="/v-blog/posts/50daec4.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(87).webp" title="网络">
+  <a href="/v-blog/posts/50daec4.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;zkz0&#x2F;image&#x2F;raw&#x2F;master&#x2F;img&#x2F;img(79).webp" title="网络">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Quetions</span>
   <h3>网络</h3>
@@ -608,7 +664,7 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li class="active"><a href="/v-blog/posts/4a322b5b.html" rel="bookmark" title="React">React</a></li><li><a href="/v-blog/posts/50daec4.html" rel="bookmark" title="网络">网络</a></li><li><a href="/v-blog/posts/b7e144d1.html" rel="bookmark" title="算法">算法</a></li><li><a href="/v-blog/posts/764f33bc.html" rel="bookmark" title="工程化">工程化</a></li><li><a href="/v-blog/posts/cc1b9611.html" rel="bookmark" title="JavaScript">JavaScript</a></li>
+          <li class="active"><a href="/v-blog/posts/4a322b5b.html" rel="bookmark" title="React">React</a></li><li><a href="/v-blog/posts/50daec4.html" rel="bookmark" title="网络">网络</a></li><li><a href="/v-blog/posts/b7e144d1.html" rel="bookmark" title="算法">算法</a></li><li><a href="/v-blog/posts/764f33bc.html" rel="bookmark" title="工程化">工程化</a></li><li><a href="/v-blog/posts/cc1b9611.html" rel="bookmark" title="JavaScript">JavaScript</a></li><li><a href="/v-blog/posts/ee69e452.html" rel="bookmark" title="CSS">CSS</a></li><li><a href="/v-blog/posts/2eec1551.html" rel="bookmark" title="HTML">HTML</a></li><li><a href="/v-blog/posts/f8e09374.html" rel="bookmark" title="Vue">Vue</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -622,7 +678,7 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 <nav class="state">
     <div class="item posts">
       <a href="/v-blog/archives/">
-        <span class="count">20</span>
+        <span class="count">24</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -715,30 +771,10 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 <div class="breadcrumb">
 <a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
 <i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
+<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
 </div>
 
-    <span><a href="/v-blog/posts/649c58d0.html" title="基于 Promise A+ 实现 Promise">基于 Promise A+ 实现 Promise</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
-</div>
-
-    <span><a href="/v-blog/posts/764f33bc.html" title="工程化">工程化</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
-</div>
-
-    <span><a href="/v-blog/posts/3c6f1dc0.html" title="JS 中的函数">JS 中的函数</a></span>
+    <span><a href="/v-blog/posts/4e4316ec.html" title="React Fiber 是什么？">React Fiber 是什么？</a></span>
   </li>
 
       
@@ -762,17 +798,26 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 <a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
 </div>
 
-    <span><a href="/v-blog/posts/acf427af.html" title="离开回调地狱，进入 Promise 时代">离开回调地狱，进入 Promise 时代</a></span>
+    <span><a href="/v-blog/posts/649c58d0.html" title="基于 Promise A+ 实现 Promise">基于 Promise A+ 实现 Promise</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
 </div>
 
-    <span><a href="/v-blog/posts/4c3fd2b0.html" title="JS 中的数据类型">JS 中的数据类型</a></span>
+    <span><a href="/v-blog/posts/ee69e452.html" title="CSS">CSS</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/v-blog/posts/0.html" title="未命名">未命名</a></span>
   </li>
 
       
@@ -781,10 +826,44 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 <div class="breadcrumb">
 <a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
 <i class="ic i-angle-right"></i>
-<a href="/v-blog/categories/javascripts/react/" title="分类于 React">React</a>
+<a href="/v-blog/categories/javascripts/vue/" title="分类于 Vue">Vue</a>
 </div>
 
-    <span><a href="/v-blog/posts/1e1dcd8.html" title="React 的原理导读">React 的原理导读</a></span>
+    <span><a href="/v-blog/posts/217af96f.html" title="Vue Router 食用指南">Vue Router 食用指南</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/javascripts/Promise/" title="分类于 Promise">Promise</a>
+</div>
+
+    <span><a href="/v-blog/posts/c321570b.html" title="Promise 中的方法实现">Promise 中的方法实现</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/react/" title="分类于 React">React</a>
+<i class="ic i-angle-right"></i>
+<a href="/v-blog/categories/react/%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/" title="分类于 开发实践">开发实践</a>
+</div>
+
+    <span><a href="/v-blog/posts/33bad1c2.html" title="React全局状态管理 - Redux">React全局状态管理 - Redux</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/v-blog/categories/javascripts/" title="分类于 JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/v-blog/posts/41a9f2c1.html" title="JS 中的执行环境与作用域链">JS 中的执行环境与作用域链</a></span>
   </li>
 
       
@@ -795,26 +874,6 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
 </div>
 
     <span><a href="/v-blog/posts/cc1b9611.html" title="JavaScript">JavaScript</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
-</div>
-
-    <span><a href="/v-blog/posts/4a322b5b.html" title="React">React</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/v-blog/categories/Quetions/" title="分类于 Quetions">Quetions</a>
-</div>
-
-    <span><a href="/v-blog/posts/b7e144d1.html" title="算法">算法</a></span>
   </li>
 
   </ul>
@@ -839,13 +898,13 @@ React 中的 Fiber 是一个 <code>多环的链表结构</code> ，链表的结�
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">79k 字</span>
+    <span title="站点总字数">91k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:12</span>
+    <span title="站点阅读时长">1:23</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

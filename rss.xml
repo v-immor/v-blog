@@ -5,14 +5,121 @@
         <link>https://v-immor.github.io/v-blog</link>
         <description>~虚拟建设者~</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 24 Feb 2023 23:04:24 +0000</pubDate>
-        <lastBuildDate>Fri, 24 Feb 2023 23:04:24 +0000</lastBuildDate>
+        <pubDate>Wed, 08 Mar 2023 09:09:19 +0000</pubDate>
+        <lastBuildDate>Wed, 08 Mar 2023 09:09:19 +0000</lastBuildDate>
         <category>JS 基础</category>
         <category>Promise</category>
         <category>原理</category>
         <category>面试</category>
         <category>React</category>
         <category>Vue</category>
+        <item>
+            <guid isPermalink="true">https://v-immor.github.io/v-blog/posts/0.html</guid>
+            <title></title>
+            <link>https://v-immor.github.io/v-blog/posts/0.html</link>
+            <pubDate>Wed, 08 Mar 2023 09:09:19 +0000</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://v-immor.github.io/v-blog/posts/f8e09374.html</guid>
+            <title>Vue</title>
+            <link>https://v-immor.github.io/v-blog/posts/f8e09374.html</link>
+            <category>面试</category>
+            <pubDate>Sun, 05 Mar 2023 16:10:00 +0000</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;vue-原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vue-原理&#34;&gt;#&lt;/a&gt; Vue 原理&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;Vue&lt;/code&gt;  是什么？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;Vue&lt;/code&gt;  的生命周期&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;Vue&lt;/code&gt;  为什么推荐使用 &lt;code&gt;模版语法&lt;/code&gt; &lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;Vue&lt;/code&gt;  的 Diff 原理&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;Vue&lt;/code&gt;  如何处理事件绑定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;``&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://v-immor.github.io/v-blog/posts/ee69e452.html</guid>
+            <title>CSS</title>
+            <link>https://v-immor.github.io/v-blog/posts/ee69e452.html</link>
+            <category>面试</category>
+            <pubDate>Fri, 03 Mar 2023 14:34:00 +0000</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基础&#34;&gt;#&lt;/a&gt; 基础&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;什么是  &lt;code&gt;BFC&lt;/code&gt; ？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;css3&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css3&#34;&gt;#&lt;/a&gt; CSS3&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;描述一下  &lt;code&gt;flex&lt;/code&gt;  及常用的属性含义&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://v-immor.github.io/v-blog/posts/2eec1551.html</guid>
+            <title>HTML</title>
+            <link>https://v-immor.github.io/v-blog/posts/2eec1551.html</link>
+            <category>面试</category>
+            <pubDate>Fri, 03 Mar 2023 14:34:00 +0000</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基础&#34;&gt;#&lt;/a&gt; 基础&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;DOCTYPE&lt;/code&gt;  是什么？HTML4 和 HTML5 的  &lt;code&gt;DOCTYPE&lt;/code&gt;  有什么区别？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;HTML  &lt;code&gt;语义化&lt;/code&gt;  的理解&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;前端页面有哪些组成部分？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;结构层&lt;/code&gt; 、 &lt;code&gt;表示层&lt;/code&gt; 、 &lt;code&gt;行为层&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;块级元素和行内元素有什么区别，都有哪些？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;SEO 中的  &lt;code&gt;TDK&lt;/code&gt;  是什么？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;title、description、key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;img 上的  &lt;code&gt;title&lt;/code&gt;  和  &lt;code&gt;alt&lt;/code&gt;  有什么区别&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;src&lt;/code&gt;  和  &lt;code&gt;href&lt;/code&gt;  有什么区别&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;H5 和 HTML5 有什么区别&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;H5&lt;/code&gt;  一般指的是使用 HTML5、CSS3 的移动端网页应用；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HTML&lt;/code&gt;  指的是 HTML 第 5 版标准；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;html5&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#html5&#34;&gt;#&lt;/a&gt; HTML5&lt;/h2&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://v-immor.github.io/v-blog/posts/cc1b9611.html</guid>
             <title>JavaScript</title>
@@ -69,6 +176,17 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;bind&lt;/code&gt; 、 &lt;code&gt;call&lt;/code&gt; 、 &lt;code&gt;apply&lt;/code&gt;  的原理和实现&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;三者的本质都是通过改变 this 的指向来借用函数，不同的是  &lt;code&gt;bind&lt;/code&gt;  是返回一个待调用的函数， &lt;code&gt;call&lt;/code&gt;  和  &lt;code&gt;apply&lt;/code&gt;  返回的是执行结果&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bind&lt;/code&gt; 、 &lt;code&gt;call&lt;/code&gt; 、 &lt;code&gt;apply&lt;/code&gt;  的第一个参数都是 &lt;code&gt;借用方&lt;/code&gt; ，也就是函数执行时 this 的指向；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bind&lt;/code&gt;  除了第一个参数外，剩余的参数会依次作为被借函数的入参，返回的函数的入参的顺序会在  &lt;code&gt;bind&lt;/code&gt;  参数的后续依次入参；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;call&lt;/code&gt;  除了第一个参数外，剩余的参数会依次作为被借函数的入参；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;apply&lt;/code&gt;  的第二个参数是一个类数组，参数会按序作为被借用函数的入参；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;bind&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;context&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; ctx &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; context &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; fn &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Symbol&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  ctx&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;fn&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; args &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arguments&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; ctx&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;fn&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;arguments&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;call&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;context&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; ctx &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; context &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; window&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; fn &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Symbol&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  ctx&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;fn&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; res &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ctx&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;fn&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;arguments&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;delete&lt;/span&gt; ctx&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;fn&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; res&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;apply&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;context&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; args&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; ctx &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; context &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; window&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; symbol &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Symbol&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  ctx&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;symbol&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; res &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ctx&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;symbol&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;delete&lt;/span&gt; ctx&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;symbol&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; res&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;什么是原型，什么是原型链？&lt;/p&gt;
@@ -80,10 +198,13 @@
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
-&lt;p&gt;什么是闭包？&lt;/p&gt;
+&lt;p&gt;什么是闭包？有什么应用场景？&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;闭包是指在函数内使用了非函数内的变量，导致这个变量无法在其作用域销毁时销毁的现象。&lt;/li&gt;
+&lt;li&gt;即使是创建这个变量上下文已经销毁，但这个变量它依旧存在内存中，这种现象就是 &lt;code&gt;闭包&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;在代码中引用了自由变量也会造成闭包现象。&lt;/li&gt;
+&lt;li&gt;在闭包现象中，上下文的销毁时，它的 &lt;code&gt;活动变量(AO)&lt;/code&gt;  不一定会从作用域链中移除，所以闭包函数可以通过作用域链访问到这个变量；&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
@@ -92,6 +213,7 @@
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;typeof&lt;/code&gt;  判断的是对象在内存上的存储类型， &lt;code&gt;instanceOf&lt;/code&gt;  判断的是原型链上的原型。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;typeof&lt;/code&gt;  只能判断除  &lt;code&gt;null&lt;/code&gt;  外的基本数据类型和  &lt;code&gt;object&lt;/code&gt; 、 &lt;code&gt;function&lt;/code&gt; ，无法判断实例的原型， &lt;code&gt;instanceOf&lt;/code&gt;  不能判断  &lt;code&gt;number&lt;/code&gt; 、 &lt;code&gt;string&lt;/code&gt; 、 &lt;code&gt;boolean&lt;/code&gt;  类型，可以判断实例的原型，可以区分  &lt;code&gt;Array&lt;/code&gt;  和  &lt;code&gt;Object&lt;/code&gt; 。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
@@ -105,9 +227,27 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;this&lt;/code&gt;  是什么？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;this&lt;/code&gt;  是函数执行的主体，如果将最外层当成一个  &lt;code&gt;main&lt;/code&gt;  函数来看，那  &lt;code&gt;main&lt;/code&gt;  的主体就是  &lt;code&gt;window&lt;/code&gt;  或者是  &lt;code&gt;global&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;总的来说就是谁调用的函数  &lt;code&gt;this&lt;/code&gt;  就会指向谁，箭头函数除外。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;描述 JS 的事件循环？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;哪些任务是宏任务？哪些事件是微任务？宏任务和微任务的区别&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;setTimeout&lt;/code&gt; 、 &lt;code&gt;setInterval&lt;/code&gt; 、 &lt;code&gt;setImmediate&lt;/code&gt; 、 &lt;code&gt;requestAnimationFrame&lt;/code&gt; 、 &lt;code&gt;requestIdleCallback&lt;/code&gt; 、 &lt;code&gt;MessageChannel&lt;/code&gt;  属于宏任务， &lt;code&gt;Promise.then&lt;/code&gt; 、 &lt;code&gt;MutationObserver&lt;/code&gt; 、 &lt;code&gt;process.nextTick&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;宏任务是在事件循环的起始执行的，微任务是在循环的末尾执行；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setTimeout&lt;/code&gt; / &lt;code&gt;setInterval&lt;/code&gt;  创建的宏任务，有一个最短 4ms 的延迟，也就是两个循环之间最短时间是 4ms；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;requestAnimationFrame&lt;/code&gt;  是浏览器按帧执行的，约为 16.6ms，若页签处于后台时，不更新帧则不会执行；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;requestIdleCallback&lt;/code&gt;  仅在浏览器渲染执行完还有剩余时间时会执行，没有时间则不执行；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;为什么 &lt;strong&gt;for&lt;/strong&gt; 循环的性能比 &lt;strong&gt;forEach&lt;/strong&gt; 高？&lt;/p&gt;
@@ -169,18 +309,45 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;实现一个  &lt;code&gt;Promise&lt;/code&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;FULFILLED&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;fulfilled&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;REJECTED&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;rejected&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;PENDING&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;pending&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;scheduleCallBack&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function&#34;&gt;setTimeout&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;task&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;resolvePromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;promise&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; promise&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;TypeError&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Chaining cycle detected for promise&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;typeof&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;object&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;typeof&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;function&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; executed &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; then &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;then&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;typeof&lt;/span&gt; then &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;function&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;call&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;executed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            executed &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token function&#34;&gt;resolvePromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;promise&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;executed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            executed &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;e&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;executed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      executed &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IPromise&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  status &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;PENDING&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  value &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  reason &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  fulfilledCallbacks &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  rejectedCallbacks &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function&#34;&gt;constructor&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;exec&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;status &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;PENDING&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;reason &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;57&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;58&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fulfilledCallbacks &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;59&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;rejectedCallbacks &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;60&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;61&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; that &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;62&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;63&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;64&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;value &lt;span class=&#34;token keyword&#34;&gt;instanceof&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IPromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;65&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        value&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;66&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;67&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;68&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;that&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;status &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;PENDING&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;69&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        that&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; value&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;70&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        that&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;status &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;FULFILLED&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;71&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        that&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fulfilledCallbacks&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;forEach&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;cb&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;cb&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;72&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;73&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;74&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;75&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;reason&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;76&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;that&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;status &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;PENDING&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;77&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        that&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;reason &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; reason&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;78&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        that&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;status &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;REJECTED&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;79&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        that&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;rejectedCallbacks&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;forEach&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;cb&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;cb&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;80&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;81&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;82&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;83&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;84&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function&#34;&gt;exec&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;85&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;86&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;87&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;88&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;89&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;90&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;onFulfilled&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; onRejected&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;91&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// prettier-ignore&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;92&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    onFulfilled &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;typeof&lt;/span&gt; onFulfilled &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;function&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;onFulfilled&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; value&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;93&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// prettier-ignore&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;94&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    onRejected &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;typeof&lt;/span&gt; onRejected &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;function&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;onRejected&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;throw&lt;/span&gt; e &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;95&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;96&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; promise &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IPromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;97&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;status &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;FULFILLED&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;98&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;scheduleCallBack&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;99&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;100&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;onFulfilled&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;101&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token function&#34;&gt;resolvePromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;promise&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;102&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;103&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;104&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;105&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;106&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;status &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;REJECTED&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;107&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;scheduleCallBack&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;108&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;109&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;onRejected&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;reason&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;110&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token function&#34;&gt;resolvePromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;promise&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;111&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;112&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;113&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;114&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;115&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;116&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fulfilledCallbacks&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;117&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token function&#34;&gt;scheduleCallBack&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;118&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;119&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;onFulfilled&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;120&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              &lt;span class=&#34;token function&#34;&gt;resolvePromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;promise&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;121&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;122&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;123&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;124&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;125&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;126&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;127&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;rejectedCallbacks&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;128&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token function&#34;&gt;scheduleCallBack&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;129&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;130&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;onRejected&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;reason&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;131&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              &lt;span class=&#34;token function&#34;&gt;resolvePromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;promise&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;132&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;133&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;134&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;135&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;136&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;137&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;138&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;139&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;140&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; promise&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;141&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;142&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;实现一下常见的  &lt;code&gt;Promise&lt;/code&gt;  方法&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;race&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;promises&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IPromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; promises&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;length&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;       IPromise&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;promises&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;resolve&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;catch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;all&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;promises&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IPromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; res &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; len &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; promises&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;length&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;       IPromise&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;promises&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         res&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; val&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;len &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; promises&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;length&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;res&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;       &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IPromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;reason&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IPromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;res&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; rej&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rej&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;reason&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;allSettled&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;promises&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IPromise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;resolve&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; res &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; len &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; plen &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; promises&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;length&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; plen&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;       IPromise&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;promises&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           res&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token literal-property property&#34;&gt;status&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;FULFILLED&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token literal-property property&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; val&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           len&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;len &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; plen&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;res&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;reason&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           res&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token literal-property property&#34;&gt;status&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token constant&#34;&gt;REJECTED&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token literal-property property&#34;&gt;reason&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; reason&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           len&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;len &lt;span class=&#34;token operator&#34;&gt;===&lt;/span&gt; plen&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;res&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;       &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;57&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;58&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;59&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;catch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;onRejected&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;60&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; onRejected&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;61&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;62&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;63&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;finally&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;cb&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;64&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;65&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; IPromise&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;resolve&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;cb&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; val&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;66&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;reason&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;67&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;       IPromise&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;reject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;cb&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;68&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;         &lt;span class=&#34;token keyword&#34;&gt;throw&lt;/span&gt; reason&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;69&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;       &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;70&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;71&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;什么是  &lt;code&gt;Proxy&lt;/code&gt; ？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Proxy&lt;/code&gt;  是代理对象，通过在被代理对象上套一层拦截机制，让代理对象进行操作时可以做更多的事情；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Proxy&lt;/code&gt;  是一个构造函数，一个入参是被代理对象，第二个是  &lt;code&gt;handler&lt;/code&gt;  对象，通过拦截对象属性可以提供  &lt;code&gt;13&lt;/code&gt;  种操作的拦截；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;get&lt;/code&gt; 、 &lt;code&gt;set&lt;/code&gt; 、 &lt;code&gt;has&lt;/code&gt; 、 &lt;code&gt;apply&lt;/code&gt; 、 &lt;code&gt;construct&lt;/code&gt; 、 &lt;code&gt;ownKeys&lt;/code&gt; 、 &lt;code&gt;defineProperty&lt;/code&gt; 、 &lt;code&gt;deleteProperty&lt;/code&gt; 、 &lt;code&gt;getPrototypeOf&lt;/code&gt; 、 &lt;code&gt;setPrototypeOf&lt;/code&gt; 、 &lt;code&gt;getOwnPropertyDescriptor&lt;/code&gt; 、 &lt;code&gt;preventExtensions&lt;/code&gt; 、 &lt;code&gt;isExtensible&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;什么是  &lt;code&gt;Reflect&lt;/code&gt; ？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Reflect&lt;/code&gt;  是反射对象，是 JS 的内置对象，提供 JS 对象操作的拦截方法，所有的方法都是静态方法，不能够进行实例化。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Reflect&lt;/code&gt;  通常搭配  &lt;code&gt;Proxy&lt;/code&gt;  一起使用，其内部方法也和  &lt;code&gt;Proxy&lt;/code&gt;  的 hanlder 一一对应，主要是作用域  &lt;code&gt;Proxy&lt;/code&gt;  中的  &lt;code&gt;Receiver&lt;/code&gt;  让  &lt;code&gt;Proxy&lt;/code&gt;  可以正确地处理  &lt;code&gt;Receiver&lt;/code&gt;  的引用，保证代理对象在劫持时可以获取到正确的  &lt;code&gt;this&lt;/code&gt;  指向。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
-&lt;p&gt;&lt;code&gt;Proxy&lt;/code&gt;  和  &lt;code&gt;definePrototype&lt;/code&gt;  的区别&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Proxy&lt;/code&gt;  和  &lt;code&gt;Object.defineProperty&lt;/code&gt;  的区别&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Proxy&lt;/code&gt;  是 ES6 提供对象代理方法， &lt;code&gt;Proxy&lt;/code&gt;  只是将对象进行代理，后续操作都是对代理对象操作进行拦截。对原对象没有变动；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Object.defineProperty&lt;/code&gt;  则是对对象的属性进行拦截，但对象新增的属性是监听不到的，需要对新属性也进行  &lt;code&gt;observer&lt;/code&gt;  处理，比如 array 的 push、unshift 等操作时监听不到新值，或者监听异常的，这是由于 length 的变化导致新的索引没有被监听处理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Proxy&lt;/code&gt;  代理的是整个对象，可以通过  &lt;code&gt;get&lt;/code&gt;  /  &lt;code&gt;set&lt;/code&gt;  等方法劫持所有的一级属性， &lt;code&gt;Object.defineProperty&lt;/code&gt;  监听的是对象本身的属性，需要逐个劫持每个属性；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Proxy&lt;/code&gt;  和  &lt;code&gt;Object.defineProperty&lt;/code&gt;  都只能够劫持对象自身的属性，而不能够深层劫持内部对象的属性，都需要进行递归处理深层对象，才能够完整劫持到全部属性；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;Set&lt;/code&gt; 、 &lt;code&gt;WeakSet&lt;/code&gt; 、 &lt;code&gt;Map&lt;/code&gt; 、 &lt;code&gt;WeakMap&lt;/code&gt;  的区别&lt;/p&gt;
@@ -284,11 +451,34 @@
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;什么是 &lt;code&gt;工程化&lt;/code&gt; ？&lt;/p&gt;
 &lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;import&lt;/code&gt;  和  &lt;code&gt;require&lt;/code&gt;  的区别？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;require&lt;/code&gt;  是  &lt;code&gt;CommonJS&lt;/code&gt;  的标准，引入模块是运行时同步执行的，可以在运行时使用，引入是模块的值拷贝，不会共享模块的变量；搭配的导出语法是 &lt;code&gt;moudle.exports&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;import&lt;/code&gt;  是  &lt;code&gt;ES Module&lt;/code&gt;  的标准，引入模块是编译时异步加载的，早期的版本不允许在运行时调用，引入的是模块的值引用，可以共享模块变量；导出语法是 &lt;code&gt;export&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;npm&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#npm&#34;&gt;#&lt;/a&gt; NPM&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;npm&lt;/code&gt;  的安装流程&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;npm install&lt;/code&gt;  -&amp;gt; 查找  &lt;code&gt;package.json&lt;/code&gt;  -&amp;gt; 获取远程包信息 -&amp;gt; 构建依赖结构 -&amp;gt; 查找缓存 -&amp;gt; 下载远程包 -&amp;gt; 添加到缓存 -&amp;gt; 添加到  &lt;code&gt;node_modules&lt;/code&gt;  -&amp;gt; 生成 / 更新  &lt;code&gt;package-lock.json&lt;/code&gt; ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm install&lt;/code&gt;  -&amp;gt; 比对  &lt;code&gt;package.json&lt;/code&gt;  和  &lt;code&gt;package-lock.json&lt;/code&gt;  -&amp;gt; 查找缓存 -&amp;gt; 添加到  &lt;code&gt;node_modules&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;npm&lt;/code&gt;  如何解决依赖冲突？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在依赖的包中新增  &lt;code&gt;node_modules&lt;/code&gt; ，项目中的依赖优先置于顶层包，其余相同依赖会在对应的包下；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;npm&lt;/code&gt; 、 &lt;code&gt;yarn&lt;/code&gt; 、 &lt;code&gt;pnpm&lt;/code&gt;  的区别&lt;/p&gt;
@@ -338,9 +528,26 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;常用的  &lt;code&gt;loader&lt;/code&gt;  和  &lt;code&gt;plugin&lt;/code&gt;  有哪些？他们的作用分别是什么？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;loader： &lt;code&gt;css-loader&lt;/code&gt; 、 &lt;code&gt;style-loader&lt;/code&gt; 、 &lt;code&gt;less-loader&lt;/code&gt; 、 &lt;code&gt;sass-loader&lt;/code&gt; 、 &lt;code&gt;jsx-loader&lt;/code&gt; 、 &lt;code&gt;image-loader&lt;/code&gt; 、 &lt;code&gt;thread-loader&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;plugin:  &lt;code&gt;html-webpack-plugin&lt;/code&gt; 、 &lt;code&gt;mini-css-extract-plugin&lt;/code&gt; 、 &lt;code&gt;copy-webpack-plugin&lt;/code&gt; 、 &lt;code&gt;happypack&lt;/code&gt; 、 &lt;code&gt;commons-chunk-plugin&lt;/code&gt; 、 &lt;code&gt;hot-module-replacement-plugin&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;描述  &lt;code&gt;Webpack&lt;/code&gt;  的 &lt;code&gt;热更新&lt;/code&gt; 原理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;webpack 的热更新是由  &lt;code&gt;hot-module-replacement-plugin&lt;/code&gt;  提供能力，在 webpackV5 时内置为 module.hot 上；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;HMR&lt;/code&gt;  提供了  &lt;code&gt;HMR Server&lt;/code&gt;  和  &lt;code&gt;HMR runtime&lt;/code&gt;  两个部分；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HMR Server&lt;/code&gt;  部分是  &lt;code&gt;webpack-dev-middleware&lt;/code&gt;  开发服务器的中间件。通过监听  &lt;code&gt;webpack&lt;/code&gt;  的  &lt;code&gt;compiler done&lt;/code&gt;  将编译后的模块新 hash 通过  &lt;code&gt;websocket&lt;/code&gt;  发送给浏览器的  &lt;code&gt;HMR runtime&lt;/code&gt;  部分进行 hash 比较后，若不一致则通过模块新 hash 请求  &lt;code&gt;manifest&lt;/code&gt;  文件确认模块变更的范围列表，再请求对应的 &lt;code&gt;[hash].hot-update.js&lt;/code&gt; ，再进行替换和执行；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HMR runtime&lt;/code&gt;  会执行  &lt;code&gt;module.hot.accept&lt;/code&gt;  的回调函数进行热替换，所以在需要热替换的 JS 需要手动添加  &lt;code&gt;module.hot.accept&lt;/code&gt;  逻辑。通常只需要在应用入口进行添加就够用了。对于样式文件，在 loader 中已经添加了  &lt;code&gt;module.hot.accept&lt;/code&gt;  逻辑，所以只需添加相应的 loader 也会开启热替换的功能；&lt;/li&gt;
+&lt;li&gt;如果在模块替换或者执行的时候出现了意外，就会用 reload 兜底，刷新整个页面&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;什么是 &lt;code&gt;联邦模块&lt;/code&gt; ？&lt;/p&gt;
@@ -376,6 +583,49 @@
 &lt;p&gt;&lt;code&gt;Rollup&lt;/code&gt;  常用的插件&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;微前端&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#微前端&#34;&gt;#&lt;/a&gt; 微前端&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;JS 沙箱&lt;/code&gt;  的实现方式有几种，原理是？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;iframe  &lt;code&gt;sandbox&lt;/code&gt; ,  &lt;code&gt;contentWindow&lt;/code&gt;  天然沙箱，iframe 必须同域才能够使用 contentWindow 属性&lt;/li&gt;
+&lt;li&gt;with + new Function 代理沙箱&lt;/li&gt;
+&lt;li&gt;快照沙箱，在运行时将 window 对象进行一个快照拷贝，将 window 上所有的属性复制到快照对象上，当子应用卸载时，将当前 window 对象与快照对象进行 diff ，将变更的属性使用 map 保存起来，便于下一次挂载时再次进行还原。通过  &lt;code&gt;Proxy&lt;/code&gt;  也能够监听到属性修改，用  &lt;code&gt;Proxy&lt;/code&gt;  实现的也叫代理沙箱；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;CSS  &lt;code&gt;样式隔离&lt;/code&gt;  的实现方式以及原理？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;没有开启  &lt;code&gt;shadowDOM&lt;/code&gt;  模式下， &lt;code&gt;micro-app&lt;/code&gt;  默认会为每一个样式加上  &lt;code&gt;micro-app[name=xxx]&lt;/code&gt;  的前缀作为样式隔离；&lt;/li&gt;
+&lt;li&gt;可以在  &lt;code&gt;microApp.start()&lt;/code&gt;  中配置全局禁用，也可以在  &lt;code&gt;micro-app&lt;/code&gt;  的  &lt;code&gt;disableScopecss&lt;/code&gt;  属性进行单个应用的禁用。在样式文件中可以通过添加注释  &lt;code&gt;! scopecss-disable&lt;/code&gt;  来禁用单个样式的隔离。&lt;/li&gt;
+&lt;li&gt;开启  &lt;code&gt;shadowDOM&lt;/code&gt;  模式后样式将不进行隔离处理，因为  &lt;code&gt;shadowDOM&lt;/code&gt;  天然隔离样式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;micro-app&lt;/code&gt;  元素隔离原理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;micro-app&lt;/code&gt;  是通过修改  &lt;code&gt;document&lt;/code&gt;  原型链上的  &lt;code&gt;querySelector&lt;/code&gt;  实现的元素隔离，当子应用调用时，会存在  &lt;code&gt;appName&lt;/code&gt; ，则会调用子应用的  &lt;code&gt;querySelector&lt;/code&gt; ，当主应用访问  &lt;code&gt;document&lt;/code&gt;  的属性时，通过拦截将  &lt;code&gt;appName&lt;/code&gt;  置空，从而访问到原始的  &lt;code&gt;querySelector&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;基座应用是可以访问到子应用的元素的，基座应用在没有开启  &lt;code&gt;shadowDOM&lt;/code&gt;  模式下可以访问到所有的元素；&lt;/li&gt;
+&lt;li&gt;在子应用卸载时，元素隔离的解除是异步的，可能会造成渲染异常，可以通过手动调用  &lt;code&gt;window.removeDomScope()&lt;/code&gt;  来解除元素的绑定。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;微前端中应用间的通讯方式&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;通过基座应用的  &lt;code&gt;state&lt;/code&gt;  变化，传递  &lt;code&gt;props&lt;/code&gt;  来更新子应用；&lt;/li&gt;
+&lt;li&gt;通过 &lt;code&gt;发布-订阅&lt;/code&gt; 模式，通过事件订阅来通讯；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MessageChannel&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
@@ -388,6 +638,22 @@
 &lt;ol start=&#34;0&#34;&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;介绍一下  &lt;code&gt;七层网络模型&lt;/code&gt;  和  &lt;code&gt;TCP/IP 四层概念模型&lt;/code&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;七层网络模型&lt;br&gt;
+ &lt;code&gt;应用层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;表示层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;会话层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;传输层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;网络层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;数据链路层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;物理层&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;TCP/IP 概念模型&lt;br&gt;
+ &lt;code&gt;应用层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;传输层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;网络层&lt;/code&gt;  -&amp;gt;  &lt;code&gt;数据链路层&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;各层的代表协议&lt;br&gt;
+应用层：&lt;strong&gt;HTTP、FTP、SMTP&lt;/strong&gt; -&amp;gt; 为网络应用提供服务&lt;br&gt;
+表示层：&lt;strong&gt;Telnet、SNMP&lt;/strong&gt; -&amp;gt; 数据格式化、加解密&lt;br&gt;
+会话层：&lt;strong&gt;SMTP、DNS&lt;/strong&gt; -&amp;gt; 建立 / 维护 / 管理会话连接&lt;br&gt;
+传输层：&lt;strong&gt;TCP、UDP&lt;/strong&gt; -&amp;gt; 建立 / 维护 / 管理端到端的连接&lt;br&gt;
+网络层：&lt;strong&gt;IP、ICMP、ARP&lt;/strong&gt; -&amp;gt; IP 寻址、路由选择&lt;br&gt;
+数据链路层：&lt;strong&gt;PPP、PDN&lt;/strong&gt; -&amp;gt; 控制网络层和物理层之间的通讯&lt;br&gt;
+物理层：&lt;strong&gt;IEEE 802.1A&lt;/strong&gt; -&amp;gt; 比特率传输协议&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;HTTP&lt;/code&gt;  是什么？&lt;/p&gt;
@@ -428,6 +694,44 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;HTTP&lt;/code&gt;  各个版本（1.0、1.1、2.0、3.0）的区别&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP/1.0:&lt;br&gt;
+&lt;strong&gt; 特点：&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;引入  &lt;code&gt;if-Modified-since&lt;/code&gt;  和  &lt;code&gt;expires&lt;/code&gt;  作为缓存；&lt;/li&gt;
+&lt;li&gt;引入了  &lt;code&gt;POST&lt;/code&gt;  和  &lt;code&gt;HEAD&lt;/code&gt;  请求；&lt;/li&gt;
+&lt;li&gt;引入了长连接（keep-alive），可以有序的发起多个请求，但新的请求需要等待上一个请求响应才会发起，所以默认是关闭的；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP/1.1:&lt;br&gt;
+&lt;strong&gt; 特点：&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;默认开启长连接，引入了 &lt;code&gt;管道机制&lt;/code&gt; 可在一个 TCP 连接中同时发出多个请求，但响应依旧是有序响应，所以会有 &lt;code&gt;队头阻塞&lt;/code&gt; 的问题；&lt;/li&gt;
+&lt;li&gt;新增了请求方法： &lt;code&gt;PUT&lt;/code&gt; 、 &lt;code&gt;DELETE&lt;/code&gt; 、 &lt;code&gt;PATCH&lt;/code&gt; 、 &lt;code&gt;OPTIONS&lt;/code&gt; ;&lt;/li&gt;
+&lt;li&gt;通过  &lt;code&gt;Range&lt;/code&gt;  属性实现断点续传；&lt;/li&gt;
+&lt;li&gt;新增了缓存机制的失效控制字段： &lt;code&gt;E-tag&lt;/code&gt; 、 &lt;code&gt;if-Match&lt;/code&gt; 、 &lt;code&gt;if-None-Match&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP/2.0&lt;br&gt;
+&lt;strong&gt; 特点：&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;引入了 &lt;code&gt;二进制分帧&lt;/code&gt; 来处理 header 和数据；&lt;/li&gt;
+&lt;li&gt;对 header 进行压缩，解决头部偏重的问题；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;多路复用&lt;/code&gt; ，可以在一个 TCP 连接里，同时发起多个请求，并且可以不需要要有序响应，解决了 &lt;code&gt;队头阻塞&lt;/code&gt; 的问题；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;服务器推送&lt;/code&gt; ，服务器可以主动推送资源给客服端；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;请求优先级&lt;/code&gt; ，可以设置数据帧的优先级，让服务端优先处理响应；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;HTTP/3.0（QUIC）&lt;br&gt;
+&lt;strong&gt;特点：&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 UDP 替换 TCP 建立连接；&lt;/li&gt;
+&lt;li&gt;使用了  &lt;code&gt;TLS1.3&lt;/code&gt;  保证通讯的安全；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;HTTP&lt;/code&gt;  有哪些请求方法？&lt;/p&gt;
@@ -447,7 +751,26 @@
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;HTTP&lt;/code&gt;  有哪些状态码？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;1xx：  &lt;code&gt;100&lt;/code&gt;  -&amp;gt; 服务端已收到请求，请继续发送后续请求；&lt;/li&gt;
+&lt;li&gt;2xx：  &lt;code&gt;200&lt;/code&gt;  -&amp;gt; 成功响应请求，响应报文中会含有 body 部分； &lt;code&gt;204&lt;/code&gt;  -&amp;gt; 成功响应请求，但没有 body； &lt;code&gt;206&lt;/code&gt;  -&amp;gt; 响应成功，但返回内容仅是一部分，常用于分块下载、断点续传。&lt;/li&gt;
+&lt;li&gt;3xx：  &lt;code&gt;301&lt;/code&gt;  -&amp;gt; 资源永久重定向到新地址； &lt;code&gt;302&lt;/code&gt;  -&amp;gt; 资源暂时重定向到新地址； &lt;code&gt;304&lt;/code&gt;  -&amp;gt; 资源未修改，重定向到缓存地址 ( &lt;code&gt;协商缓存&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;4xx：  &lt;code&gt;400&lt;/code&gt;  -&amp;gt; 请求报文有错误； &lt;code&gt;401&lt;/code&gt;  -&amp;gt; 没有权限访问该资源； &lt;code&gt;403&lt;/code&gt;  -&amp;gt; 没有权限访问该资源，但资源是存在的； &lt;code&gt;404&lt;/code&gt;  -&amp;gt; 请求的资源不存在；&lt;/li&gt;
+&lt;li&gt;5xx： &lt;code&gt;500&lt;/code&gt;  -&amp;gt; 笼统的服务端错误，没有具体指明； &lt;code&gt;501&lt;/code&gt;  -&amp;gt; 客服端请求的功能还不支持； &lt;code&gt;502&lt;/code&gt;  -&amp;gt; 网关挂了，服务可能是正常的； &lt;code&gt;503&lt;/code&gt;  -&amp;gt; 服务器正忙，无法响应；&lt;/li&gt;
+&lt;li&gt;更多…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;HTTP/2&lt;/code&gt;  的 &lt;code&gt;多路复用&lt;/code&gt; 和  &lt;code&gt;HTTP/1.1&lt;/code&gt;  的  &lt;code&gt;keep-alive&lt;/code&gt;  的区别&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;多路复用&lt;/code&gt;  指的是一个 TCP 连接下可以同时发起多个请求，并且不需要有序响应，不会阻塞请求的响应；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;keep-alive&lt;/code&gt;  仅是让 TCP 不断开，虽然可以同时发起多个请求，但是请求的响应会有序，会造成阻塞；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;HTTPS&lt;/code&gt;  是什么&lt;/p&gt;
@@ -467,9 +790,24 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;HTTPS&lt;/code&gt;  的握手过程&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;握手可以分为五个阶段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;由客户端传递 &lt;code&gt;协议版本号&lt;/code&gt; 、一个 &lt;code&gt;随机数&lt;/code&gt; 、 &lt;code&gt;支持的加密方法&lt;/code&gt; ；&lt;/li&gt;
+&lt;li&gt;由服务端确认使用何种 &lt;code&gt;加密方法&lt;/code&gt; ，并将 &lt;code&gt;数字证书&lt;/code&gt; 、服务端产生的 &lt;code&gt;随机数&lt;/code&gt; 传递给客户端；&lt;/li&gt;
+&lt;li&gt;客户端确认证书有效后，生成一个 &lt;code&gt;新的随机数&lt;/code&gt; 、并使用数字证书中的 &lt;code&gt;公钥&lt;/code&gt; 对这个随机数进行加密后传递给服务端；&lt;/li&gt;
+&lt;li&gt;服务端使用私钥解密获得随机数，用三个随机数进行计算生成本次会话所需的 &lt;code&gt;会话秘钥&lt;/code&gt; ，将协商的加密方法和秘钥发送给客户端、并通知握手结束通知；&lt;/li&gt;
+&lt;li&gt;进入会话阶段，通过 &lt;code&gt;会话秘钥&lt;/code&gt; 加密全部对话过程；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;HTTPS&lt;/code&gt;  的握手过程中，客户端如何验证证书的合法性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;TLS&lt;/code&gt;  是什么？&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;介绍一下  &lt;code&gt;HTTPS&lt;/code&gt;  的中间人攻击&lt;/p&gt;
@@ -483,7 +821,7 @@
 &lt;li class=&#34;quiz&#34;&gt;
 &lt;p&gt;A、B 机器正常连接后，B 机器突然重启，问 A 此时 处于 TCP 什么状态？&lt;/p&gt;
 &lt;ul class=&#34;options&#34;&gt;
-&lt;li&gt;SYN_SENT&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;SYN_SENT&lt;/li&gt;
 &lt;li&gt;SYN_RCVD&lt;/li&gt;
 &lt;li&gt;ESTABLISHED&lt;/li&gt;
 &lt;li&gt;FIN_WAIT1&lt;/li&gt;
@@ -521,7 +859,42 @@
 &lt;p&gt;描述从输入 URL 到页面显示的过程&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;浏览器有几个进程？ 分别的作用是？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;渲染进程 n&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;GUI 渲染线程：负责渲染页面 ( &lt;code&gt;解析 HTML&lt;/code&gt;  -&amp;gt;  &lt;code&gt;构建 DOM 树&lt;/code&gt;  -&amp;gt;  &lt;code&gt;CSSOM 树构建&lt;/code&gt;  -&amp;gt;  &lt;code&gt;合成 Render 树&lt;/code&gt;  -&amp;gt; 布局、绘制)。 &lt;code&gt;GUI 渲染进程&lt;/code&gt;  和  &lt;code&gt;JS 引擎线程&lt;/code&gt; 是互斥的，JS 代码执行会阻塞页面的渲染；&lt;/li&gt;
+&lt;li&gt;JS 引擎线程：等待任务队列的进入，负责解析 JS 代码，JS 的执行；与  &lt;code&gt;GUI 渲染线程&lt;/code&gt;  互斥，会在异步宏任务之间询问是否需要调用  &lt;code&gt;GUI 渲染线程&lt;/code&gt; ；&lt;/li&gt;
+&lt;li&gt;计时器线程： &lt;code&gt;setTimeout&lt;/code&gt;  和  &lt;code&gt;setInterval&lt;/code&gt;  计时的线程，计时结束后会将回调任务通过 &lt;code&gt;事件触发线程&lt;/code&gt; 放入任务队列，等待  &lt;code&gt;JS 引擎线程&lt;/code&gt; 调用；&lt;/li&gt;
+&lt;li&gt;事件触发线程：负责维护事件任务队列；&lt;/li&gt;
+&lt;li&gt;HTTP 请求线程：负责发起请求，若有回调任务则会通过 &lt;code&gt;事件触发线程&lt;/code&gt; 加入到任务队列中，等待执行；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;GPU 进程 1&lt;/li&gt;
+&lt;li&gt;网络进程 1&lt;/li&gt;
+&lt;li&gt;插件进程 n&lt;/li&gt;
+&lt;li&gt;浏览器进程 1&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;浏览器的界面显示，管理页签、管理进程，将页面内容写入内存，渲染图像，文件存储；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;浏览器的渲染进程里，有什么线程？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;浏览器一帧内做了什么&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;主线程的一帧：&lt;/li&gt;
+&lt;li&gt;-&amp;gt;  &lt;code&gt;Input Event&lt;/code&gt;  -&amp;gt;  &lt;code&gt;JS Task&lt;/code&gt;  -&amp;gt;  &lt;code&gt;Begin Frame&lt;/code&gt;  -&amp;gt;  &lt;code&gt;RAF&lt;/code&gt;  -&amp;gt;  &lt;code&gt;Layout&lt;/code&gt;  -&amp;gt;  &lt;code&gt;Paint&lt;/code&gt;  -&amp;gt;  &lt;code&gt;RIC&lt;/code&gt;  -&amp;gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Input Event&lt;/code&gt; ：用户输入事件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JS Task&lt;/code&gt; ：同步代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;描述一下浏览器的事件机制&lt;/p&gt;
@@ -537,9 +910,21 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;MessageChannel&lt;/code&gt;  和  &lt;code&gt;window.postMessage&lt;/code&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;MessageChannel 是主线程异步执行，Window.postMessage 是 web Worker 进程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;如何进行跨页签通信？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Web Worker&lt;/code&gt; : window.postMessage&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MessageChannel&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;webSocket&lt;/code&gt; ：借助服务器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
  ]]></description>
@@ -697,6 +1082,16 @@ React 中的 Fiber 是一个 &lt;code&gt;多环的链表结构&lt;/code&gt; ，�
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;React  &lt;code&gt;class 组件&lt;/code&gt;  和  &lt;code&gt;Hook 组件&lt;/code&gt;  的区别&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;从语法来看， &lt;code&gt;class&lt;/code&gt;  需要继承  &lt;code&gt;React.Component&lt;/code&gt; ， &lt;code&gt;Hook&lt;/code&gt;  则不需要。&lt;/li&gt;
+&lt;li&gt;从代码执行角度来看， &lt;code&gt;class&lt;/code&gt;  的运行逻辑没有  &lt;code&gt;Hook&lt;/code&gt;  清晰， &lt;code&gt;class&lt;/code&gt;  通过生命周期钩子实现，需要了解生命周期钩子的作用及含义，还需要关注  &lt;code&gt;this&lt;/code&gt;  指针问题。 &lt;code&gt;Hook&lt;/code&gt;  则是纯函数实现方式，不需要关注生命周期的执行，不需要考虑  &lt;code&gt;this&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;从  &lt;code&gt;React&lt;/code&gt;  的设计理念来看， &lt;code&gt;Hook&lt;/code&gt;  更加符合  &lt;code&gt;UI=Fn(data)&lt;/code&gt;  的理念。&lt;/li&gt;
+&lt;li&gt;从  &lt;code&gt;React&lt;/code&gt;  运行逻辑来看， &lt;code&gt;class&lt;/code&gt;  需要进行实例化， &lt;code&gt;Hook&lt;/code&gt;  运行完便可回收。 &lt;code&gt;Hook&lt;/code&gt;  在内存上会更加节省一些。&lt;/li&gt;
+&lt;li&gt;从  &lt;code&gt;React&lt;/code&gt;  的特性来看， &lt;code&gt;class&lt;/code&gt;  组件使用  &lt;code&gt;state&lt;/code&gt;  只需要定义在  &lt;code&gt;this&lt;/code&gt;  上即可使用， &lt;code&gt;Hook&lt;/code&gt;  则需要通过  &lt;code&gt;useState&lt;/code&gt;  钩子来实现状态。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;函数式组件天然可以捕获渲染时的所使用的值&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;setState 是同步的还是异步的&lt;/p&gt;
@@ -767,6 +1162,17 @@ React 中的 Fiber 是一个 &lt;code&gt;多环的链表结构&lt;/code&gt; ，�
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;React.Fragment&lt;/code&gt;  的原理&lt;/p&gt;
 &lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;React&lt;/code&gt;  如何做 &lt;code&gt;时间切片&lt;/code&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;判断当前循环中已经执行了多少秒，如果低于  &lt;code&gt;5ms&lt;/code&gt;  就继续下一个任务，不切片，如果大于  &lt;code&gt;5ms&lt;/code&gt;  则进行切片，中断任务执行；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;&lt;code&gt;useSyncExternalStore&lt;/code&gt;  的作用及原理&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;react-应用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#react-应用&#34;&gt;#&lt;/a&gt; React 应用&lt;/h2&gt;
 &lt;ol&gt;
@@ -778,6 +1184,11 @@ React 中的 Fiber 是一个 &lt;code&gt;多环的链表结构&lt;/code&gt; ，�
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;hook 为什么不能放在条件语句中&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;因为  &lt;code&gt;Hooks&lt;/code&gt;  基于链表数据结构实现的，在 React 进行遍历时，当前处理的 hook 指针是按序依次更新的，如果 hook 在条件语句中使用就会出现指针错误，找不到或找到错误的 hook 进行处理；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;react-技术生态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#react-技术生态&#34;&gt;#&lt;/a&gt; React 技术生态&lt;/h2&gt;
@@ -838,6 +1249,12 @@ React 中的 Fiber 是一个 &lt;code&gt;多环的链表结构&lt;/code&gt; ，�
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;useSelector&lt;/code&gt;  的原理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;useSelector&lt;/code&gt;  直接订阅了  &lt;code&gt;store&lt;/code&gt;  的变化，在  &lt;code&gt;Redux&lt;/code&gt;  更新中， &lt;code&gt;store&lt;/code&gt;  是不断变化的，但内部 state 的引用只会在相应  &lt;code&gt;state&lt;/code&gt;  发生变化时才会更新，所以  &lt;code&gt;useSelector&lt;/code&gt;  的第一个参数是一个筛选函数，用于订阅具体的  &lt;code&gt;state&lt;/code&gt; ，仅当订阅的旧  &lt;code&gt;state&lt;/code&gt;  和筛选函数返回的新  &lt;code&gt;state&lt;/code&gt;  不同时才会进行触发视图的更新，第二个参数则是一个更具体的比较函数，当返回 true 才会更新，类似于  &lt;code&gt;shouldComponentUpdate&lt;/code&gt;  的作用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;useSelector&lt;/code&gt;  的更新，早期使用  &lt;code&gt;forceRender&lt;/code&gt;  实现，现在使用  &lt;code&gt;useSyncExternalStore&lt;/code&gt;  实现，避免因为  &lt;code&gt;React&lt;/code&gt;  自身的调度更新导致状态不一致；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;redux-thunk&lt;/code&gt;  和  &lt;code&gt;react-saga&lt;/code&gt;  的区别&lt;/p&gt;
@@ -851,15 +1268,39 @@ React 中的 Fiber 是一个 &lt;code&gt;多环的链表结构&lt;/code&gt; ，�
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;Redux&lt;/code&gt;  和  &lt;code&gt;Mobx&lt;/code&gt;  的区别是什么，使用场景&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Redux&lt;/code&gt;  基于  &lt;code&gt;发布-订阅&lt;/code&gt;  模式，走的是单向数据流，store 唯一，数据不可变；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Mobx&lt;/code&gt;  基于  &lt;code&gt;观察者&lt;/code&gt;  模式，采用的是双向数据流，store 可以多个，数据是可变的；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Redux&lt;/code&gt;  需要手动追踪数据的变化，也能对数据变化进行追踪和追溯， &lt;code&gt;Mobx&lt;/code&gt;  则只需对数据变化进行观察，在变化时触发监听，数据变化不好追溯；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Redux&lt;/code&gt;  处理异步时，需要借助中间件增强  &lt;code&gt;Action&lt;/code&gt; ， &lt;code&gt;Mobx&lt;/code&gt;  则天然可支持异步处理；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;原子状态库的原理是什么？&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;原子类状态库和  &lt;code&gt;Redux&lt;/code&gt; 、 &lt;code&gt;Mobx&lt;/code&gt;  等状态库有什么区别&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;原子类状态库和  &lt;code&gt;Redux&lt;/code&gt;  的核心原理都是  &lt;code&gt;发布-订阅&lt;/code&gt;  模式， &lt;code&gt;Mobx&lt;/code&gt;  则采用 &lt;code&gt;观察者&lt;/code&gt; 模式实现；&lt;/li&gt;
+&lt;li&gt;原子类状态库的基本理念是细粒度更新、扁平化分散管理、可追溯， &lt;code&gt;Redux&lt;/code&gt;  的基本理念是单向数据流、集中管理、可追溯， &lt;code&gt;Mobx&lt;/code&gt;  的基本理念是衍生、响应式、可观察；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;React-Query&lt;/code&gt;  的原理是什么？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;React-Query&lt;/code&gt;  是一个以  &lt;code&gt;hook&lt;/code&gt;  的方式管理请求的请求管理库（Server State）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;React-Query&lt;/code&gt;  的本质是一个外部的状态管理器，类似于  &lt;code&gt;Redux&lt;/code&gt; 、 &lt;code&gt;Mobx&lt;/code&gt; ，不同的是它集成了与服务端请求的状态处理，并提供给开发者使用；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;React-Query&lt;/code&gt;  使用了 &lt;code&gt;观察者&lt;/code&gt; 模式去桥接  &lt;code&gt;React&lt;/code&gt;  和状态库的数据变化  &lt;code&gt;useState(() =&amp;gt; new Observer(queryClient, options))&lt;/code&gt; ；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;React-Query&lt;/code&gt;  通过  &lt;code&gt;cache&lt;/code&gt;  的变化通知订阅者执行回调来进行更新，在 v3 版本使用的是 forceUpDate 强制更新，v4 使用  &lt;code&gt;useSyncExternalStore&lt;/code&gt;  来订阅  &lt;code&gt;Observer&lt;/code&gt;  的变化&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;什么是 &lt;code&gt;状态持久化&lt;/code&gt; （数据持久化）？&lt;/p&gt;
@@ -869,7 +1310,7 @@ React 中的 Fiber 是一个 &lt;code&gt;多环的链表结构&lt;/code&gt; ，�
 &lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;在服务端调用  &lt;code&gt;renderString&lt;/code&gt;  将组件和数据输出为  &lt;code&gt;HTML&lt;/code&gt;  字符串，将这部分视图先交给浏览器进行渲染。&lt;/li&gt;
-&lt;li&gt;在服务端通过在全局变量挂载服务端发生的状态变化，在客户端进行 &lt;code&gt;水合&lt;/code&gt; 后更新页面，让客户端和服务端的状态保持一致。&lt;/li&gt;
+&lt;li&gt;在服务端通过在全局变量挂载服务端发生的状态变化，在客户端进行  &lt;code&gt;hydrate - 水合&lt;/code&gt; 后更新页面，让客户端和服务端的状态保持一致。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
