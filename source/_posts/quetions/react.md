@@ -96,6 +96,13 @@ abbrlink: 4a322b5b
 
 13. React `class 组件` 和 `Hook 组件` 的区别 {.quiz .fill}
 
+    > - 从语法来看，`class` 需要继承 `React.Component`，`Hook` 则不需要。
+    > - 从代码执行角度来看，`class` 的运行逻辑没有 `Hook` 清晰，`class` 通过生命周期钩子实现，需要了解生命周期钩子的作用及含义，还需要关注 `this` 指针问题。`Hook` 则是纯函数实现方式，不需要关注生命周期的执行，不需要考虑 `this`。
+    > - 从 `React` 的设计理念来看，`Hook` 更加符合 `UI=Fn(data)` 的理念。
+    > - 从 `React` 运行逻辑来看，`class` 需要进行实例化，`Hook` 运行完便可回收。`Hook` 在内存上会更加节省一些。
+    > - 从 `React` 的特性来看，`class` 组件使用 `state` 只需要定义在 `this` 上即可使用，`Hook` 则需要通过 `useState` 钩子来实现状态。
+    > - **函数式组件天然可以捕获渲染时的所使用的值**。
+
 14. setState 是同步的还是异步的 {.quiz .fill}
 
     > - 没有启用 `Fiber` 架构时，在合成事件和生命周期钩子中是异步的，在 settimeout 、原生事件中是同步的。
@@ -197,6 +204,12 @@ abbrlink: 4a322b5b
 
 21. `React.Fragment` 的原理 {.quiz .fill}
 
+22. `React` 如何做`时间切片` {.quiz .fill}
+
+    > - 判断当前循环中已经执行了多少秒，如果低于 `5ms` 就继续下一个任务，不切片，如果大于 `5ms` 则进行切片，中断任务执行；
+
+23. `useSyncExternalStore` 的作用及原理 {.quiz .fill}
+
 ## React 应用
 
 1. `useReducer` 和 `Redux` 的区别和优缺点 {.quiz .fill}
@@ -204,6 +217,8 @@ abbrlink: 4a322b5b
 2. 如何解决 `useState`、`useEffect` 的闭包问题 {.quiz .fill}
 
 3. hook 为什么不能放在条件语句中 {.quiz .fill}
+
+   > - 因为 `Hooks` 基于链表数据结构实现的，在 React 进行遍历时，当前处理的 hook 指针是按序依次更新的，如果 hook 在条件语句中使用就会出现指针错误，找不到或找到错误的 hook 进行处理；
 
 ## React 技术生态
 
@@ -238,6 +253,9 @@ abbrlink: 4a322b5b
 
 5.  `useSelector` 的原理 {.quiz .fill}
 
+    > 1. `useSelector` 直接订阅了 `store` 的变化，在 `Redux` 更新中，`store` 是不断变化的，但内部 state 的引用只会在相应 `state` 发生变化时才会更新，所以 `useSelector` 的第一个参数是一个筛选函数，用于订阅具体的 `state`，仅当订阅的旧 `state` 和筛选函数返回的新 `state` 不同时才会进行触发视图的更新，第二个参数则是一个更具体的比较函数，当返回 true 才会更新，类似于 `shouldComponentUpdate` 的作用。
+    > 2. `useSelector` 的更新，早期使用 `forceRender` 实现，现在使用 `useSyncExternalStore` 实现，避免因为 `React` 自身的调度更新导致状态不一致；
+
 6.  `redux-thunk` 和 `react-saga` 的区别 {.quiz .fill}
 
     > - `thunk` 使用的是高阶函数的形式通过 `Promise` 来增强 `dispatch`。
@@ -246,18 +264,32 @@ abbrlink: 4a322b5b
 
 7.  `Redux` 和 `Mobx` 的区别是什么，使用场景 {.quiz .fill}
 
+    > 1. `Redux` 基于 `发布-订阅` 模式，走的是单向数据流，store 唯一，数据不可变；
+    > 2. `Mobx` 基于 `观察者` 模式，采用的是双向数据流，store 可以多个，数据是可变的；
+    > 3. `Redux` 需要手动追踪数据的变化，也能对数据变化进行追踪和追溯，`Mobx` 则只需对数据变化进行观察，在变化时触发监听，数据变化不好追溯；
+    > 4. `Redux` 处理异步时，需要借助中间件增强 `Action`，`Mobx` 则天然可支持异步处理；
+
 8.  原子状态库的原理是什么？ {.quiz .fill}
 
 9.  原子类状态库和 `Redux`、`Mobx` 等状态库有什么区别 {.quiz .fill}
 
+    > 1. 原子类状态库和 `Redux` 的核心原理都是 `发布-订阅` 模式，`Mobx` 则采用`观察者`模式实现；
+    > 2. 原子类状态库的基本理念是细粒度更新、扁平化分散管理、可追溯，`Redux` 的基本理念是单向数据流、集中管理、可追溯，`Mobx` 的基本理念是衍生、响应式、可观察；
+
 10. `React-Query` 的原理是什么? {.quiz .fill}
+
+    > > `React-Query` 是一个以 `hook` 的方式管理请求的请求管理库（Server State）。
+    >
+    > 1. `React-Query` 的本质是一个外部的状态管理器，类似于 `Redux`、`Mobx`，不同的是它集成了与服务端请求的状态处理，并提供给开发者使用；
+    > 2. `React-Query` 使用了`观察者`模式去桥接 `React` 和状态库的数据变化 `useState(() => new Observer(queryClient, options))`；
+    > 3. `React-Query` 通过 `cache` 的变化通知订阅者执行回调来进行更新，在 v3 版本使用的是 forceUpDate 强制更新，v4 使用 `useSyncExternalStore` 来订阅 `Observer` 的变化
 
 11. 什么是`状态持久化`（数据持久化）？ {.quiz .fill}
 
 12. `React SSR` 的原理？ {.quiz .fill}
 
     > 1. 在服务端调用 `renderString` 将组件和数据输出为 `HTML` 字符串，将这部分视图先交给浏览器进行渲染。
-    > 2. 在服务端通过在全局变量挂载服务端发生的状态变化，在客户端进行`水合`后更新页面，让客户端和服务端的状态保持一致。
+    > 2. 在服务端通过在全局变量挂载服务端发生的状态变化，在客户端进行 `hydrate - 水合`后更新页面，让客户端和服务端的状态保持一致。
 
 13. `React-Route` 的原理？ {.quiz .fill}
 

@@ -44,18 +44,63 @@ abbrlink: cc1b9611
 
 5.  `bind`、`call`、`apply` 的原理和实现 {.quiz .fill}
 
+    > - 三者的本质都是通过改变 this 的指向来借用函数，不同的是 `bind` 是返回一个待调用的函数，`call` 和 `apply` 返回的是执行结果
+    > - `bind`、`call`、`apply` 的第一个参数都是`借用方`，也就是函数执行时 this 的指向；
+    > - `bind` 除了第一个参数外，剩余的参数会依次作为被借函数的入参，返回的函数的入参的顺序会在 `bind` 参数的后续依次入参；
+    > - `call` 除了第一个参数外，剩余的参数会依次作为被借函数的入参；
+    > - `apply` 的第二个参数是一个类数组，参数会按序作为被借用函数的入参；
+
+    > ```js
+    > function bind(context) {
+    >   const ctx = context || {}
+    >
+    >   const fn = Symbol()
+    >   ctx[fn] = this
+    >   const args = arguments
+    >
+    >   return function () {
+    >     return ctx[fn](...args, ...arguments)
+    >   }
+    > }
+    >
+    > function call(context) {
+    >   const ctx = context || window
+    >   const fn = Symbol()
+    >   ctx[fn] = this
+    >   const res = ctx[fn](...arguments)
+    >
+    >   delete ctx[fn]
+    >   return res
+    > }
+    >
+    > function apply(context, args) {
+    >   const ctx = context || window
+    >   const symbol = Symbol()
+    >   ctx[symbol] = this
+    >
+    >   const res = ctx[symbol](...args)
+    >
+    >   delete ctx[symbol]
+    >   return res
+    > }
+    > ```
+
 6.  什么是原型，什么是原型链？ {.quiz .fill}
 
     > - 原型就是对象。JS 的对象系统是基于原型模式设计的，在原型模式里有一个原则是“要得到一个对象，不是通过实例化类，而是找到一个对象作为原型并克隆这个对象。”
     > - 原型链就是对象之间的关联，在 JS 中实例对象的 `__proto__` 会指向其构造函数的原型 `prototype`，构造函数的原型对象的 `__protot__` 也会指向这个原型对象构造函数的 `prototype`，一直到 `Object.prototype.__proto__` 为止，这种链式向上关联就是`原型链 `
 
-7.  什么是闭包？ {.quiz .fill}
+7.  什么是闭包？有什么应用场景? {.quiz .fill}
 
     > - 闭包是指在函数内使用了非函数内的变量，导致这个变量无法在其作用域销毁时销毁的现象。
+    > - 即使是创建这个变量上下文已经销毁，但这个变量它依旧存在内存中，这种现象就是`闭包`。
+    > - 在代码中引用了自由变量也会造成闭包现象。
+    > - 在闭包现象中，上下文的销毁时，它的`活动变量(AO)`不一定会从作用域链中移除，所以闭包函数可以通过作用域链访问到这个变量；
 
 8.  `typeof` 和 `instanceOf` 的原理和区别 {.quiz .fill}
 
     > - `typeof` 判断的是对象在内存上的存储类型，`instanceOf` 判断的是原型链上的原型。
+    > - `typeof` 只能判断除 `null` 外的基本数据类型和 `object`、`function`，无法判断实例的原型，`instanceOf` 不能判断 `number`、`string`、`boolean` 类型，可以判断实例的原型，可以区分 `Array` 和 `Object`。
 
 9.  什么是变量提升 {.quiz .fill}
 
@@ -63,11 +108,22 @@ abbrlink: cc1b9611
 
 10. `this` 是什么？ {.quiz .fill}
 
+    > 1. `this` 是函数执行的主体，如果将最外层当成一个 `main` 函数来看，那 `main` 的主体就是 `window` 或者是 `global`。
+    > 2. 总的来说就是谁调用的函数 `this` 就会指向谁，箭头函数除外。
+
 11. 描述 JS 的事件循环？{.quiz .fill}
 
-12. 为什么 **for** 循环的性能比 **forEach** 高？ {.quiz .fill}
+12. 哪些任务是宏任务？哪些事件是微任务？宏任务和微任务的区别 {.quiz .fill}
 
-13. 描述一下 V8 引擎的`垃圾回收机制`，如何定位内存泄露？ {.quiz .fill}
+    > - `setTimeout`、`setInterval`、`setImmediate`、`requestAnimationFrame`、`requestIdleCallback`、`MessageChannel` 属于宏任务，`Promise.then`、`MutationObserver`、`process.nextTick`
+    > - 宏任务是在事件循环的起始执行的，微任务是在循环的末尾执行；
+    > - `setTimeout`/`setInterval` 创建的宏任务，有一个最短 4ms 的延迟，也就是两个循环之间最短时间是 4ms；
+    > - `requestAnimationFrame` 是浏览器按帧执行的，约为 16.6ms，若页签处于后台时，不更新帧则不会执行；
+    > - `requestIdleCallback` 仅在浏览器渲染执行完还有剩余时间时会执行，没有时间则不执行；
+
+13. 为什么 **for** 循环的性能比 **forEach** 高？ {.quiz .fill}
+
+14. 描述一下 V8 引擎的`垃圾回收机制`，如何定位内存泄露？ {.quiz .fill}
 
 ## ES6
 
@@ -161,13 +217,245 @@ abbrlink: cc1b9611
 
 4. 实现一个 `Promise` {.quiz .fill}
 
+   > ```js
+   > const FULFILLED = 'fulfilled'
+   > const REJECTED = 'rejected'
+   > const PENDING = 'pending'
+   >
+   > function scheduleCallBack(task) {
+   >   setTimeout(task, 0)
+   > }
+   >
+   > function resolvePromise(promise, x, resolve, reject) {
+   >   if (x === promise) {
+   >     return reject(new TypeError('Chaining cycle detected for promise'))
+   >   }
+   >
+   >   if (x && (typeof x === 'object' || typeof x === 'function')) {
+   >     let executed = false
+   >     try {
+   >       const then = x.then
+   >       if (typeof then === 'function') {
+   >         then.call(
+   >           x,
+   >           (y) => {
+   >             if (executed) return
+   >             executed = true
+   >
+   >             resolvePromise(promise, y, resolve, reject)
+   >           },
+   >           (e) => {
+   >             if (executed) return
+   >             executed = true
+   >             reject(e)
+   >           }
+   >         )
+   >       } else {
+   >         resolve(x)
+   >       }
+   >     } catch (error) {
+   >       if (executed) return
+   >       executed = true
+   >       reject(error)
+   >     }
+   >   } else {
+   >     resolve(x)
+   >   }
+   > }
+   >
+   > class IPromise {
+   >   status = PENDING
+   >   value = null
+   >   reason = null
+   >   fulfilledCallbacks = []
+   >   rejectedCallbacks = []
+   >
+   >   constructor(exec) {
+   >     this.status = PENDING
+   >     this.value = null
+   >     this.reason = null
+   >
+   >     this.fulfilledCallbacks = []
+   >     this.rejectedCallbacks = []
+   >
+   >     const that = this
+   >
+   >     function resolve(value) {
+   >       if (value instanceof IPromise) {
+   >         value.then(resolve, reject)
+   >         return
+   >       }
+   >       if (that.status === PENDING) {
+   >         that.value = value
+   >         that.status = FULFILLED
+   >         that.fulfilledCallbacks.forEach((cb) => cb())
+   >       }
+   >     }
+   >
+   >     function reject(reason) {
+   >       if (that.status === PENDING) {
+   >         that.reason = reason
+   >         that.status = REJECTED
+   >         that.rejectedCallbacks.forEach((cb) => cb())
+   >       }
+   >     }
+   >
+   >     try {
+   >       exec(resolve, reject)
+   >     } catch (error) {
+   >       reject(error)
+   >     }
+   >   }
+   >
+   >   then(onFulfilled, onRejected) {
+   >     // prettier-ignore
+   >     onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : (value) => value
+   >     // prettier-ignore
+   >     onRejected = typeof onRejected === 'function' ? onRejected : (e) => { throw e }
+   >
+   >     const promise = new IPromise((resolve, reject) => {
+   >       if (this.status === FULFILLED) {
+   >         scheduleCallBack(() => {
+   >           try {
+   >             const x = onFulfilled(this.value)
+   >             resolvePromise(promise, x, resolve, reject)
+   >           } catch (error) {
+   >             reject(error)
+   >           }
+   >         })
+   >       } else if (this.status === REJECTED) {
+   >         scheduleCallBack(() => {
+   >           try {
+   >             const x = onRejected(this.reason)
+   >             resolvePromise(promise, x, resolve, reject)
+   >           } catch (error) {
+   >             reject(error)
+   >           }
+   >         })
+   >       } else {
+   >         this.fulfilledCallbacks.push(() => {
+   >           scheduleCallBack(() => {
+   >             try {
+   >               const x = onFulfilled(this.value)
+   >               resolvePromise(promise, x, resolve, reject)
+   >             } catch (error) {
+   >               reject(error)
+   >             }
+   >           })
+   >         })
+   >
+   >         this.rejectedCallbacks.push(() => {
+   >           scheduleCallBack(() => {
+   >             try {
+   >               const x = onRejected(this.reason)
+   >               resolvePromise(promise, x, resolve, reject)
+   >             } catch (error) {
+   >               reject(error)
+   >             }
+   >           })
+   >         })
+   >       }
+   >     })
+   >
+   >     return promise
+   >   }
+   > }
+   > ```
+
 5. 实现一下常见的 `Promise` 方法 {.quiz .fill}
+
+   > ```js
+   >  function race(promises) {
+   >    return new IPromise((resolve, reject) => {
+   >      for (let i = 0; i < promises.length; i++) {
+   >        IPromise.resolve(promises[i]).then(resolve).catch(reject)
+   >      }
+   >    })
+   >  }
+   >
+   >  function all(promises) {
+   >    return new IPromise((resolve, reject) => {
+   >      const res = []
+   >      let len = 0
+   >      for (let i = 0; i < promises.length; i++) {
+   >        IPromise.resolve(promises[i]).then((val) => {
+   >          res[i] = val
+   >          if (++len === promises.length) resolve(res)
+   >        }, reject)
+   >      }
+   >    })
+   >  }
+   >
+   >  function resolve(value) {
+   >    return new IPromise((resolve) => resolve(value))
+   >  }
+   >
+   >  function reject(reason) {
+   >    return new IPromise((res, rej) => rej(reason))
+   >  }
+   >
+   >  function allSettled(promises) {
+   >    return new IPromise((resolve, reject) => {
+   >      const res = []
+   >      let len = 0
+   >      const plen = promises.length
+   >
+   >      for (let i = 0; i < plen; i++) {
+   >        IPromise.resolve(promises[i]).then(
+   >          (val) => {
+   >            res[i] = {
+   >              status: FULFILLED,
+   >              value: val,
+   >            }
+   >            len++
+   >            if (len === plen) resolve(res)
+   >          },
+   >          (reason) => {
+   >            res[i] = {
+   >              status: REJECTED,
+   >              reason: reason,
+   >            }
+   >            len++
+   >            if (len === plen) resolve(res)
+   >          }
+   >        )
+   >      }
+   >    })
+   >  }
+   >
+   >  function catch(onRejected) {
+   >    return this.then(null, onRejected)
+   >  }
+   >
+   >  function finally(cb) {
+   >    return this.then(
+   >      (val) => IPromise.resolve(cb()).then(() => val),
+   >      (reason) =>
+   >        IPromise.reject(cb()).then(() => {
+   >          throw reason
+   >        })
+   >    )
+   >  }
+   > ```
 
 6. 什么是 `Proxy`？ {.quiz .fill}
 
+   > - `Proxy` 是代理对象，通过在被代理对象上套一层拦截机制，让代理对象进行操作时可以做更多的事情；
+   > - `Proxy` 是一个构造函数，一个入参是被代理对象，第二个是 `handler` 对象，通过拦截对象属性可以提供 `13` 种操作的拦截；
+   > - `get`、`set`、`has`、`apply`、`construct`、`ownKeys`、`defineProperty`、`deleteProperty`、`getPrototypeOf`、`setPrototypeOf`、`getOwnPropertyDescriptor`、`preventExtensions`、`isExtensible`
+
 7. 什么是 `Reflect`？ {.quiz .fill}
 
-8. `Proxy` 和 `definePrototype` 的区别 {.quiz .fill}
+   > - `Reflect` 是反射对象，是 JS 的内置对象，提供 JS 对象操作的拦截方法，所有的方法都是静态方法，不能够进行实例化。
+   > - `Reflect` 通常搭配 `Proxy` 一起使用，其内部方法也和 `Proxy` 的 hanlder 一一对应，主要是作用域 `Proxy` 中的 `Receiver` 让 `Proxy` 可以正确地处理 `Receiver` 的引用，保证代理对象在劫持时可以获取到正确的 `this` 指向。
+
+8. `Proxy` 和 `Object.defineProperty` 的区别 {.quiz .fill}
+
+   > 1. `Proxy` 是 ES6 提供对象代理方法，`Proxy` 只是将对象进行代理，后续操作都是对代理对象操作进行拦截。对原对象没有变动；
+   > 2. `Object.defineProperty` 则是对对象的属性进行拦截，但对象新增的属性是监听不到的，需要对新属性也进行 `observer` 处理，比如 array 的 push、unshift 等操作时监听不到新值，或者监听异常的，这是由于 length 的变化导致新的索引没有被监听处理
+   >
+   > - `Proxy` 代理的是整个对象，可以通过 `get` / `set` 等方法劫持所有的一级属性，`Object.defineProperty` 监听的是对象本身的属性，需要逐个劫持每个属性；
+   > - `Proxy` 和 `Object.defineProperty` 都只能够劫持对象自身的属性，而不能够深层劫持内部对象的属性，都需要进行递归处理深层对象，才能够完整劫持到全部属性；
 
 9. `Set`、`WeakSet`、`Map`、`WeakMap` 的区别 {.quiz .fill}
 
