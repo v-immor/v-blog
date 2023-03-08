@@ -2,6 +2,7 @@
 title: JavaScript
 date: '2023-02-24 23:04:24'
 quiz: true
+hide: true
 categories:
   - Quetions
 tags:
