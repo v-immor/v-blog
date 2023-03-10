@@ -5,8 +5,8 @@
         <link>https://v-immor.github.io/v-blog</link>
         <description>~虚拟建设者~</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 08 Mar 2023 09:32:42 +0000</pubDate>
-        <lastBuildDate>Wed, 08 Mar 2023 09:32:42 +0000</lastBuildDate>
+        <pubDate>Fri, 10 Mar 2023 14:49:51 +0000</pubDate>
+        <lastBuildDate>Fri, 10 Mar 2023 14:49:51 +0000</lastBuildDate>
         <category>JS 基础</category>
         <category>Promise</category>
         <category>原理</category>
@@ -17,7 +17,7 @@
             <guid isPermalink="true">https://v-immor.github.io/v-blog/posts/0.html</guid>
             <title></title>
             <link>https://v-immor.github.io/v-blog/posts/0.html</link>
-            <pubDate>Wed, 08 Mar 2023 09:32:42 +0000</pubDate>
+            <pubDate>Fri, 10 Mar 2023 14:49:51 +0000</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
         <item>
@@ -152,6 +152,17 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;JS 的执行环境和作用域、作用域链&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;关键词&lt;/strong&gt;：作用域 -&amp;gt;  &lt;code&gt;Scope&lt;/code&gt; 、变量对象 -&amp;gt;  &lt;code&gt;VO&lt;/code&gt; 、活动对象 -&amp;gt;  &lt;code&gt;AO&lt;/code&gt; 、全局对象 -&amp;gt;  &lt;code&gt;GO&lt;/code&gt; 、作用域链 -&amp;gt;  &lt;code&gt;[[Scopes]]&lt;/code&gt; 、变量环境 -&amp;gt;  &lt;code&gt;VE&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;执行环境：在 JS 中大致有三种执行环境  &lt;code&gt;Global&lt;/code&gt; 、 &lt;code&gt;Function&lt;/code&gt; 、 &lt;code&gt;eval&lt;/code&gt; ，在 JS 代码执行时，解释器会创建执行环境，作用域、变量对象、this 的执行；JS 代码在运行时会进入不同的执行环境，执行环境是以栈的形式存储。当执行环境的代码执行完后就会弹出，直到 global 环境会在页面关闭时销毁。执行环境栈和执行栈是两个东西，虽然基本理念相似，执行栈的栈元素是函数、执行环境栈的栈元素是代码。执行环境栈在 JS 解释阶段创建，执行栈在运行阶段创建。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;作用域&lt;/code&gt; 指的是当前执行环境能够访问到 &lt;code&gt;变量对象（VO）&lt;/code&gt; ，作用域随着执行环境一同创建、里层环境可以访问到外层环境的作用域，也就是可以通过 &lt;code&gt;作用域链&lt;/code&gt; 访问到外层环境作用域内的变量对象。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;&lt;code&gt;new&lt;/code&gt;  的原理和实现&lt;/p&gt;
@@ -236,6 +247,14 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;描述 JS 的事件循环？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Event Loop&lt;/code&gt;  是 JS 处理任务的工作循环，会不断地从任务队列中取出任务到执行栈中执行。&lt;/li&gt;
+&lt;li&gt;一个简单的循环结构： &lt;code&gt;同步代码&lt;/code&gt;  -&amp;gt; 清空  &lt;code&gt;微任务&lt;/code&gt;  队列 -&amp;gt; 取出一个 &lt;code&gt;宏任务&lt;/code&gt; 加入执行栈中执行 -&amp;gt; 清空  &lt;code&gt;微任务&lt;/code&gt;  队列…&lt;/li&gt;
+&lt;li&gt;因为 JS 是单线程执行的，所以除了  &lt;code&gt;setTimeout&lt;/code&gt;  、 &lt;code&gt;setInterval&lt;/code&gt;  在计时器线程中异步执行计时，是真正的异步任务，其回调函数，都是 &lt;code&gt;伪异步&lt;/code&gt; ，只是执行的时机不同导致其 &lt;code&gt;异步&lt;/code&gt; 的现象。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;宏任务&lt;/code&gt;  和  &lt;code&gt;微任务&lt;/code&gt;  的区别主要在于执行时机， &lt;code&gt;宏任务&lt;/code&gt;  是每个循环的起始，在每个宏任务执行完时，会将微任务队列中的任务全部加入到执行栈中执行，直到微任务队列清空，才会尝试去取出 &lt;code&gt;宏任务&lt;/code&gt; ，进入下一个循环。并且在每个宏任务之间会去问询  &lt;code&gt;GUI 渲染线程&lt;/code&gt;  是否要工作，若  &lt;code&gt;GUI 渲染线程&lt;/code&gt;  要进行工作，则会将  &lt;code&gt;JS 引擎线程&lt;/code&gt;  进行挂起，等待响应。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;哪些任务是宏任务？哪些事件是微任务？宏任务和微任务的区别&lt;/p&gt;
@@ -251,6 +270,12 @@
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;为什么 &lt;strong&gt;for&lt;/strong&gt; 循环的性能比 &lt;strong&gt;forEach&lt;/strong&gt; 高？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;for&lt;/code&gt;  没有创建额外的调用栈和上下文，遍历的是索引， &lt;code&gt;forEach&lt;/code&gt;  会创建额外的调用栈和上下文，调用的是函数，这会造成性能上的损耗；&lt;/li&gt;
+&lt;li&gt;在没达到一定数量级之前，两种循环的性能差异极小，使用  &lt;code&gt;forEach&lt;/code&gt;  可以让代码的语义更加明显；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;描述一下 V8 引擎的 &lt;code&gt;垃圾回收机制&lt;/code&gt; ，如何定位内存泄露？&lt;/p&gt;
